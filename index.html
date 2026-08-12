@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   THUNDRR — one-page agency site  ·  build 08052
+   THUNDRR — one-page agency site  ·  build 08054
    Single file. No build step. No dependencies.
    ============================================================ */
 
@@ -836,7 +836,7 @@ footer{position:relative;z-index:2;padding:88px 0 0;border-top:1px solid var(--b
 }
 
 /* ============================================================
-   RUNTIME PATCHES · build 08052
+   RUNTIME PATCHES · build 08054
    ============================================================ */
 .viewport{position:relative;z-index:2}
 .sheet-regions .flag{font-size:15px;line-height:1}
@@ -847,7 +847,7 @@ footer{position:relative;z-index:2;padding:88px 0 0;border-top:1px solid var(--b
 @media (max-width:1024px){.nav-inner{gap:14px}}
 
 /* ============================================================
-   V2 · build 08052 — background, labels, photo systems, mobile
+   V2 · build 08054 — background, labels, photo systems, mobile
    ============================================================ */
 
 /* ---------- background field: layered mesh, not flat black ---------- */
@@ -1084,7 +1084,7 @@ body{
 }
 
 /* ============================================================
-   V3 · build 08052 — performance pass + brighter apply modal
+   V3 · build 08054 — performance pass + brighter apply modal
    ============================================================ */
 
 /* --- background moved to a single fixed layer (no scroll repaint) --- */
@@ -1187,7 +1187,7 @@ h1,h2,h3,h4{line-height:1.14}
 }
 
 /* ============================================================
-   V4 · build 08052 — static background layer (was the lag source)
+   V4 · build 08054 — static background layer (was the lag source)
    ============================================================ */
 
 /* huge animated blur filters replaced by baked gradients: the whole
@@ -1220,7 +1220,7 @@ h1,h2,h3,h4{line-height:1.14}
 
 
 /* ============================================================
-   V5 · build 08052 — metallic blue bloom + micro starfield
+   V5 · build 08054 — metallic blue bloom + micro starfield
    ============================================================ */
 :root{
   --steel-1:#eaf2ff;   /* polished highlight */
@@ -1300,7 +1300,7 @@ h1,h2,h3,h4{line-height:1.14}
   background:linear-gradient(150deg,rgba(28,100,255,.22),rgba(150,196,255,.05))}
 
 /* ============================================================
-   V6 · build 08052 — app preview, app view, dot-sphere orb
+   V6 · build 08054 — app preview, app view, dot-sphere orb
    ============================================================ */
 
 /* ---------- shared: the orb (THUNDRR AI dot sphere) ---------- */
@@ -1405,7 +1405,7 @@ h1,h2,h3,h4{line-height:1.14}
 }
 
 /* ============================================================
-   V7 · build 08052 — stat stack, phone showcase, feature strip
+   V7 · build 08054 — stat stack, phone showcase, feature strip
    ============================================================ */
 
 /* ---------- orb stage: give the ported globe room ---------- */
@@ -1572,7 +1572,7 @@ b.dn,.dn{color:#ff6b6b}
 }
 
 /* ============================================================
-   V8 · build 08052 — wide surfaces bake their glow (perf)
+   V8 · build 08054 — wide surfaces bake their glow (perf)
    ============================================================ */
 /* A full-width card with a 132%-wide radial bloom layer costs ~12fps to
    composite. Same look, painted with the element instead of over it. */
@@ -1588,7 +1588,7 @@ b.dn,.dn{color:#ff6b6b}
   linear-gradient(140deg,rgba(17,17,30,.9),rgba(7,7,14,.96))}
 
 /* ============================================================
-   V9 · build 08052 — home affordances
+   V9 · build 08054 — home affordances
    ============================================================ */
 .home-btn{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;
   padding:9px 15px 9px 13px;border-radius:99px;border:1px solid var(--border);
@@ -1621,7 +1621,7 @@ b.dn,.dn{color:#ff6b6b}
 }
 
 /* ============================================================
-   V10 · build 08052 — compete cards rebuilt (dense, no dead space)
+   V10 · build 08054 — compete cards rebuilt (dense, no dead space)
    ============================================================ */
 .duo{grid-template-columns:1fr 1fr;align-items:stretch}
 .duo .frame{display:flex}
@@ -1736,7 +1736,7 @@ b.dn,.dn{color:#ff6b6b}
 }
 
 /* ============================================================
-   V11 · build 08052 — features grouped into tabs (was a 12-card wall)
+   V11 · build 08054 — features grouped into tabs (was a 12-card wall)
    ============================================================ */
 .ftabs{margin-top:clamp(34px,4vw,56px)}
 .ftabs-bar{display:flex;gap:5px;padding:5px;margin:0 auto 22px;width:fit-content;max-width:100%;
@@ -1779,7 +1779,7 @@ b.dn,.dn{color:#ff6b6b}
 }
 
 /* ============================================================
-   V12 · build 08052 — it reads as TikTok LIVE, not an AI product
+   V12 · build 08054 — it reads as TikTok LIVE, not an AI product
    ============================================================ */
 :root{--livered:#ff2f4a}
 
@@ -1904,7 +1904,7 @@ b.dn,.dn{color:#ff6b6b}
 }
 
 /* ============================================================
-   V13 · build 08052 — shadow/gradient budget
+   V13 · build 08054 — shadow/gradient budget
    Huge-blur shadows were the single biggest scroll cost:
    the stream mock's 96px shadow alone was worth ~17fps.
    ============================================================ */
@@ -1924,7 +1924,7 @@ b.dn,.dn{color:#ff6b6b}
 .lp-cam.alt{background:linear-gradient(168deg,rgba(255,47,74,.28),rgba(14,7,11,.96))}
 
 /* ============================================================
-   V14 · build 08052 — LIVE branding: gloves, gifts, PK bars
+   V14 · build 08054 — LIVE branding: gloves, gifts, PK bars
    ============================================================ */
 
 /* --- gift icons inside the stream feed --- */
@@ -2031,7 +2031,7 @@ b.dn,.dn{color:#ff6b6b}
 .pcard{animation-duration:9s}
 
 /* ============================================================
-   V15 · build 08052 — layering fixed, gifts unboxed
+   V15 · build 08054 — layering fixed, gifts unboxed
    ============================================================ */
 
 /* the phone sits behind the floating layer, never in front of it */
@@ -2110,7 +2110,7 @@ b.dn,.dn{color:#ff6b6b}
 }
 
 /* ============================================================
-   V15d · build 08052 — the visual is a 3-column grid, so the
+   V15d · build 08054 — the visual is a 3-column grid, so the
    cards physically cannot land on the phone at any width
    ============================================================ */
 @media (min-width:901px){
@@ -2148,7 +2148,7 @@ b.dn,.dn{color:#ff6b6b}
 }
 
 /* ============================================================
-   V16 · build 08052 — glove on the word LIVE, gifts at real size
+   V16 · build 08054 — glove on the word LIVE, gifts at real size
    ============================================================ */
 
 /* --- the glove hovering off the corner of LIVE --- */
@@ -2213,7 +2213,7 @@ h1.h-xl:hover
 @media (max-width:900px){.gfloat{position:static}}
 
 /* ============================================================
-   V17 · build 08052 — correct gift art per slot
+   V17 · build 08054 — correct gift art per slot
    glove  = ..._9f8bd923...   rose = ..._eba3a9bb...
    galaxy = ..._79a02148...
    ============================================================ */
@@ -2229,7 +2229,7 @@ h1.h-xl:hover
 .liveword::after{width:.62em;height:.62em;top:-.46em;right:-.36em}
 
 /* ============================================================
-   V18 · build 08052 — no halos behind the gifts, bigger and
+   V18 · build 08054 — no halos behind the gifts, bigger and
    deliberately placed around the phone
    ============================================================ */
 
@@ -2315,7 +2315,7 @@ h1.h-xl:hover
 }
 
 /* ============================================================
-   V19 · build 08052 — new hero photo, decorative gift trio removed
+   V19 · build 08054 — new hero photo, decorative gift trio removed
    ============================================================ */
 /* the AI widget now sits alone on the grid's second row */
 @media (min-width:901px) and (max-width:1280px){
@@ -2326,7 +2326,7 @@ h1.h-xl:hover
 @media (max-width:768px){.shot-sub{width:47%;left:-2%;bottom:0}}
 
 /* ============================================================
-   V20 · build 08052 — gift art bedded BEHIND the phone
+   V20 · build 08054 — gift art bedded BEHIND the phone
    The frame occludes part of each piece, so they read as objects
    sitting in the scene rather than stickers floating beside it.
    ============================================================ */
@@ -2367,7 +2367,7 @@ h1.h-xl:hover
 }
 
 /* ============================================================
-   V20b · build 08052 — art anchored to the phone, so the amount
+   V20b · build 08054 — art anchored to the phone, so the amount
    tucked behind the frame is identical at every width
    ============================================================ */
 .lphone{position:relative;z-index:3}
@@ -2416,7 +2416,7 @@ h1.h-xl:hover
 }
 
 /* ============================================================
-   V21 · build 08052 — the PK strip moves into the header
+   V21 · build 08054 — the PK strip moves into the header
    ============================================================ */
 
 
@@ -2447,7 +2447,7 @@ h1.h-xl:hover
 }
 
 /* ============================================================
-   V22 · build 08052 — the hero eyebrow IS a battle bar
+   V22 · build 08054 — the hero eyebrow IS a battle bar
    ============================================================ */
 .eyebrow-pk{gap:13px}
 .eyebrow-pk::before{display:none}          /* the bar replaces the hairline rule */
@@ -2482,7 +2482,7 @@ h1.h-xl:hover
 }
 
 /* ============================================================
-   V23 · build 08052 — the eyebrow line IS the battle bar
+   V23 · build 08054 — the eyebrow line IS the battle bar
    ============================================================ */
 .eyebrow-pk{display:block;width:100%;max-width:560px;margin-bottom:30px}
 .eyebrow-pk::before,.eyebrow-pk::after{display:none}
@@ -2502,7 +2502,7 @@ h1.h-xl:hover
 }
 
 /* ============================================================
-   V24 · build 08052 — motion vocabulary (rise+blur, kinetic
+   V24 · build 08054 — motion vocabulary (rise+blur, kinetic
    characters, sweep, grow, pop, seams, streaks)
    ============================================================ */
 
@@ -2557,7 +2557,7 @@ h1.h-xl:hover
 }
 
 /* ============================================================
-   V25 · build 08052 — blur loading everywhere, tighter halo
+   V25 · build 08054 — blur loading everywhere, tighter halo
    ============================================================ */
 /* the gift art / phone / cards inside the preview lift as a group,
    but they must keep their own transforms, so lift only the filter */
@@ -2585,7 +2585,7 @@ h1.h-xl:hover
   white-space:nowrap}
 
 /* ============================================================
-   V26 · build 08052 — apply modal: frosted glass, blue glow,
+   V26 · build 08054 — apply modal: frosted glass, blue glow,
    and the hard gradient bar at the top is gone
    ============================================================ */
 .rmodal{background:rgba(2,3,8,.66);backdrop-filter:blur(14px) saturate(120%);-webkit-backdrop-filter:blur(14px) saturate(120%)}
@@ -2622,14 +2622,14 @@ h1.h-xl:hover
              0 10px 30px -12px color-mix(in srgb,var(--acc-1) 65%,transparent)}
 
 /* ============================================================
-   V27 · build 08052 — kinetic words stay whole, LIVE goes bold
+   V27 · build 08054 — kinetic words stay whole, LIVE goes bold
    ============================================================ */
 .split.kinetic .kw{display:inline-block;white-space:nowrap}
 .liveword{font-weight:800}
 .h-xl .liveword,h1 .liveword{font-weight:800}
 
 /* ============================================================
-   V28 · build 08052 — division-coloured cards, accent emphasis
+   V28 · build 08054 — division-coloured cards, accent emphasis
    ============================================================ */
 
 /* --- bold accent word in a headline, with a glow --- */
@@ -2679,6 +2679,136 @@ html[data-div="shop"] .handoff,html[data-div="go"] .handoff{
   border-color:color-mix(in srgb,var(--acc-1) 24%,transparent)}
 /* the star dust picks up a warm tint instead of ice blue */
 html[data-div="go"] .starlit::before{opacity:.5}
+
+/* ============================================================
+   V29 · build 08054 — mobile pass: legibility, 44px targets,
+   density, and safe-area insets
+   ============================================================ */
+
+/* --- 1. safe areas: nothing tucks under a notch or home bar --- */
+@supports (padding:env(safe-area-inset-left)){
+  .nav-inner{padding-left:max(var(--gut),env(safe-area-inset-left));
+             padding-right:max(var(--gut),env(safe-area-inset-right))}
+  .shell,.hero-in{padding-left:max(var(--gut),env(safe-area-inset-left));
+                  padding-right:max(var(--gut),env(safe-area-inset-right))}
+  .sheet{padding-bottom:calc(40px + env(safe-area-inset-bottom))}
+  .top{bottom:calc(22px + env(safe-area-inset-bottom))}
+  .homefab{bottom:calc(76px + env(safe-area-inset-bottom))}
+  .rmodal,.modal{padding-bottom:calc(22px + env(safe-area-inset-bottom))}
+}
+
+@media (max-width:768px){
+  /* --- 2. readable body copy: nothing supporting under 12.5px --- */
+  .lede{font-size:16px;line-height:1.72}
+  .p-text{font-size:15px;line-height:1.68}
+  .div-text{font-size:15px;line-height:1.65}
+  .step-d{font-size:14.5px;line-height:1.68}
+  .member-bio{font-size:14px;line-height:1.65}
+  .q-body p{font-size:15px;line-height:1.72}
+  .p-item span,.fcard-tx{font-size:13.5px;line-height:1.6}
+  .quick span{font-size:12.5px;padding:9px 14px}
+  .hero-note,.fineprint{font-size:13px;line-height:1.7}
+  .orb-quote p,.gal-cap span,.phone figcaption span{font-size:13.5px;line-height:1.6}
+  .handoff span,.board-foot span{font-size:13.5px}
+  .brow-tx span,.stand-row .brow-tx span{font-size:11.5px}
+  .brow-tx b{font-size:13px}
+
+  /* small caps labels stay legible instead of vanishing */
+  .p-badge,.div-label,.member-role,.div-stat-l,.sheet-label,.seam-mid em,.seam-mid b,
+  .stat-l,.pcard-top span,.pcard-foot,.orb-label,.hb-live,.board-tabs span{
+    font-size:10.5px;letter-spacing:.12em}
+  .member-yrs{font-size:10.5px;padding:6px 12px}
+  .eyebrow{font-size:11px;letter-spacing:.18em}
+  .ftab{font-size:12.5px}
+
+  /* --- 3. every target at least 44px --- */
+  .social{width:44px;height:44px}
+  .social svg{width:19px;height:19px}
+  .burger{width:46px;height:46px}
+  .burger i{left:14px}
+  .region-chip{min-height:44px;padding:10px 14px;font-size:12.5px}
+  .brand{min-height:44px;display:inline-flex;align-items:center}
+  .modal-x,.rmodal .modal-x{width:44px;height:44px}
+  .top{width:46px;height:46px}
+  .homefab{min-height:46px}
+  .foot-links a,.foot-legal a{display:inline-flex;align-items:center;min-height:44px}
+  .q-btn{min-height:56px}
+  .ftab{min-height:44px}
+  #sheetSwitch button,#sheetRegions button{min-height:48px}
+  .rcard{min-height:56px}
+  .brow-cta{min-height:40px;padding:10px 16px}
+  .btn{min-height:50px}
+  .sheet-nav a{min-height:56px}
+
+  /* --- 4. density: the page was 15 screens tall --- */
+  .band{padding:52px 0}
+  .band-tight{padding:44px 0}
+  .hero{padding-top:calc(var(--nav-h) + 30px);padding-bottom:34px}
+  .hero-compact{padding-top:calc(var(--nav-h) + 34px);padding-bottom:34px}
+  .head{margin-bottom:26px}
+  .grid{gap:12px}
+  .seam{margin:2px auto}
+  .shell>.rule{margin:2px 0}
+  .panel,.panel-sm{padding:20px 18px}
+  .p-list{gap:8px}
+  .step{margin-bottom:0}
+  .rail{gap:26px}
+  .footer-grid,.foot-grid{gap:32px}
+  h2.h-lg{margin-bottom:10px}
+  .lede{margin-bottom:20px}
+}
+
+/* --- 5. taps feel immediate, and nothing rubber-bands sideways --- */
+@media (hover:none){
+  a,button,.frame,.member,.gal-item,.fcard,.gfloat{-webkit-tap-highlight-color:transparent}
+  a:active,button:active{opacity:.85}
+  .btn:active{transform:scale(.985)}
+  body{overscroll-behavior-x:none}
+}
+
+/* ============================================================
+   V29b · build 08054 — mobile density + last tap targets
+   ============================================================ */
+@media (max-width:768px){
+  /* the team was 3,383px of stacked cards; on a phone it reads better
+     as a swipe rail, and it gives back ~2,600px of scrolling */
+  .team-grid{
+    display:grid;
+    grid-auto-flow:column;
+    grid-auto-columns:78%;
+    gap:12px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    padding:2px 0 14px;
+    margin-inline:calc(var(--gut) * -1);
+    padding-inline:var(--gut);
+  }
+  .team-grid::-webkit-scrollbar{display:none}
+  .team-grid>.frame{scroll-snap-align:center}
+  .member-img{height:238px}
+  .member-body{padding:16px 16px 18px}
+  .team-hint{display:flex}
+
+  /* last of the sub-44px controls */
+  .modal .modal-x,.rmodal .modal-x{width:46px;height:46px}
+  body .top{width:46px;height:46px}
+  body .homefab{padding:14px 18px 14px 15px}
+  .foot-legal a,.foot-links a{min-width:44px;justify-content:flex-start}
+  .rmodal-note a{display:inline-block;padding:8px 2px}
+
+  /* trim the other tall stacks a little */
+  .div-card{padding:22px 20px}
+  .gal-item,.gal-item.tall{min-height:250px}
+  .phone-shell{max-width:264px}
+}
+.team-hint{display:none;align-items:center;gap:8px;justify-content:center;margin-top:2px;
+  font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-faint)}
+.team-hint svg{width:14px;height:14px;stroke:currentColor}
+
+/* the hint must come after its own base rule to win */
+@media (max-width:768px){.team-hint{display:flex}}
 </style>
 </head>
 <body>
@@ -2985,6 +3115,10 @@ html[data-div="go"] .starlit::before{opacity:.5}
         <p class="lede rv lift rv-d2">No account managers you never meet. Tap any card for the full bio.</p>
       </div>
 
+      <p class="team-hint" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Swipe the team
+      </p>
       <div class="team-grid">
         <div class="frame rv lift rv-s" data-tilt>
           <button class="member" data-member="andrew">
@@ -3183,7 +3317,7 @@ html[data-div="go"] .starlit::before{opacity:.5}
                 <div class="div-name">TikTok LIVE</div>
               </div>
             </div>
-            <p class="div-text">Creator management and monetization for LIVE streamers. Coaching, agency campaigns, tournaments, and escalation support through our official partnership.</p>
+            <p class="div-text">Creator management and monetization for LIVE streamers. Coaching, agency campaigns, tournaments, and violation support through our official partnership.</p>
             <div class="div-stats">
               <div><div class="div-stat-n">1,000+</div><div class="div-stat-l">LIVE creators</div></div>
               <div><div class="div-stat-n">Top 3</div><div class="div-stat-l">US agency</div></div>
@@ -4091,7 +4225,7 @@ html[data-div="go"] .starlit::before{opacity:.5}
       <div class="foot-legal">
         <a href="https://www.thundrr.co/contact" target="_blank" rel="noopener">Privacy</a>
         <a href="https://www.thundrr.co/contact" target="_blank" rel="noopener">Terms</a>
-        <span class="foot-stamp">BUILD 08052</span>
+        <span class="foot-stamp">BUILD 08054</span>
       </div>
     </div>
   </div>
@@ -4140,7 +4274,7 @@ html[data-div="go"] .starlit::before{opacity:.5}
 
 <script>
 /* ============================================================
-   THUNDRR — one page · build 08052
+   THUNDRR — one page · build 08054
    ============================================================ */
 (function(){
 'use strict';
@@ -4201,7 +4335,7 @@ var MARQUEE = [
   'US · LATAM · UK · AU',
   '<b>No</b> agency fees',
   'Monthly <b>campaigns &amp; tournaments</b>',
-  'Direct <b>platform escalation</b>',
+  'Direct <b>violation support</b>',
   '<b>1:1</b> creator management'
 ];
 
