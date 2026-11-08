@@ -4,8 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#030303">
-<title>Thundrr — Official TikTok LIVE Partner Agency</title>
-<meta name="description" content="Thundrr is an official TikTok partner agency. We manage LIVE creators, Shop affiliates and travel creator programs across the US, LATAM, UK and Australia.">
+<title>Thundrr | TikTok LIVE Agency &amp; Creator Network</title>
+<meta name="description" content="Explore Thundrr's TikTok LIVE agency and creator network. Learn about LIVE creator management and find out how to join.">
+<link rel="icon" href="https://cdn.prod.website-files.com/654e6334636e875f348b0297/6570cc49bc3474b752ad9e77_thun.png" type="image/png">
+<link rel="apple-touch-icon" href="https://cdn.prod.website-files.com/654e6334636e875f348b0297/6570cc72832c3e82dfd68d4e_256.png">
+<meta property="og:title" content="Thundrr | TikTok LIVE Agency &amp; Creator Network">
+<meta property="og:description" content="Explore Thundrr's TikTok LIVE agency and creator network. Learn about LIVE creator management and find out how to join.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdn.prod.website-files.com/654e6334636e875f348b0297/6a6f6c370b6b45baecbda1e0_DSC06616.jpg">
+<meta property="og:image:alt" content="A Thundrr creator receiving a tournament prize cheque">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thundrr | TikTok LIVE Agency &amp; Creator Network">
+<meta name="twitter:description" content="Explore Thundrr's TikTok LIVE agency and creator network. Learn about LIVE creator management and find out how to join.">
+<meta name="twitter:image" content="https://cdn.prod.website-files.com/654e6334636e875f348b0297/6a6f6c370b6b45baecbda1e0_DSC06616.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Thundrr",
+  "description": "Explore Thundrr's TikTok LIVE agency and creator network. Learn about LIVE creator management and find out how to join.",
+  "logo": "https://cdn.prod.website-files.com/683f98497507d77677d89804/6862c30f972806b245bdc610_var2.png",
+  "areaServed": ["United States", "Latin America", "United Kingdom", "Australia"],
+  "sameAs": [
+    "https://www.linkedin.com/company/thundrrco",
+    "https://www.tiktok.com/@thundrr.co",
+    "https://www.instagram.com/thundrr.co/"
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://cdn.prod.website-files.com" crossorigin>
@@ -78,6 +104,12 @@ img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit;color:inherit;background:none;border:none;cursor:pointer}
 :focus-visible{outline:2px solid var(--secondary);outline-offset:3px;border-radius:6px}
+.skip{
+  position:absolute;left:16px;top:12px;z-index:500;transform:translateY(-160%);
+  padding:10px 14px;border-radius:8px;background:#fff;color:#030303;
+  font-size:13px;font-weight:700;
+}
+.skip:focus{transform:none}
 
 /* scrollbar */
 ::selection{background:rgba(28,100,255,.35);color:#fff}
@@ -373,7 +405,7 @@ h1,h2,h3,h4{letter-spacing:-.03em;line-height:1.08;font-weight:800}
   grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:70px;align-items:center}
 .hero-copy{max-width:660px}
 .hero-copy .eyebrow{margin-bottom:28px}
-.hero h1{margin-bottom:26px}
+.hero .h-xl{margin-bottom:26px}
 .hero .lede{max-width:560px;margin-bottom:40px}
 .hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:44px}
 .hero-meta{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
@@ -1036,7 +1068,7 @@ body{
   .hero-copy .eyebrow{justify-content:center}
   .hero-copy .eyebrow::after{content:'';width:32px;height:1px;flex-shrink:0;
     background:linear-gradient(270deg,transparent,var(--acc-2))}
-  .hero h1,.hero .lede{margin-left:auto;margin-right:auto}
+  .hero .h-xl,.hero .lede{margin-left:auto;margin-right:auto}
   .hero-btns{align-items:center;justify-content:center}
   .hero-meta{justify-content:center;gap:12px 18px}
   .head-left{text-align:center;align-items:center;margin-left:auto;margin-right:auto}
@@ -2818,6 +2850,7 @@ html[data-div="go"] .starlit::before{opacity:.5}
 </style>
 </head>
 <body>
+<a class="skip" href="#live-home">Skip to content</a>
 
 <div class="prog" id="prog"></div>
 <div class="halo" id="halo" aria-hidden="true"></div>
@@ -2855,7 +2888,7 @@ html[data-div="go"] .starlit::before{opacity:.5}
       <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" style="opacity:.45"><path d="M6 9l6 6 6-6"/></svg>
     </button>
 
-    <a class="nav-cta" href="#" data-apply>
+    <a class="nav-cta" href="#applyModal" data-apply aria-haspopup="dialog" aria-controls="applyModal">
       <span>Apply now</span>
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
@@ -2878,7 +2911,7 @@ html[data-div="go"] .starlit::before{opacity:.5}
   <div class="sheet-regions" id="sheetRegions"></div>
   <p class="sheet-label">Sections</p>
   <nav class="sheet-nav" id="sheetNav"></nav>
-  <a class="sheet-cta" href="#" data-apply>
+  <a class="sheet-cta" href="#applyModal" data-apply aria-haspopup="dialog" aria-controls="applyModal">
     <span>Apply now</span>
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </a>
@@ -2886,12 +2919,12 @@ html[data-div="go"] .starlit::before{opacity:.5}
 
 <span id="top"></span>
 
-<div class="viewport" id="viewport">
+<main class="viewport" id="viewport">
 
 <!-- ============================================================
      VIEW · TIKTOK LIVE
      ============================================================ -->
-<main class="view is-live" id="view-live">
+<div class="view is-live" id="view-live">
 
   <!-- ---------- HERO ---------- -->
   <section class="hero" id="live-home">
@@ -2901,7 +2934,7 @@ html[data-div="go"] .starlit::before{opacity:.5}
         <h1 class="h-xl"><span class="split kinetic" data-kinetic>Turn your <em class="liveword">LIVE</em> into a <strong>career.</strong></span></h1>
         <p class="lede rv lift rv-d2">Thundrr manages TikTok LIVE creators in the US, LATAM, the UK and Australia — real coaching, real campaigns, and a direct line to TikTok when you need it. No agency fees, ever.</p>
         <div class="hero-btns rv lift rv-d3">
-          <a class="btn btn-1" href="#" data-apply>
+          <a class="btn btn-1" href="#applyModal" data-apply aria-haspopup="dialog" aria-controls="applyModal">
             <span>Apply as a Thundrr creator</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -3427,18 +3460,18 @@ html[data-div="go"] .starlit::before{opacity:.5}
   <div class="shell"><div class="rule grow"></div></div>
 
   <!-- ---------- FAQ ---------- -->
-</main>
+</div>
 
 <!-- ============================================================
      VIEW · TIKTOK SHOP
      ============================================================ -->
-<main class="view" id="view-shop">
+<div class="view" id="view-shop">
 
   <section class="hero hero-compact" id="shop-home">
     <div class="hero-in hero-solo">
       <div class="hero-copy">
         <div class="eyebrow rv lift">Gold-certified TikTok Shop Partner</div>
-        <h1 class="h-xl"><span class="split kinetic" data-kinetic>Join 400+ Top <em class="hot">Affiliates.</em></span></h1>
+        <h2 class="h-xl"><span class="split kinetic" data-kinetic>Join 400+ Top <em class="hot">Affiliates.</em></span></h2>
         <p class="lede rv lift rv-d2">Thundrr Shop is a Gold-certified TikTok Shop Partner. 400+ affiliates run their GMV, their targets and their rewards through the THUNDRR SHOP app, with a named creator manager on every account.</p>
         <div class="quick rv lift rv-d3">
           <span>400+ affiliates</span>
@@ -3546,18 +3579,18 @@ html[data-div="go"] .starlit::before{opacity:.5}
       <p class="fineprint rv lift rv-d2">Flat-fee rates, commission percentages and task tiers move between periods &mdash; the app always shows the current ones.</p>
     </div>
   </section>
-</main>
+</div>
 
 <!-- ============================================================
      VIEW · TIKTOK GO
      ============================================================ -->
-<main class="view" id="view-go">
+<div class="view" id="view-go">
 
   <section class="hero hero-compact" id="go-home">
     <div class="hero-in hero-solo">
       <div class="hero-copy">
         <div class="eyebrow rv lift">Thundrr GO &middot; travel affiliate program</div>
-        <h1 class="h-xl"><span class="split kinetic" data-kinetic>Get <em class="hot">paid</em> for hotel and things&#8209;to&#8209;do content.</span></h1>
+        <h2 class="h-xl"><span class="split kinetic" data-kinetic>Get <em class="hot">paid</em> for hotel and things&#8209;to&#8209;do content.</span></h2>
         <p class="lede rv lift rv-d2">1,100+ GO affiliates across the US, Canada and Mexico post accommodation and things-to-do content on TikTok and earn commission on the orders it drives. The whole program runs through the Thundrr GO app.</p>
         <div class="quick rv lift rv-d3">
           <span>1,100+ GO affiliates</span>
@@ -3679,19 +3712,19 @@ html[data-div="go"] .starlit::before{opacity:.5}
       <p class="fineprint rv lift rv-d2">GMV bands and level rules are reviewed monthly and can change between periods &mdash; your manager confirms the current thresholds in-app.</p>
     </div>
   </section>
-</main>
+</div>
 
 
 <!-- ============================================================
      VIEW · THE APP
      ============================================================ -->
-<main class="view" id="view-app">
+<div class="view" id="view-app">
 
   <section class="hero hero-compact" id="app-home">
     <div class="hero-in">
       <div class="hero-copy">
         <div class="eyebrow rv lift">THUNDRR LIVE · creator app</div>
-        <h1 class="h-xl"><span class="split kinetic" data-kinetic>The app that turns you into a <em>LIVE Pro.</em></span></h1>
+        <h2 class="h-xl"><span class="split kinetic" data-kinetic>The app that turns you into a <em>LIVE Pro.</em></span></h2>
         <p class="lede rv lift rv-d2">Not a dashboard you check once a month. Diamonds, tiers, battles, tournaments, tasks, points, payouts and an AI coach — all in one installable app, updated against the same TikTok data your manager works from.</p>
         <div class="quick rv lift rv-d3">
           <span>Installs to your home screen</span>
@@ -3699,7 +3732,7 @@ html[data-div="go"] .starlit::before{opacity:.5}
           <span>Free for every creator on the roster</span>
         </div>
         <div class="hero-btns rv lift rv-d4">
-          <a class="btn btn-1 btn-lg" href="#" data-apply><span>Apply and get access</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a class="btn btn-1 btn-lg" href="#applyModal" data-apply aria-haspopup="dialog" aria-controls="applyModal"><span>Apply and get access</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           <button class="btn btn-2" data-goto="live"><span>Back to the agency</span></button>
         </div>
       </div>
@@ -4064,7 +4097,7 @@ html[data-div="go"] .starlit::before{opacity:.5}
           <h2 class="h-md">Get the app. <span class="grad">Get the team.</span></h2>
           <p class="lede">The app is how we manage you, so it comes free with a Thundrr contract — no subscription, no upsell, nothing to buy.</p>
           <div class="cta-btns">
-            <a class="btn btn-1 btn-lg" href="#" data-apply><span>Apply as a Thundrr creator</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a class="btn btn-1 btn-lg" href="#applyModal" data-apply aria-haspopup="dialog" aria-controls="applyModal"><span>Apply as a Thundrr creator</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <button class="btn btn-2" data-goto="live"><span>Back to the agency</span></button>
           </div>
           <p class="cta-note">Already with us? The app lives at app.thundrr.co — sign in with the email your manager has.</p>
@@ -4072,18 +4105,18 @@ html[data-div="go"] .starlit::before{opacity:.5}
       </div>
     </div>
   </section>
-</main>
+</div>
 
 
 <!-- ============================================================
      VIEW · QUESTIONS
      ============================================================ -->
-<main class="view" id="view-faq">
+<div class="view" id="view-faq">
   <section class="hero hero-compact" id="faq-home">
     <div class="hero-in hero-solo">
       <div class="hero-copy">
         <div class="eyebrow rv lift">Questions &amp; answers</div>
-        <h1 class="h-xl"><span class="split" data-split>Before you apply.</span></h1>
+        <h2 class="h-xl"><span class="split" data-split>Before you apply.</span></h2>
         <p class="lede rv lift rv-d2">The things creators ask us most, answered plainly. If yours isn&rsquo;t here, your manager will answer it on the intro call.</p>
       </div>
     </div>
@@ -4136,16 +4169,29 @@ html[data-div="go"] .starlit::before{opacity:.5}
           <h2 class="h-md">Still deciding?</h2>
           <p class="lede">Applying costs nothing and doesn&rsquo;t lock you into anything. Worst case, you get a call with someone who does this every day.</p>
           <div class="cta-btns">
-            <a class="btn btn-1 btn-lg" href="#" data-apply><span>Apply as a Thundrr creator</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <a class="btn btn-1 btn-lg" href="#applyModal" data-apply aria-haspopup="dialog" aria-controls="applyModal"><span>Apply as a Thundrr creator</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
             <button class="btn btn-2" data-home><span>Back to home</span></button>
           </div>
         </div>
       </div>
     </div>
   </section>
-</main>
+</div>
 
-</div><!-- /viewport -->
+</main><!-- /viewport -->
+
+<noscript>
+  <div class="shell" style="padding:8px 0 36px">
+    <h2 class="foot-h">Apply as a TikTok LIVE creator</h2>
+    <div class="foot-links">
+      <a href="https://www.tiktok.com/t/ZTDDdEtB8/" rel="noopener">United States</a>
+      <a href="https://www.tiktok.com/t/ZMk1B9spE/" rel="noopener">Latin America</a>
+      <a href="https://www.tiktok.com/t/ZMk1BQ1xH/" rel="noopener">United Kingdom</a>
+      <a href="https://www.tiktok.com/t/ZS6RL85mg/" rel="noopener">Australia</a>
+      <a href="https://wkf.ms/3COWZi3" rel="noopener">Apply as a creator manager</a>
+    </div>
+  </div>
+</noscript>
 
 <!-- ==================== FOOTER ==================== -->
 <footer>
@@ -4190,7 +4236,7 @@ html[data-div="go"] .starlit::before{opacity:.5}
       <div>
         <h4 class="foot-h">For creators</h4>
         <div class="foot-links">
-          <a href="#" data-apply><span>Apply as a Thundrr creator</span></a>
+          <a href="#applyModal" data-apply aria-haspopup="dialog" aria-controls="applyModal"><span>Apply as a Thundrr creator</span></a>
           <a href="https://wkf.ms/3COWZi3" target="_blank" rel="noopener">Become a creator manager</a>
           <a href="mailto:cheily@thundrr.co?subject=Affiliate%20creator%20application">Join the Shop roster</a>
           <a href="https://thundrrgo.com" target="_blank" rel="noopener">Apply to Thundrr GO</a>
@@ -4231,14 +4277,19 @@ html[data-div="go"] .starlit::before{opacity:.5}
 </div>
 
 <!-- ==================== APPLY · REGION PICKER ==================== -->
-<div class="rmodal" id="applyModal" role="dialog" aria-modal="true" aria-labelledby="applyTitle">
+<div class="rmodal" id="applyModal" role="dialog" aria-modal="true" aria-labelledby="applyTitle" aria-hidden="true">
   <div class="rmodal-box">
     <button class="modal-x" id="applyX" aria-label="Close">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
     <h3 id="applyTitle">Where are you applying from?</h3>
     <p class="rmodal-sub">Pick your region and we'll open the right TikTok LIVE application for it.</p>
-    <div class="rgrid" id="rgrid"></div>
+    <div class="rgrid" id="rgrid">
+      <a class="rcard" data-region="us" href="https://www.tiktok.com/t/ZTDDdEtB8/" target="_blank" rel="noopener"><span class="flag">🇺🇸</span><span><b>United States</b><span>Los Angeles HQ · PT hours</span></span><svg class="go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a class="rcard" data-region="latam" href="https://www.tiktok.com/t/ZMk1B9spE/" target="_blank" rel="noopener"><span class="flag">🌎</span><span><b>Latin America</b><span>Español y português</span></span><svg class="go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a class="rcard" data-region="uk" href="https://www.tiktok.com/t/ZMk1BQ1xH/" target="_blank" rel="noopener"><span class="flag">🇬🇧</span><span><b>United Kingdom</b><span>GMT / BST hours</span></span><svg class="go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a class="rcard" data-region="au" href="https://www.tiktok.com/t/ZS6RL85mg/" target="_blank" rel="noopener"><span class="flag">🇦🇺</span><span><b>Australia</b><span>AEST hours</span></span><svg class="go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
     <p class="rmodal-note">Want to manage creators instead of streaming? <a href="https://wkf.ms/3COWZi3" target="_blank" rel="noopener">Apply as a creator manager</a>.</p>
   </div>
 </div>
@@ -4698,8 +4749,11 @@ function buildRegionUI(){
   REGION_ORDER.forEach(function(key){
     var r = REGIONS[key];
 
-    var c = document.createElement('button');
+    var c = document.createElement('a');
     c.className = 'rcard';
+    c.href = r.link;
+    c.target = '_blank';
+    c.rel = 'noopener';
     c.setAttribute('data-region', key);
     c.innerHTML =
       '<span class="flag">' + r.flag + '</span>' +
@@ -4729,12 +4783,14 @@ function setRegion(key){
 
 function openApply(){
   applyModal.classList.add('is-open');
+  applyModal.setAttribute('aria-hidden', 'false');
   document.body.classList.add('is-locked');
   var current = $('.rcard.is-on') || $('.rcard');
   if(current) current.focus();
 }
 function closeApply(){
   applyModal.classList.remove('is-open');
+  applyModal.setAttribute('aria-hidden', 'true');
   if(!sheet.classList.contains('is-open') && !modal.classList.contains('is-open')){
     document.body.classList.remove('is-locked');
   }

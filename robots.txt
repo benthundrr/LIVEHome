@@ -1,0 +1,6 @@
+# Describes https://benthundrr.github.io/LIVEHome/ only.
+# Does not choose a canonical host and does not block the page.
+User-agent: *
+Allow: /
+
+Sitemap: https://benthundrr.github.io/LIVEHome/sitemap.xml
