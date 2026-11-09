@@ -1,6 +1,5 @@
-# Describes https://benthundrr.github.io/LIVEHome/ only.
-# Does not choose a canonical host and does not block the page.
+# https://www.thundrr.co/ after the GitHub Pages cutover.
 User-agent: *
 Allow: /
 
-Sitemap: https://benthundrr.github.io/LIVEHome/sitemap.xml
+Sitemap: https://www.thundrr.co/sitemap.xml
