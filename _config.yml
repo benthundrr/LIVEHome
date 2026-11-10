@@ -22,10 +22,7 @@ defaults:
       permalink: /blog/:title/
 
 guides:
-  author: Andrew Andrawes
-  author_role: Founder, Thundrr
-  author_bio: Builds the systems that let creators turn a stream schedule into a business — entertainment, music and lifestyle.
-  author_image: https://cdn.prod.website-files.com/683f98497507d77677d89804/6966adcaf794567d1bab3077_headshot_1_optimized_4000.png
+  author: THUNDRR
   logo: https://cdn.prod.website-files.com/683f98497507d77677d89804/6862c30f972806b245bdc610_var2.png
   logo_footer: https://cdn.prod.website-files.com/683f98497507d77677d89804/6862c30e5de5b0fb91a05188_var1.png
   default_image: https://cdn.prod.website-files.com/654e6334636e875f348b0297/6a6f6c370b6b45baecbda1e0_DSC06616.jpg

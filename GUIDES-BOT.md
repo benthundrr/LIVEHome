@@ -59,7 +59,7 @@ faq:
 | `takeaways` | 3 to 5 short sentences. They appear in the Key takeaways box at the top. |
 | `faq` | Optional. 2 to 5 questions. Shown as a Questions section at the end. |
 
-Do not add `layout`, `author`, `image` or anything else. The author is always Andrew Andrawes and the site adds him.
+Do not add `layout`, `author`, `image` or anything else. The byline is always THUNDRR and the site adds it. You may mention Andrew Andrawes as founder inside the post text.
 
 ---
 
@@ -158,7 +158,7 @@ Every guide uses at least three different blocks, one Apply panel, and ends with
 - No emojis. No mention of Discord.
 - Write LIVE in capitals when it means TikTok LIVE.
 - Plain, direct sentences. Sentence case headings. American English.
-- Never name Thundrr staff other than Andrew Andrawes. Don't add email addresses or phone numbers.
+- The byline is THUNDRR, not a person. You may name Andrew Andrawes as founder inside the post text. Don't add email addresses or phone numbers.
 
 ---
 

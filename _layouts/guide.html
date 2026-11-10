@@ -40,10 +40,13 @@
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
   "dateModified": {{ g_mod | date_to_xmlschema | jsonify }},
   "author": {
-    "@type": "Person",
+    "@type": "Organization",
     "name": {{ site.guides.author | jsonify }},
-    "jobTitle": "Founder",
-    "url": {{ '/' | absolute_url | jsonify }}
+    "url": "https://www.thundrr.co/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ site.guides.logo | jsonify }}
+    }
   },
   "publisher": {
     "@type": "Organization",
@@ -71,6 +74,23 @@
   ]
 }
 </script>
+{%- if page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for f in page.faq %}
+    {
+      "@type": "Question",
+      "name": {{ f.q | jsonify }},
+      "acceptedAnswer": {"@type": "Answer", "text": {{ f.a | jsonify }}}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif %}
 </head>
 <body>
 {% include guides/nav.html %}
@@ -90,7 +110,7 @@
       <h1 class="post-h1 kin">{{ g_title_html }}</h1>
       <p class="lede">{{ page.summary | default: g_desc | escape }}</p>
       <div class="meta">
-        <span class="avatar"><img src="{{ site.guides.author_image }}" alt=""></span>
+        <span class="avatar logo"><img src="{{ site.guides.logo }}" alt=""></span>
         <span class="meta-tx">
           <b>{{ site.guides.author }}</b>
           <span><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%b %-d, %Y' }}</time><i></i>{{ g_mins }} min read</span>
@@ -140,11 +160,9 @@
       </div>
 
       <div class="g-bio">
-        <span class="avatar"><img src="{{ site.guides.author_image }}" alt=""></span>
+        <span class="avatar logo"><img src="{{ site.guides.logo }}" alt=""></span>
         <div class="g-bio-tx">
           <b>{{ site.guides.author }}</b>
-          <span>{{ site.guides.author_role }}</span>
-          <p>{{ site.guides.author_bio }}</p>
         </div>
       </div>
 
