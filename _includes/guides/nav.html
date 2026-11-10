@@ -1,0 +1,42 @@
+<a class="skip" href="#main">Skip to content</a>
+<div class="prog" id="prog"></div>
+<div class="atmos" aria-hidden="true"><div class="atmos-mesh"></div><div class="atmos-grid"></div><div class="atmos-vig"></div></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Thundrr home">
+      <img src="{{ site.guides.logo }}" alt="Thundrr">
+    </a>
+    <nav class="nav-links" aria-label="Site">
+      <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
+      <a class="nav-link" href="/#live-app">The App</a>
+      <a class="nav-link" href="/#live-process">Onboarding</a>
+      <a class="nav-link" href="/#live-team">Team</a>
+      <a class="nav-link" href="/#live-divisions">Divisions</a>
+      <a class="nav-link" href="/#live-why">Benefits</a>
+      <a class="nav-link is-active" href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' or page.layout == 'guide' %} aria-current="page"{% endif %}>Guides</a>
+    </nav>
+    <a class="nav-cta" href="{{ site.guides.join_url }}">
+      <span>Apply now</span>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet">
+  <p class="sheet-label">Menu</p>
+  <nav class="sheet-nav" aria-label="Site">
+    <a href="{{ '/' | relative_url }}">Home<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
+    <a href="/#live-app">The App<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
+    <a href="/#live-process">Onboarding<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
+    <a href="/#live-team">Team<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
+    <a href="/#live-divisions">Divisions<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
+    <a href="/#live-why">Benefits<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
+    <a href="{{ '/blog/' | relative_url }}" class="is-active">Guides<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
+  </nav>
+  <a class="sheet-cta" href="{{ site.guides.join_url }}">
+    <span>Apply now</span>
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+</div>

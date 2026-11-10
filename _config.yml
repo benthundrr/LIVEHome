@@ -1,0 +1,35 @@
+# Jekyll settings for the TikTok LIVE Guides section.
+# index.html, join/, 404.html and CNAME have no front matter, so GitHub Pages
+# copies them exactly as they are.
+
+title: Thundrr
+url: https://www.thundrr.co
+baseurl: ""
+timezone: America/Los_Angeles
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: guide
+      permalink: /blog/:title/
+
+guides:
+  author: THUNDRR
+  logo: https://cdn.prod.website-files.com/683f98497507d77677d89804/6862c30f972806b245bdc610_var2.png
+  logo_footer: https://cdn.prod.website-files.com/683f98497507d77677d89804/6862c30e5de5b0fb91a05188_var1.png
+  default_image: https://cdn.prod.website-files.com/654e6334636e875f348b0297/6a6f6c370b6b45baecbda1e0_DSC06616.jpg
+  default_image_alt: A Thundrr creator receiving a tournament prize cheque
+  join_url: https://www.thundrr.co/join
+  ga_id: G-0YGVG14X39
+
+exclude:
+  - GUIDES-BOT.md
+  - README.md
