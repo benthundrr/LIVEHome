@@ -1,3 +1,11 @@
+---
+layout: null
+---
+{%- assign g_lm = '' -%}
+{%- for post in site.posts -%}
+  {%- assign g_d = post.last_modified_at | default: post.date | date: '%Y-%m-%d' -%}
+  {%- if g_d > g_lm -%}{%- assign g_lm = g_d -%}{%- endif -%}
+{%- endfor -%}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -6,4 +14,16 @@
   <url>
     <loc>https://www.thundrr.co/join</loc>
   </url>
+  <url>
+    <loc>{{ '/blog/' | absolute_url }}</loc>
+    {%- if g_lm != '' %}
+    <lastmod>{{ g_lm }}</lastmod>
+    {%- endif %}
+  </url>
+  {%- for post in site.posts %}
+  <url>
+    <loc>{{ post.url | absolute_url }}</loc>
+    <lastmod>{{ post.last_modified_at | default: post.date | date: '%Y-%m-%d' }}</lastmod>
+  </url>
+  {%- endfor %}
 </urlset>

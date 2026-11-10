@@ -1,0 +1,10 @@
+{%- assign g_name = include.name | default: '' | downcase -%}
+{%- if g_name == 'battle' or g_name == 'manager' -%}
+<figure class="graphic">
+{%- if g_name == 'battle' %}{% include graphics/battle.html %}{% endif -%}
+{%- if g_name == 'manager' %}{% include graphics/manager.html %}{% endif -%}
+{%- if include.caption %}
+<figcaption>{{ include.caption }}</figcaption>
+{%- endif %}
+</figure>
+{%- endif -%}

@@ -1,0 +1,19 @@
+{%- assign c_post = include.post -%}
+{%- case c_post.icon -%}
+{%- when 'battle' -%}{%- assign c_cols = '--c1:#ff2f4a;--c2:#1c64ff' -%}
+{%- when 'gift' -%}{%- assign c_cols = '--c1:#ffb800;--c2:#ff2f4a' -%}
+{%- when 'diamond' -%}{%- assign c_cols = '--c1:#00d4ff;--c2:#a8c6ff' -%}
+{%- when 'schedule' -%}{%- assign c_cols = '--c1:#1c64ff;--c2:#00d4ff' -%}
+{%- when 'growth' -%}{%- assign c_cols = '--c1:#00d4ff;--c2:#1c64ff' -%}
+{%- when 'manager' -%}{%- assign c_cols = '--c1:#1c64ff;--c2:#ff2f4a' -%}
+{%- when 'safety' -%}{%- assign c_cols = '--c1:#ffb800;--c2:#00d4ff' -%}
+{%- else -%}{%- assign c_cols = '--c1:#1c64ff;--c2:#00d4ff' -%}
+{%- endcase -%}
+<a class="g-card" href="{{ c_post.url | relative_url }}" style="{{ c_cols }}">
+  <span class="g-cover">{% include guides/icon.html name=c_post.icon %}</span>
+  <span class="g-body">
+    <b>{{ c_post.title }}</b>
+    <span>{{ c_post.summary | default: c_post.description }}</span>
+    <time datetime="{{ c_post.date | date_to_xmlschema }}">{{ c_post.date | date: '%b %-d, %Y' }}</time>
+  </span>
+</a>

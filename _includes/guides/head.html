@@ -1,0 +1,46 @@
+{%- if page.seo_title -%}{%- assign g_title = page.seo_title -%}{%- else -%}{%- assign g_title = page.title | append: ' | Thundrr' -%}{%- endif -%}
+{%- assign g_desc = page.description | default: page.summary | strip_html | strip_newlines -%}
+{%- assign g_canon = page.url | absolute_url -%}
+{%- assign g_img = page.image | default: site.guides.default_image -%}
+{%- assign g_img_alt = page.image_alt | default: site.guides.default_image_alt -%}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#030303">
+<title>{{ g_title | escape }}</title>
+<meta name="description" content="{{ g_desc | escape }}">
+<link rel="canonical" href="{{ g_canon }}">
+<link rel="icon" href="https://cdn.prod.website-files.com/654e6334636e875f348b0297/6570cc49bc3474b752ad9e77_thun.png" type="image/png">
+<link rel="apple-touch-icon" href="https://cdn.prod.website-files.com/654e6334636e875f348b0297/6570cc72832c3e82dfd68d4e_256.png">
+<meta property="og:site_name" content="Thundrr">
+<meta property="og:title" content="{{ g_title | escape }}">
+<meta property="og:description" content="{{ g_desc | escape }}">
+<meta property="og:type" content="{% if page.layout == 'guide' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ g_canon }}">
+<meta property="og:image" content="{{ g_img }}">
+<meta property="og:image:alt" content="{{ g_img_alt | escape }}">
+{%- if page.layout == 'guide' %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+<meta property="article:modified_time" content="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}">
+<meta property="article:author" content="{{ site.guides.author }}">
+{%- endif %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ g_title | escape }}">
+<meta name="twitter:description" content="{{ g_desc | escape }}">
+<meta name="twitter:image" content="{{ g_img }}">
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.guides.ga_id }}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '{{ site.guides.ga_id }}');
+</script>
+<script>
+/* motion runs only with JS; if guides.js never arrives, everything shows plainly */
+document.documentElement.classList.add('js');
+setTimeout(function(){if(!window.__guides)document.documentElement.classList.remove('js');},2500);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.prod.website-files.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/guides/guides.css' | relative_url }}">
