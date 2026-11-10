@@ -2,19 +2,19 @@
 title: "What is a TikTok LIVE agency?"
 accent: "TikTok LIVE agency?"
 seo_title: "What Is a TikTok LIVE Agency? | Thundrr"
-description: "What TikTok LIVE agencies do, how they get paid, and how to pick the right one, from an official TikTok LIVE partner agency."
+description: "What TikTok LIVE agencies do, how they get paid, and how to pick the right one, from a TikTok LIVE agency and creator network."
 summary: "What LIVE agencies do, how they get paid, and how to tell if one is right for you."
 date: 2026-11-09
 last_modified_at: 2026-11-09
 icon: agency
 takeaways:
-  - "[DRAFT – replace] A LIVE agency is a TikTok-approved partner that recruits, coaches and supports LIVE creators."
+  - "[DRAFT – replace] A LIVE agency recruits, coaches and supports LIVE creators."
   - "You keep your own account and your own audience when you join."
-  - "Official agencies are paid by TikTok, so joining comes with no agency fees."
-  - "Pick an official partner with a named manager and clear terms."
+  - "Thundrr doesn't charge agency fees."
+  - "Pick an agency with a named manager and clear terms."
 faq:
   - q: "Do I have to pay to join a LIVE agency?"
-    a: "[DRAFT – replace] No. Official agencies are paid by TikTok. Thundrr doesn't charge agency fees or take a percentage of your earnings, and TikTok keeps paying you directly."
+    a: "[DRAFT – replace] No. Thundrr doesn't charge agency fees or take a percentage of your earnings, and TikTok keeps paying you directly."
   - q: "How many followers do I need?"
     a: "TikTok's LIVE requirements apply. Beyond that, consistency matters more to us than follower count."
   - q: "Can I switch to Thundrr from another agency?"
@@ -23,13 +23,13 @@ faq:
 
 ## What a TikTok LIVE agency does
 
-[DRAFT – replace] A TikTok LIVE agency is a company TikTok has approved to recruit and support creators who go LIVE. You keep your own account and your own audience. The agency's job is to help you stream with more structure and more support than you'd have on your own.
+[DRAFT – replace] A TikTok LIVE agency recruits and supports creators who go LIVE. You keep your own account and your own audience. The agency's job is to help you stream with more structure and more support than you'd have on your own.
 
 ### What you get from an agency
 
 - **Coaching** Your manager reviews your LIVEs and helps you set a schedule you can keep.
 - **Battles and events** Agencies line up LIVE Battles and enter you into campaigns and tournaments.
-- **Account support** When a stream gets flagged, an official agency can raise it with TikTok directly.
+- **Account support** When a stream gets flagged, an agency can raise it with TikTok directly.
 - **A team around you** You join a roster of creators who share what's working.
 {: .cards}
 
@@ -37,9 +37,9 @@ faq:
 
 ## How LIVE agencies get paid
 
-[DRAFT – replace] Official agencies are paid by TikTok based on how their creators perform. That's why a legitimate LIVE agency doesn't charge creators a fee to join, and TikTok keeps paying you directly.
+[DRAFT – replace] Some LIVE agencies are paid by TikTok based on how their creators perform. That's why a LIVE agency may not charge creators a fee to join, and TikTok keeps paying you directly.
 
-> **Heads up** If an agency asks you to pay upfront, ask for proof that it's an official TikTok partner before you go any further.
+> **Heads up** If an agency asks you to pay upfront, ask how that agency gets paid before you go any further.
 {: .callout .warn}
 
 {% include cta.html %}
@@ -61,9 +61,9 @@ faq:
 
 [DRAFT – replace] Three questions sort the good agencies from the rest.
 
-### Is it an official TikTok partner?
+### How does the agency get paid?
 
-Ask for proof before you accept an invitation. Official partners can show it.
+Ask before you accept an invitation. A clear answer belongs in writing.
 
 ### Who will your manager be?
 
@@ -81,7 +81,7 @@ Read how long the agreement lasts and how you can leave before you sign anything
 
 ## Is Thundrr a LIVE agency?
 
-[DRAFT – replace] Yes. Thundrr is an official TikTok LIVE partner agency headquartered in Los Angeles, recruiting creators across the US, Latin America, the UK and Australia.
+[DRAFT – replace] Yes. Thundrr is a TikTok LIVE agency and creator network of 1,500+ creators, headquartered in Los Angeles, recruiting across the US, Latin America, the UK and Australia.
 
 - **4** regions we recruit in
 - **1** named manager for every creator

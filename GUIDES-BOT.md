@@ -31,7 +31,7 @@ Never put a double quote inside a value (use single quotes instead).
 title: "How TikTok LIVE Battles work"
 accent: "LIVE Battles work"
 seo_title: "How TikTok LIVE Battles Work | Thundrr"
-description: "How TikTok LIVE Battles are scored, how long they last and how to pick matchups, from an official TikTok LIVE partner agency."
+description: "How TikTok LIVE Battles are scored, how long they last and how to pick matchups, from a TikTok LIVE agency and creator network."
 summary: "Scoring, timing and how to pick your matchups."
 date: 2026-11-12
 last_modified_at: 2026-11-12
@@ -129,7 +129,7 @@ Do not add `layout`, `author`, `image` or anything else. The author is always An
 {% include cta.html %}
 ```
 
-You can change its words: `{% include cta.html title="Want help with Battles?" text="Thundrr is an official TikTok LIVE partner agency." %}`
+You can change its words: `{% include cta.html title="Want help with Battles?" text="Thundrr is a TikTok LIVE agency and creator network of 1,500+ creators." %}`
 
 **Graphics** — at most one of each per guide, only where they fit the section:
 
@@ -144,7 +144,7 @@ You can change its words: `{% include cta.html title="Want help with Battles?" t
 [Apply to join Thundrr](https://www.thundrr.co/join){: .button}
 ```
 
-**Links** — link other guides as `/blog/<slug>/`. Link outside the site only to official TikTok pages.
+**Links** — link other guides as `/blog/<slug>/`. Link outside the site only to TikTok's own pages.
 
 Every guide uses at least three different blocks, one Apply panel, and ends with the Apply button.
 
@@ -152,7 +152,7 @@ Every guide uses at least three different blocks, one Apply panel, and ends with
 
 ## 4. Brand rules
 
-- Thundrr is "an official TikTok LIVE partner agency". Guides cover TikTok LIVE only: never mention TikTok Shop, Thundrr Shop, Thundrr GO, or travel and hotel programs.
+- Thundrr is a TikTok LIVE agency and creator network. Never call Thundrr an official TikTok partner, a partner agency, or partnered with TikTok. Never write "Official TikTok LIVE Agency". Guides cover TikTok LIVE only: never mention TikTok Shop, Thundrr Shop, Thundrr GO, or travel and hotel programs.
 - Say "LIVE Battles" or "Battles". Never "PK".
 - Never write "X, not Y" contrast sentences (for example "An agency, not a middleman"). Say the thing directly.
 - No emojis. No mention of Discord.
@@ -167,14 +167,14 @@ Every guide uses at least three different blocks, one Apply panel, and ends with
 Only use facts from this list or from https://www.thundrr.co. Never invent numbers, payouts, diamond rates,
 percentages, follower minimums, rankings, quotes or creator names. If you can't confirm something, leave it out.
 
-- Thundrr is an official TikTok LIVE partner agency headquartered in Los Angeles.
+- Thundrr is a TikTok LIVE agency and creator network of 1,500+ creators, headquartered in Los Angeles.
 - Thundrr recruits creators in the United States, Latin America, the United Kingdom and Australia.
 - No agency fees. Thundrr doesn't take a percentage of creator earnings. TikTok pays creators directly.
 - Every creator gets a named manager.
 - Applications are reviewed by hand, usually within 48 hours.
 - Joining works in four steps: Apply, Intro call, Join and get onboarded, Go LIVE with a plan.
 - Creators can usually switch from another agency once their current agreement allows it. Thundrr won't ask anyone to break a contract.
-- As an official partner, Thundrr can escalate account issues through a direct channel. No outcome is ever promised.
+- Thundrr can raise account issues through a direct channel. No outcome is ever promised. Never explain that as an official partnership.
 
 If a paragraph needs Ben to check a claim, start it with `[DRAFT – replace]` — it shows as a yellow tag on the page.
 
