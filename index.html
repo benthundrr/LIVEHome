@@ -865,7 +865,7 @@ h1,h2,h3,h4{letter-spacing:-.03em;line-height:1.08;font-weight:800}
 
 .awards{list-style:none;max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
 .award{
-  padding:16px 22px;border-radius:var(--r-md);
+  padding:0;border-radius:var(--r-md);
   background:rgba(255,255,255,.018);border:1px solid var(--border);
   border-left:2px solid color-mix(in srgb,var(--acc-2) 75%,#fff);
   font-size:15px;line-height:1.5;font-weight:600;letter-spacing:-.011em;color:#fff;
@@ -873,6 +873,58 @@ h1,h2,h3,h4{letter-spacing:-.03em;line-height:1.08;font-weight:800}
   transition:border-color .45s var(--ease-soft),background .45s var(--ease-soft)}
 .award:hover{border-color:var(--border-hi);background:rgba(255,255,255,.035)}
 .award b{display:block;margin-bottom:4px;font-size:12px;font-weight:800;letter-spacing:.02em;color:var(--acc-2)}
+.award-btn{display:block;width:100%;padding:16px 22px;text-align:left;font:inherit;font-weight:600;letter-spacing:-.011em;color:inherit;border-radius:inherit}
+.award-btn:focus-visible{outline-offset:-3px}
+
+/* award photo — variation A */
+.amodal{
+  position:fixed;inset:0;z-index:420;display:flex;align-items:center;justify-content:center;
+  padding:max(16px,env(safe-area-inset-top)) 14px max(16px,env(safe-area-inset-bottom));
+  overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+  background:
+    radial-gradient(900px 520px at 70% 18%, rgba(28,100,255,.35), transparent 60%),
+    radial-gradient(700px 480px at 18% 92%, rgba(0,212,255,.16), transparent 55%),
+    rgba(3,4,10,.94);
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .35s var(--ease),visibility .35s}
+.amodal.is-open{opacity:1;visibility:visible;pointer-events:auto}
+.amodal-x{
+  position:fixed;z-index:3;top:max(12px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right));
+  width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:rgba(8,10,18,.82);border:1px solid rgba(255,255,255,.2);color:#fff;
+  box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.amodal-x:hover{background:#1c64ff;border-color:transparent}
+.apop-shot{width:min(380px,calc(100vw - 64px));margin:28px auto;position:relative;z-index:1}
+.apop-polaroid{
+  background:#f7f7f5;color:#161616;padding:12px 12px 78px;
+  box-shadow:0 24px 60px rgba(0,0,0,.45),0 2px 8px rgba(0,0,0,.25);
+  transform:rotate(-4.5deg)}
+.apop-polaroid img{display:block;width:100%;height:auto;max-width:100%;background:#eceae4}
+.apop-bubble{
+  position:absolute;z-index:2;right:8px;bottom:16px;max-width:240px;
+  padding:11px 13px 12px;border-radius:16px;
+  background:linear-gradient(135deg,#1c64ff,#00b4e6);color:#fff;
+  font-size:12.5px;line-height:1.35;font-weight:600;
+  box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.apop-bubble b{display:block;margin:0 0 4px;font-size:12px;font-weight:800;letter-spacing:-.01em;color:#fff}
+.apop-bubble span{display:block;font-weight:600}
+.apop-bubble i{
+  position:absolute;left:22px;top:-7px;width:14px;height:14px;
+  background:#1c64ff;transform:rotate(45deg)}
+body.award-lock{position:fixed;left:0;right:0;width:100%;overflow:hidden}
+
+@media (max-width:540px),(max-height:560px){
+  .apop-shot{width:min(360px,calc(100vw - 72px));margin:36px auto 18px}
+  .apop-polaroid{transform:rotate(-3deg);padding:10px 10px 14px}
+  .apop-polaroid img{width:auto;max-width:100%;max-height:calc(100svh - 210px);margin:0 auto}
+  .apop-bubble{position:relative;right:auto;bottom:auto;left:auto;max-width:none;margin:12px 2px 2px}
+}
+@media (max-height:430px){
+  .apop-shot{margin:8px auto}
+  .apop-polaroid{transform:rotate(-2deg);padding:8px 8px 10px}
+  .apop-polaroid img{max-height:calc(100svh - 168px)}
+  .apop-bubble{margin-top:8px;font-size:12px;padding:9px 11px}
+}
 
 
 /* ============================================================
@@ -3595,12 +3647,12 @@ html[data-div="go"] .starlit::before{opacity:.5}
         <h2 class="h-lg rv lift rv-d1"><span class="split" data-split>Awards</span></h2>
       </div>
       <ul class="awards">
-          <li class="award rv lift"><b>LIVE FEST 2023:</b> Ranked top three in LIVE Fest: US 2023</li>
-          <li class="award rv lift"><b>LIVE FEST 2024:</b> 2nd Place, US Diamond Track</li>
-          <li class="award rv lift"><b>Community FEST 2024:</b> 3rd Place, US Diamond Track</li>
-          <li class="award rv lift"><b>2025 Creator Network Awards:</b> Excellence in LIVE Content, #3</li>
-          <li class="award rv lift"><b>2024 Creator Network Partner Summit:</b> Top Revenue Award, 3rd Place</li>
-          <li class="award rv lift">First US Creator Network to reach 200M Diamonds in 30 days (TikTok LIVE, 02/23/2024)</li>
+          <li class="award rv lift"><button type="button" class="award-btn" data-award="live-fest-2023" data-src="/assets/awards/live-fest-2023.webp" data-alt="Framed LIVE FEST 2023 Certificate of Achievement for Thundrr, ranked top three in LIVE Fest: US 2023." data-blurb="Awarded to Thundrr at TikTok LIVE Fest 2023." aria-haspopup="dialog" aria-controls="awardModal"><b>LIVE FEST 2023:</b> Ranked top three in LIVE Fest: US 2023</button></li>
+          <li class="award rv lift"><button type="button" class="award-btn" data-award="live-fest-2024" data-src="/assets/awards/live-fest-2024.webp" data-alt="White LIVE FEST 2024 plaque, 2nd Place, US Diamond Track, awarded to Thundrr." data-blurb="Awarded to Thundrr at TikTok LIVE Fest 2024." aria-haspopup="dialog" aria-controls="awardModal"><b>LIVE FEST 2024:</b> 2nd Place, US Diamond Track</button></li>
+          <li class="award rv lift"><button type="button" class="award-btn" data-award="community-fest-2024" data-src="/assets/awards/community-fest-2024.webp" data-alt="Framed Community FEST 2024 certificate, 3rd place, US Diamond Track, awarded to Thundrr." data-blurb="Awarded to Thundrr at TikTok Community Fest 2024." aria-haspopup="dialog" aria-controls="awardModal"><b>Community FEST 2024:</b> 3rd Place, US Diamond Track</button></li>
+          <li class="award rv lift"><button type="button" class="award-btn" data-award="cna-2025" data-src="/assets/awards/creator-network-awards-2025.webp" data-alt="Pink glass trophy for the 2025 Creator Network Awards, Excellence in LIVE Content #3, awarded to Thundrr." data-blurb="Awarded to Thundrr at the 2025 Creator Network Awards." aria-haspopup="dialog" aria-controls="awardModal"><b>2025 Creator Network Awards:</b> Excellence in LIVE Content, #3</button></li>
+          <li class="award rv lift"><button type="button" class="award-btn" data-award="partner-summit-2024" data-src="/assets/awards/partner-summit-2024.webp" data-alt="Glass trophy for the 2024 Creator Network Partner Summit Top Revenue Award, 3rd Place, awarded to Thundrr." data-blurb="Awarded to Thundrr at the 2024 Creator Network Partner Summit." aria-haspopup="dialog" aria-controls="awardModal"><b>2024 Creator Network Partner Summit:</b> Top Revenue Award, 3rd Place</button></li>
+          <li class="award rv lift"><button type="button" class="award-btn" data-award="diamonds-200m" data-src="/assets/awards/200m-diamonds-2024.webp" data-alt="TikTok LIVE poster naming Thundrr the first US Creator Network to reach 200M Diamonds in 30 days, dated 02/23/2024." data-blurb="Awarded to Thundrr by TikTok LIVE on 02/23/2024." aria-haspopup="dialog" aria-controls="awardModal">First US Creator Network to reach 200M Diamonds in 30 days (TikTok LIVE, 02/23/2024)</button></li>
       </ul>
     </div>
   </section>
@@ -4436,6 +4488,19 @@ html[data-div="go"] .starlit::before{opacity:.5}
   </div>
 </div>
 
+<!-- ==================== AWARD PHOTO ==================== -->
+<div class="amodal" id="awardModal" role="dialog" aria-modal="true" aria-labelledby="awardName" aria-hidden="true">
+  <button class="amodal-x" id="awardX" type="button" data-award-close aria-label="Close">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <div class="apop-shot">
+    <div class="apop-polaroid">
+      <img id="awardImg" alt="" width="340" height="348" decoding="async" loading="lazy">
+      <div class="apop-bubble"><i aria-hidden="true"></i><b id="awardName"></b><span id="awardBlurb"></span></div>
+    </div>
+  </div>
+</div>
+
 <!-- ==================== TO TOP ==================== -->
 <button class="homefab" id="homeFab" data-home aria-label="Back to home"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/></svg><span>Home</span></button>
 
@@ -4882,6 +4947,9 @@ function setView(view, then){
 /* ---------- 8. REGION · picked when applying ------------- */
 
 var applyModal = $('#applyModal');
+var awardModal = $('#awardModal');
+var awardReturn = null;
+var awardScrollY = 0;
 
 function buildRegionUI(){
   var grid = $('#rgrid');
@@ -4933,17 +5001,69 @@ function openApply(){
 function closeApply(){
   applyModal.classList.remove('is-open');
   applyModal.setAttribute('aria-hidden', 'true');
-  if(!sheet.classList.contains('is-open') && !modal.classList.contains('is-open')){
+  if(!sheet.classList.contains('is-open') && !modal.classList.contains('is-open') && !awardModal.classList.contains('is-open')){
     document.body.classList.remove('is-locked');
   }
 }
+
+function awardFocusable(){
+  return $$('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])', awardModal).filter(function(el){
+    return !el.disabled && el.getAttribute('aria-hidden') !== 'true';
+  });
+}
+function setPageInert(on){
+  var kids = document.body.children;
+  for(var i = 0; i < kids.length; i++){
+    if(kids[i] === awardModal) continue;
+    if(on) kids[i].setAttribute('inert', '');
+    else kids[i].removeAttribute('inert');
+  }
+}
+function openAward(btn){
+  if(!btn) return;
+  var img = $('#awardImg');
+  var src = btn.getAttribute('data-src');
+  awardReturn = btn;
+  awardScrollY = window.pageYOffset || 0;
+  $('#awardName').textContent = (btn.innerText || '').replace(/\s+/g, ' ').trim();
+  $('#awardBlurb').textContent = btn.getAttribute('data-blurb') || '';
+  img.alt = btn.getAttribute('data-alt') || '';
+  awardModal.classList.add('is-open');
+  awardModal.setAttribute('aria-hidden', 'false');
+  img.loading = 'eager';
+  if(img.getAttribute('src') !== src) img.setAttribute('src', src);
+  document.body.classList.add('is-locked', 'award-lock');
+  document.body.style.top = '-' + awardScrollY + 'px';
+  setPageInert(true);
+  var closer = $('#awardX');
+  if(closer) closer.focus();
+}
+function closeAward(){
+  if(!awardModal.classList.contains('is-open')) return;
+  awardModal.classList.remove('is-open');
+  awardModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('award-lock');
+  document.body.style.top = '';
+  setPageInert(false);
+  if(!sheet.classList.contains('is-open') && !modal.classList.contains('is-open') && !applyModal.classList.contains('is-open')){
+    document.body.classList.remove('is-locked');
+  }
+  window.scrollTo(0, awardScrollY);
+  if(awardReturn && awardReturn.focus) awardReturn.focus();
+}
+document.addEventListener('touchmove', function(e){
+  if(awardModal.classList.contains('is-open') && !awardModal.contains(e.target)) e.preventDefault();
+}, {passive:false});
 
 /* ---------- 9. MOBILE SHEET ------------------------------- */
 
 function setSheet(open){
   sheet.classList.toggle('is-open', open);
   burger.classList.toggle('is-on', open);
-  document.body.classList.toggle('is-locked', open);
+  if(open) document.body.classList.add('is-locked');
+  else if(!modal.classList.contains('is-open') && !applyModal.classList.contains('is-open') && !awardModal.classList.contains('is-open')){
+    document.body.classList.remove('is-locked');
+  }
   burger.setAttribute('aria-expanded', open ? 'true' : 'false');
 }
 
@@ -5008,7 +5128,9 @@ function openMember(key){
 
 function closeModal(){
   modal.classList.remove('is-open');
-  if(!sheet.classList.contains('is-open')) document.body.classList.remove('is-locked');
+  if(!sheet.classList.contains('is-open') && !applyModal.classList.contains('is-open') && !awardModal.classList.contains('is-open')){
+    document.body.classList.remove('is-locked');
+  }
 }
 
 $('#modalX').addEventListener('click', closeModal);
@@ -5022,6 +5144,18 @@ document.addEventListener('click', function(e){
   var t = e.target;
 
   if(t.closest('[data-stop]')) return;              /* social links inside cards */
+
+  if(t.closest('[data-award-close]') || t === awardModal){
+    e.preventDefault();
+    closeAward();
+    return;
+  }
+  var awardBtn = t.closest('[data-award]');
+  if(awardBtn){
+    e.preventDefault();
+    openAward(awardBtn);
+    return;
+  }
 
   var member = t.closest('[data-member]');
   if(member){ openMember(member.getAttribute('data-member')); return; }
@@ -5104,7 +5238,19 @@ document.addEventListener('click', function(e){
 }, false);
 
 document.addEventListener('keydown', function(e){
+  if(awardModal.classList.contains('is-open') && e.key === 'Tab'){
+    var nodes = awardFocusable();
+    if(!nodes.length){ e.preventDefault(); return; }
+    var first = nodes[0], last = nodes[nodes.length - 1];
+    if(e.shiftKey && (document.activeElement === first || !awardModal.contains(document.activeElement))){
+      e.preventDefault(); last.focus();
+    } else if(!e.shiftKey && document.activeElement === last){
+      e.preventDefault(); first.focus();
+    }
+    return;
+  }
   if(e.key === 'Escape'){
+    if(awardModal.classList.contains('is-open')){ closeAward(); return; }
     closeModal();
     closeApply();
     setSheet(false);
