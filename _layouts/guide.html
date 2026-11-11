@@ -33,8 +33,9 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": ["BlogPosting", "Article"],
   "headline": {{ page.title | jsonify }},
+  "url": {{ g_canon | jsonify }},
   "description": {{ g_desc | jsonify }},
   "image": [{{ g_img | jsonify }}],
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},

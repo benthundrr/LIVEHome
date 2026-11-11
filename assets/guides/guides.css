@@ -460,7 +460,10 @@ html.js .graphic.in .gc-msg:nth-child(4){transition-delay:1.5s}
 .cta-in{position:relative;z-index:1;max-width:640px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:18px}
 .cta-h{font-size:clamp(28px,3.6vw,44px);line-height:1.14}
 .cta-p{font-size:16px;line-height:1.7;color:var(--text-soft)}
-.cta .btn{margin-top:8px}
+.cta-p a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.cta-actions{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;width:100%;margin-top:8px}
+.cta-actions .btn{margin-top:0}
+.btn-ghost{color:#fff;background:rgba(255,255,255,.04);border:1px solid var(--border-hi)}
 
 /* footer — same as the homepage */
 footer{position:relative;z-index:2;padding:88px 0 0;border-top:1px solid var(--border);margin-top:56px}
@@ -490,6 +493,7 @@ footer{position:relative;z-index:2;padding:88px 0 0;border-top:1px solid var(--b
   .nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 34px color-mix(in srgb,var(--acc-1) 52%,transparent)}
   .btn:hover svg,.prose a.button:hover::after{transform:translateX(4px)}
   .btn-1:hover,.prose a.button:hover{transform:translateY(-3px);box-shadow:0 16px 44px color-mix(in srgb,var(--acc-1) 50%,transparent)}
+  .btn-ghost:hover{transform:translateY(-3px);background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.28)}
   .crumbs a:hover{color:#fff}
   .b-toc a:hover{color:var(--text-soft)}
   .prose ul.cards li:hover{border-color:color-mix(in srgb,var(--c1) 45%,transparent)}
@@ -588,6 +592,7 @@ footer{position:relative;z-index:2;padding:88px 0 0;border-top:1px solid var(--b
   .end{padding:44px 0 4px}
   .cta{padding:48px 22px;border-radius:var(--r-lg)}
   .cta-p{font-size:15px}
+  .cta-actions{flex-direction:column;align-items:stretch}
   footer{padding-top:56px}
   .foot-grid{grid-template-columns:1fr;gap:32px;padding-bottom:44px}
   .foot-bot{justify-content:center;text-align:center;flex-direction:column;gap:16px}
