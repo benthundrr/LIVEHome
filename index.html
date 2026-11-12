@@ -326,7 +326,7 @@ body.has-cursor .halo{opacity:1}
 .nav-links{display:flex;align-items:center;gap:4px;margin-left:auto}
 .nav-link{
   position:relative;padding:9px 14px;border-radius:99px;
-  font-size:13px;font-weight:500;color:var(--text-muted);
+  font-size:13px;font-weight:500;color:var(--text-muted);white-space:nowrap;
   transition:color .35s var(--ease-soft),background .35s var(--ease-soft);
 }
 .nav-link:hover{color:#fff;background:rgba(255,255,255,.04)}
@@ -1061,6 +1061,14 @@ footer{position:relative;z-index:2;padding:88px 0 0;border-top:1px solid var(--b
 .foot-links a span{pointer-events:none}
 .member,.div-card,.q-btn{-webkit-tap-highlight-color:transparent}
 @media (max-width:1024px){.nav-inner{gap:14px}}
+/* LIVE's six links need a tighter bar so they stay on one line and Apply now
+   stays in view. Shop and GO keep the 26px gap. */
+@media (min-width:1025px) and (max-width:1319px){
+  html[data-div="live"] .nav-inner{gap:18px}
+}
+@media (min-width:1025px) and (max-width:1239px){
+  html[data-div="live"] .nav-inner{gap:8px}
+}
 
 /* ============================================================
    V2 · build 08055 — background, labels, photo systems, mobile
@@ -4565,7 +4573,8 @@ var VIEWS = {
       ['live-process','Onboarding'],
       ['live-team','Team'],
       ['live-divisions','Divisions'],
-      ['live-why','Benefits']
+      ['live-why','Benefits'],
+      {href:'/blog/', label:'Guides'}
     ]
   },
   shop: { acc:['#ff2d55','#ff453a'], nav:[['shop-what','What we run'],['shop-creators','For creators']] },
@@ -4862,17 +4871,29 @@ function buildNav(view){
     '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>';
   sheetNav.appendChild(homeLink);
 
-  items.forEach(function(pair){
+  items.forEach(function(entry){
+    /* A section entry is [id, label] and scrolls in place. An href entry
+       is a normal link, so it is not a scroll target and not scroll-spied. */
+    var label, href, spy;
+    if(entry.href){
+      label = entry.label;
+      href = entry.href;
+    } else {
+      spy = entry[0];
+      label = entry[1];
+      href = '#' + spy;
+    }
+
     var a = document.createElement('a');
     a.className = 'nav-link';
-    a.href = '#' + pair[0];
-    a.setAttribute('data-spy', pair[0]);
-    a.textContent = pair[1];
+    a.href = href;
+    if(spy) a.setAttribute('data-spy', spy);
+    a.textContent = label;
     navLinks.appendChild(a);
 
     var b = document.createElement('a');
-    b.href = '#' + pair[0];
-    b.innerHTML = '<span>' + pair[1] + '</span>' +
+    b.href = href;
+    b.innerHTML = '<span>' + label + '</span>' +
       '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
     sheetNav.appendChild(b);
   });
