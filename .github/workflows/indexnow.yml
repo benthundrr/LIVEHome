@@ -1,0 +1,69 @@
+# Publish an IndexNow notification after GitHub Pages deploys main.
+#
+# This site uses the built-in "pages build and deployment" workflow (legacy
+# Pages, source branch main). That deploy is what makes new /blog/ guides
+# reachable. This workflow waits for that run, then waits until the live
+# sitemap shows the new deploy, then POSTs the URL list to IndexNow.
+# IndexNow errors are logged and this job still succeeds, so a rejection
+# cannot fail or block the Pages deployment.
+
+name: IndexNow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    paths:
+      - ".github/workflows/indexnow.yml"
+      - ".github/scripts/**"
+      - "*.txt"
+      - "_config.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: read
+  actions: read
+
+jobs:
+  pages-build:
+    name: Build with GitHub Pages Jekyll
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Check IndexNow script
+        run: python3 .github/scripts/indexnow.py --selftest
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Check the key file is published unchanged
+        run: bash .github/scripts/verify-indexnow-key.sh
+
+  submit:
+    name: Submit sitemap to IndexNow
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: indexnow-www-thundrr-co
+      cancel-in-progress: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Submit live sitemap URLs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/indexnow.py
