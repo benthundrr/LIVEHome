@@ -63,7 +63,7 @@ fi
 
 for url in \
   "https://www.thundrr.co/" \
-  "https://www.thundrr.co/join" \
+  "https://www.thundrr.co/join/" \
   "https://www.thundrr.co/blog/"
 do
   if ! grep -F -q "<loc>${url}</loc>" _site/sitemap.xml; then
@@ -82,4 +82,4 @@ if [[ ! -f _site/blog/index.html ]]; then
   exit 1
 fi
 
-echo "Sitemap still lists the homepage, /join and /blog/"
+echo "Sitemap still lists the homepage, /join/ and /blog/"

@@ -409,7 +409,7 @@ def selftest() -> None:
     xml = """<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.thundrr.co/</loc></url>
-  <url><loc>https://www.thundrr.co/join</loc></url>
+  <url><loc>https://www.thundrr.co/join/</loc></url>
   <url><loc>https://www.thundrr.co/blog/</loc></url>
   <url><loc>https://www.thundrr.co/blog/what-is-a-tiktok-live-agency/</loc></url>
   <url><loc>https://app.thundrr.co/</loc></url>
@@ -420,7 +420,7 @@ def selftest() -> None:
     urls = extract_urls(xml)
     assert urls == [
         "https://www.thundrr.co/",
-        "https://www.thundrr.co/join",
+        "https://www.thundrr.co/join/",
         "https://www.thundrr.co/blog/",
         "https://www.thundrr.co/blog/what-is-a-tiktok-live-agency/",
     ], urls
