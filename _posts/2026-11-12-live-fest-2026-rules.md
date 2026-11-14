@@ -5,7 +5,7 @@ seo_title: "LIVE Fest 2026 Rules and Eligibility | Thundrr"
 description: "Who can enter LIVE Fest 2026, how fans send Votes, which rewards TikTok describes, and what can remove you from the campaign."
 summary: "Eligibility, fan Votes, rewards, and the conduct rules TikTok published."
 date: 2026-11-12
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-14
 icon: safety
 takeaways:
   - "You must be 18, or 19 in Korea, live in a listed region, and keep an eligible personal account."
@@ -94,7 +94,7 @@ The Event Rules address the creator and the viewer. They tell the creator to sig
 
 A network can still be useful. It can help you read the track, plan the days, and explain Votes to the people already in the room. It cannot change the eligibility rules or the board.
 
-Thundrr is a TikTok LIVE agency and creator network of 1,500+ creators, founded by Andrew Andrawes, and a creator network since 2022. It is free to join, with no fee, no cut of your Diamonds, and no contract. Every creator gets a dedicated creator manager. Results TikTok printed for the network are "Ranked top three in LIVE Fest: US 2023" and "LIVE FEST 2024 2nd Place US Diamond Track."
+Thundrr is a TikTok LIVE agency and creator network of 1,500+ creators, founded by Andrew Andrawes, and a creator network since 2022. It is free to join, with no fee, no cut of your Diamonds, and no contract. Every creator gets a dedicated creator manager. Results for the network are "Ranked top three in LIVE Fest: US 2023" and "LIVE FEST 2024: 2nd place, US Diamond Track." Creators can follow TikTok LIVE Fest progress in the [THUNDRR LIVE app](/app/).
 
 {% include graphic.html name="manager" caption="Every Thundrr creator gets a dedicated creator manager." %}
 

@@ -65,7 +65,7 @@ TikTok says recommended creators are suggested based on basic account informatio
 - **A good sport** The victory lap task should stay fun and within the Community Guidelines.
 {: .cards}
 
-{% include cta.html title="Want a manager in your corner?" text="Thundrr is a TikTok creator network. Free to join, with no fee, no cut of your Diamonds, and no contract." %}
+{% include cta.html title="Want a manager in your corner?" text="Thundrr is a TikTok LIVE agency and creator network. Free to join, with no fee, no cut of your Diamonds, and no contract." %}
 
 ## Power-ups
 
@@ -126,7 +126,7 @@ Thundrr creators can also compete in battles and tournaments hosted by Thundrr, 
 - **Supporter space** Your gifters can follow tournaments and a calendar of your upcoming LIVEs.
 {: .cards}
 
-Every creator gets a dedicated creator manager, with a daily, direct, 1:1 line of communication in the app's messages at app.thundrr.co. Creators keep their full share of their earnings, and TikTok pays the agency separately.
+Every creator gets a dedicated creator manager, one tap away in app messages. Thundrr is free to join, with no fee and no cut of your diamonds. [The THUNDRR LIVE app](/app/) covers battles, tournaments and rankings.
 
 New here? Start with [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/) or [How to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/).
 

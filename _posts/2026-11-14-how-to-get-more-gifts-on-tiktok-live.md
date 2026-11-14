@@ -21,7 +21,7 @@ faq:
   - q: "What is a LIVE goal on TikTok?"
     a: "A LIVE goal shows viewers a target for specific Gifts during your LIVE. You write a description, pick the Gifts and quantity, can add a prize for contributors, and can show it as a sticker."
   - q: "Can a TikTok LIVE agency get me more Gifts?"
-    a: "No agency controls what viewers send. A manager can help you plan your LIVEs, use TikTok's tools well and stay within the rules. At Thundrr, creators keep their full share of their earnings, and the THUNDRR app shows your top gifters so you can thank them."
+    a: "No agency controls what viewers send. A manager can help you plan your LIVEs, use TikTok's tools well and stay within the rules. Thundrr is free to join, with no fee and no cut of your diamonds. The THUNDRR LIVE app shows your top gifters so you can thank them."
   - q: "Who can receive Gifts on TikTok LIVE?"
     a: "TikTok requires creators to be at least 18 (19 in South Korea), to live where LIVE Gifts are available, to be eligible to go LIVE, and to keep an account in good standing."
 ---
@@ -60,7 +60,7 @@ Keep it short and pair your voice with on-screen text, so late arrivals can foll
 > **Tip** Tell viewers what to send, and what happens when they do. That's an invitation to play along.
 {: .callout .tip}
 
-{% include cta.html title="Want help planning your LIVEs?" text="Thundrr is a TikTok creator network. Free to join, with no fee, no cut of your Diamonds, and no contract." %}
+{% include cta.html title="Want help planning your LIVEs?" text="Thundrr is a TikTok LIVE agency and creator network. Free to join, with no fee, no cut of your Diamonds, and no contract." %}
 
 ## Thank gifters the right way
 
@@ -114,12 +114,12 @@ No agency controls what viewers send. What you can do is know your supporters, t
 - **Coaching on call** Ask THUNDRR AI, the in-app LIVE coach, or read the LIVE Guides when you're planning your next Gift moment.
 {: .cards}
 
-Every Thundrr creator also gets a dedicated creator manager, with a daily, direct, 1:1 line of communication in the app's messages at app.thundrr.co. The app's community chat is where Thundrr creators connect with each other.
+Every creator gets a dedicated creator manager, one tap away in app messages. The [THUNDRR LIVE app](/app/) also has community chat with other Thundrr creators.
 
 > The best Gift prompt is a LIVE people don't want to leave.
 {: .pull}
 
-At Thundrr, creators keep their full share of their earnings, and TikTok pays the agency separately. Thundrr is free to join, with no fee, no cut of your Diamonds, and no contract.
+Thundrr is free to join, with no fee, no cut of your Diamonds, and no contract.
 
 More reading: [How to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/) and [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/)
 

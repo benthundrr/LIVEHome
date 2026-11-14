@@ -108,20 +108,21 @@ Scam invitations exist, so check before you accept anything. Our full checklist 
 
 ## Thundrr's verified results
 
-Thundrr is a TikTok creator network founded by Andrew Andrawes and based in Los Angeles. Since 2022, it has supported 1,500+ LIVE creators across the US.
+Thundrr is a TikTok LIVE agency and creator network founded by Andrew Andrawes and based in Los Angeles. Since 2022, it has supported 1,500+ LIVE creators across the US. Creators also get the [THUNDRR LIVE app](/app/), with LIVE stats, THUNDRR AI coaching, tournaments and rewards in one place.
 
 - **1,500+** LIVE creators across the US
-- **200M** Diamonds in 30 days, the first US Creator Network to reach it (02/23/2024)
+- **200M** Diamonds in 30 days, the first US Creator Network to reach it (Feb 23, 2024)
 - **0** fees to join
 {: .stats}
 
-These results come from TikTok LIVE events, quoted exactly as printed on each award:
+Thundrr's results:
 
-- 'Ranked top three in LIVE Fest: US 2023'
-- LIVE FEST 2024: 2nd Place, US Diamond Track
-- Community FEST 2024: 3rd Place, US Diamond Track
-- 2024 Creator Network Partner Summit: Top Revenue Award, 3rd Place
-- 2025 Creator Network Awards: Excellence in LIVE Content #3
+- Ranked top three in LIVE Fest: US 2023.
+- LIVE FEST 2024: 2nd place, US Diamond Track.
+- Community FEST 2024: 3rd place, US Diamond Track.
+- 2025 Creator Network Awards: Excellence in LIVE Content #3.
+- 2024 Creator Network Partner Summit: Top Revenue Award, 3rd place.
+- First US Creator Network to reach 200M Diamonds in 30 days (Feb 23, 2024).
 
 > A network's ranking reflects its creators' work, and it doesn't predict what any one creator will earn.
 {: .pull}
