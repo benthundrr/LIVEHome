@@ -5,7 +5,7 @@ seo_title: "How to Join a TikTok LIVE Agency, Step by Step | Thundrr"
 description: "How to join a TikTok LIVE agency: check your eligibility, find your invitation code in Agency Center, and accept the invitation in the TikTok app."
 summary: "Eligibility, your invitation code, and accepting an agency invitation in the TikTok app."
 date: 2026-11-10
-last_modified_at: 2026-11-10
+last_modified_at: 2026-11-14
 icon: manager
 takeaways:
   - "You join a TikTok LIVE agency inside the TikTok app by accepting its invitation."
@@ -78,13 +78,13 @@ Check what your current agreement says and what your Agency Center shows before 
 
 ## Why creators choose Thundrr
 
-Thundrr is a TikTok LIVE creator network based in Los Angeles. Founded by Andrew Andrawes, it works with 1,500+ creators and has been a Creator Network since 2022.
+Thundrr is a TikTok LIVE agency and creator network based in Los Angeles. Founded by Andrew Andrawes, it works with 1,500+ creators and has been a Creator Network since 2022. Once you join, the [THUNDRR LIVE app](/app/) puts LIVE stats, coaching, tournaments and rewards in one place.
 
 - **1,500+** creators
-- **200M** Diamonds in 30 days, the first US Creator Network to reach it (02/23/2024)
+- **200M** Diamonds in 30 days, the first US Creator Network to reach it (Feb 23, 2024)
 - **2022** Creator Network since
 {: .stats}
 
-Our results include LIVE FEST 2024 2nd Place, US Diamond Track and Community FEST 2024 3rd Place, US Diamond Track. Still deciding? Start with [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/)
+Our results include "LIVE FEST 2024: 2nd place, US Diamond Track" and "Community FEST 2024: 3rd place, US Diamond Track". Still deciding? Start with [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/)
 
 [Apply to join Thundrr](https://www.thundrr.co/join){: .button}

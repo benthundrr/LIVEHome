@@ -5,7 +5,7 @@ seo_title: "Are TikTok LIVE Agencies Legit? Red Flags | Thundrr"
 description: "Real TikTok LIVE agencies exist, and so do scams. Learn the red flags, how a real agency invitation works in the app, and how to verify any network."
 summary: "Red flags, how a real invitation works, and how to check any agency in a few minutes."
 date: 2026-11-10
-last_modified_at: 2026-11-10
+last_modified_at: 2026-11-14
 icon: safety
 takeaways:
   - "Real TikTok LIVE agencies, which TikTok calls Creator Networks, exist and are independent of TikTok."
@@ -70,7 +70,7 @@ A real network can tell you who runs it, show where it's based, and point to res
 | Creator Network since | A clear start date | 2022 |
 | Cost to join | None | Free, no fee, no cut of Diamonds, no contract |
 
-Results TikTok itself issued are harder to fake than screenshots of earnings. Thundrr's include 'Ranked top three in LIVE Fest: US 2023', LIVE FEST 2024 2nd Place, US Diamond Track, and a TikTok LIVE poster naming Thundrr the first US Creator Network to reach 200M Diamonds in 30 days (02/23/2024).
+Results TikTok itself issued are harder to fake than screenshots of earnings. Thundrr's include "Ranked top three in LIVE Fest: US 2023", "LIVE FEST 2024: 2nd place, US Diamond Track", and "First US Creator Network to reach 200M Diamonds in 30 days (Feb 23, 2024)".
 
 > The fastest test is simple: a real agency invites you inside TikTok and never asks for money or your password.
 {: .pull}
@@ -87,7 +87,7 @@ Ask how long any agreement lasts, whether there are minimum LIVE hours, and how 
 
 ### Who will support me?
 
-Ask who your contact will be and how you'll reach them. At Thundrr, every creator gets a dedicated creator manager.
+Ask who your contact will be and how you'll reach them. At Thundrr, every creator gets a dedicated creator manager, one tap away in the [THUNDRR LIVE app](/app/).
 
 > **Tip** If an agency won't answer these questions before you accept, keep looking.
 {: .callout .tip}

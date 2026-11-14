@@ -1,0 +1,97 @@
+---
+---
+{%- assign g_title_html = page.title | escape -%}
+{%- if page.accent -%}
+  {%- assign g_acc = page.accent | escape -%}
+  {%- assign g_acc_html = '<span class="accent">' | append: g_acc | append: '</span>' -%}
+  {%- assign g_title_html = g_title_html | replace_first: g_acc, g_acc_html -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include guides/head.html %}
+<style>.app-hero .post-h1{max-width:15em}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ page.title | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thundrr"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "THUNDRR LIVE",
+  "description": "The THUNDRR LIVE app puts LIVE stats, coaching, competitions and rewards in one place for TikTok LIVE creators.",
+  "applicationCategory": "LifestyleApplication",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thundrr"
+  }
+}
+</script>
+{%- if page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for f in page.faq %}
+    {
+      "@type": "Question",
+      "name": {{ f.q | jsonify }},
+      "acceptedAnswer": {"@type": "Answer", "text": {{ f.a | jsonify }}}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif %}
+</head>
+<body>
+{% include guides/nav.html %}
+
+<main class="page" id="main">
+  <header class="hero-b app-hero">
+    <div class="shell b-wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span class="here here-keep" aria-current="page">App</span>
+      </nav>
+      <div class="live"><span class="live-badge"><i></i>LIVE</span><span class="live-tx">The app</span></div>
+      <h1 class="post-h1 kin">{{ g_title_html }}</h1>
+      <p class="lede">{{ page.lede | escape }}</p>
+    </div>
+  </header>
+
+  <div class="shell b-wrap">
+    <div class="prose">
+{{ content }}
+    </div>
+
+    {%- if page.faq %}
+    <section class="faq" aria-labelledby="faqH">
+      <h2 class="faq-h" id="faqH">Questions</h2>
+      {%- for f in page.faq %}
+      <details><summary>{{ f.q | escape }}<i aria-hidden="true"></i></summary><div class="faq-a">{{ f.a | markdownify }}</div></details>
+      {%- endfor %}
+    </section>
+    {%- endif %}
+  </div>
+
+{% include guides/end-cta.html %}
+</main>
+
+{% include guides/footer.html %}
+
+<script src="{{ '/assets/guides/guides.js' | relative_url }}" defer></script>
+</body>
+</html>

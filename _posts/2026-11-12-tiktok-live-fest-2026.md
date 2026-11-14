@@ -5,7 +5,7 @@ seo_title: "TikTok LIVE Fest 2026: How to Join | Thundrr"
 description: "TikTok LIVE Fest 2026 is the year-end LIVE celebration. Here are the dates, leagues, and sign-up steps TikTok has published."
 summary: "Dates, leagues, and the sign-up steps TikTok has published for LIVE Fest 2026."
 date: 2026-11-12
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-14
 icon: schedule
 takeaways:
   - "TikTok calls LIVE Fest 2026 its flagship year-end celebration of LIVE creators and their communities."
@@ -113,7 +113,7 @@ Thundrr is a TikTok LIVE agency and creator network of 1,500+ creators, and a cr
 - **0** fee to join
 {: .stats}
 
-TikTok's own results for the network, quoted as printed, include "Ranked top three in LIVE Fest: US 2023" and "LIVE FEST 2024 2nd Place US Diamond Track." A past result does not predict a 2026 rank.
+Results for the network include "Ranked top three in LIVE Fest: US 2023" and "LIVE FEST 2024: 2nd place, US Diamond Track." A past result does not predict a 2026 rank. Creators can follow TikTok LIVE Fest progress in the [THUNDRR LIVE app](/app/).
 
 | What you get | On your own | With Thundrr |
 |---|---|---|

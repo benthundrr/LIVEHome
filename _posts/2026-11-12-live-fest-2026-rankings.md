@@ -5,7 +5,7 @@ seo_title: "LIVE Fest 2026 Points and Rankings | Thundrr"
 description: "How TikTok scores LIVE Fest 2026: Gifts, Votes, Power League tracks, Double Blast, and what to confirm on your campaign page."
 summary: "How Gifts, Votes, tracks, and bonuses become LIVE Fest 2026 points."
 date: 2026-11-12
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-14
 icon: diamond
 takeaways:
   - "Points rank creators. TikTok says top creators receive rewards and honor titles."
@@ -88,7 +88,7 @@ The points for each day a creator goes LIVE are the line to double-check. The Cr
 
 ## How tracks and rounds work
 
-Power League does the track split before the league starts. Creators in the same region are placed using the highest number of Diamonds collected in any single month during the six-month period, as of the date in the rules. The number of tracks changes by region. This is the 2026 use of Diamonds. The campaign strings do not name a Diamond Track. That name is how TikTok labeled a 2024 result, including "LIVE FEST 2024 2nd Place US Diamond Track" for Thundrr.
+Power League does the track split before the league starts. Creators in the same region are placed using the highest number of Diamonds collected in any single month during the six-month period, as of the date in the rules. The number of tracks changes by region. This is the 2026 use of Diamonds. The campaign strings do not name a Diamond Track. That name is how TikTok labeled a 2024 result, including "LIVE FEST 2024: 2nd place, US Diamond Track" for Thundrr.
 
 The Power League one-pager then describes the path. In round 1, how many creators advance depends on the track. TikTok has not published one universal cutoff. Advancing creators merge into three tracks for the later rounds: Legend, Crown, and Rising. Round 3 keeps those three tracks, and top creators from them advance to the global finals. The public page dates the whole Power League from November 20 to December 6, 2026, and the global finals from December 17 to 21. The day-by-day round calendar is inside the app.
 
@@ -109,7 +109,7 @@ Preparation is the part you can do before the board opens. Update the app, sign 
 4. **Stay on the track you confirmed** Talent League can remove a creator who stops showing that talent.
 {: .steps}
 
-A manager can help you turn that page into a week you can actually host. At Thundrr, a TikTok LIVE agency and creator network, every creator gets a dedicated creator manager. Thundrr is free to join, with no fee, no cut of your Diamonds, and no contract. Nothing in that support promises a rank. TikTok confirms the official points after each module.
+A manager can help you turn that page into a week you can actually host. At Thundrr, a TikTok LIVE agency and creator network, every creator gets a dedicated creator manager. Thundrr is free to join, with no fee, no cut of your Diamonds, and no contract. Nothing in that support promises a rank. TikTok confirms the official points after each module. Creators can also follow TikTok LIVE Fest progress in the [THUNDRR LIVE app](/app/).
 
 [How to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/) is the everyday version of the same work: a schedule people can plan around, and a LIVE that gives them a reason to stay.
 

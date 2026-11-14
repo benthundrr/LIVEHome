@@ -5,7 +5,7 @@ seo_title: "How to Get More Viewers on TikTok LIVE | Thundrr"
 description: "TikTok LIVE views stay low when fewer people are shown the stream, and the practical fixes are eligibility, schedule, promotion, and a stronger opening."
 summary: "Why TikTok LIVE views stay low, and what to change so more people can find the stream."
 date: 2026-11-12
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-14
 icon: growth
 takeaways:
   - "TikTok LIVE views stay low when the stream is shown to fewer people, or when new viewers leave in the opening moments."
@@ -68,6 +68,8 @@ Do not stream movies, TV, pay-per-view sports, or another creator's videos, incl
 
 > **Tip** Pause the LIVE if you leave the chair. An empty frame is one of the things TikTok tells creators to avoid.
 {: .callout .tip}
+
+On the roster, the [THUNDRR LIVE app](/app/) shows diamonds, LIVE hours and active days as you stream, and THUNDRR AI coaches from your own stats.
 
 {% include cta.html title="Want help reading your LIVEs?" text="Thundrr is a TikTok LIVE agency and creator network. Free to join, with no fee, no cut of your Diamonds, and no contract." %}
 
