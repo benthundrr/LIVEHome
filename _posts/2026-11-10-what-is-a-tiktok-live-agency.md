@@ -5,7 +5,7 @@ seo_title: "What Is a TikTok LIVE Agency? | Thundrr"
 description: "A TikTok LIVE agency, or Creator Network, is an independent company that coaches LIVE creators. What agencies do, how they're paid, and who should join."
 summary: "What LIVE agencies do, how they get paid, and how to tell if joining one is right for you."
 date: 2026-11-10
-last_modified_at: 2026-11-14
+last_modified_at: 2026-11-15
 icon: agency
 takeaways:
   - "A TikTok LIVE agency, which TikTok calls a Creator Network, is an independent company that helps LIVE creators grow."
@@ -127,6 +127,6 @@ Thundrr's results:
 > A network's ranking reflects its creators' work, and it doesn't predict what any one creator will earn.
 {: .pull}
 
-Ready to start? [How to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/) walks through every step. Already streaming? Read [How to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/), [How to get more gifts on TikTok LIVE without begging](/blog/how-to-get-more-gifts-on-tiktok-live/) and [How to win TikTok LIVE Battles](/blog/how-to-win-tiktok-live-battles/).
+Ready to start? [How to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/) walks through every step. Already streaming? Read [How to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/), [How to get more gifts on TikTok LIVE without begging](/blog/how-to-get-more-gifts-on-tiktok-live/) and [How to win TikTok LIVE Battles](/blog/how-to-win-tiktok-live-battles/). For how Diamonds and agency pay work, read [Do TikTok LIVE agencies take your Diamonds?](/blog/do-tiktok-live-agencies-take-your-diamonds/).
 
 [Apply to join Thundrr](https://www.thundrr.co/join){: .button}
