@@ -5,7 +5,7 @@ seo_title: "How to Get More Gifts on TikTok LIVE | Thundrr"
 description: "How to get more Gifts on TikTok LIVE without begging: LIVE goals, small Gift prompts, real thank-yous, Battles, and the gift baiting TikTok restricts."
 summary: "LIVE goals, small Gift prompts, real thank-yous, and the gift baiting that gets LIVEs restricted."
 date: 2026-11-14
-last_modified_at: 2026-11-14
+last_modified_at: 2026-11-16
 icon: gift
 takeaways:
   - "TikTok says viewers send Gifts to show appreciation for content in real time, so the show comes first."
@@ -121,6 +121,6 @@ Every creator gets a dedicated creator manager, one tap away in app messages. Th
 
 Thundrr is free to join, with no fee, no cut of your Diamonds, and no contract.
 
-More reading: [How to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/) and [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/)
+More reading: [How to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/) and [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/). For how Gifts become Diamonds and US dollars, read [TikTok Diamonds to USD: how LIVE Gifts turn into money](/blog/tiktok-diamonds-to-usd/).
 
 [Apply to join Thundrr](https://www.thundrr.co/join){: .button}

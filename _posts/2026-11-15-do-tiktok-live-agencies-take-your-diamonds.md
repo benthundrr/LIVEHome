@@ -5,7 +5,7 @@ seo_title: "Do TikTok LIVE Agencies Take Your Diamonds? | Thundrr"
 description: "How TikTok LIVE agencies get paid: how Coins, Gifts and Diamonds flow, where TikTok's agency bonuses fit, and the questions to ask before you join."
 summary: "How Coins, Gifts and Diamonds flow, how agencies get paid, and what to ask before you join."
 date: 2026-11-15
-last_modified_at: 2026-11-15
+last_modified_at: 2026-11-16
 icon: diamond
 takeaways:
   - "Viewers buy Coins, send Gifts, and TikTok converts those Gifts into Diamonds in your account."
@@ -109,6 +109,6 @@ TikTok notes that Creator Networks are independent businesses, and that it doesn
 
 If you're new to agencies, start with [what a TikTok LIVE agency is](/blog/what-is-a-tiktok-live-agency/) and [how to tell if one is legit](/blog/are-tiktok-live-agencies-legit/).
 
-More reading: [How to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/) and [How to get more gifts on TikTok LIVE](/blog/how-to-get-more-gifts-on-tiktok-live/)
+More reading: [How to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/) and [How to get more gifts on TikTok LIVE](/blog/how-to-get-more-gifts-on-tiktok-live/). For how Diamonds turn into US dollars, read [TikTok Diamonds to USD: how LIVE Gifts turn into money](/blog/tiktok-diamonds-to-usd/).
 
 [Apply to join Thundrr](https://www.thundrr.co/join){: .button}
