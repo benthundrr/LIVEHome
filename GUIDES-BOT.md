@@ -141,7 +141,7 @@ You can change its words: `{% include cta.html title="Want help with Battles?" t
 **Apply button** — always the last line of the guide:
 
 ```markdown
-[Apply to join Thundrr](https://www.thundrr.co/join){: .button}
+[Apply to join Thundrr](https://www.thundrr.co/join/){: .button}
 ```
 
 **Links** — link other guides as `/blog/<slug>/`. Link outside the site only to TikTok's own pages.

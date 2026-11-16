@@ -120,4 +120,4 @@ More Diamonds start with more viewers and more Gifts. Read [how to get more view
 
 New to agencies? Start with [what a TikTok LIVE agency is](/blog/what-is-a-tiktok-live-agency/) and [how to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/).
 
-[Apply to join Thundrr](https://www.thundrr.co/join){: .button}
+[Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

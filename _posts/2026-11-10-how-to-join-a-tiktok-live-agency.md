@@ -87,4 +87,4 @@ Thundrr is a TikTok LIVE agency and creator network based in Los Angeles. Founde
 
 Our results include "LIVE FEST 2024: 2nd place, US Diamond Track" and "Community FEST 2024: 3rd place, US Diamond Track". Still deciding? Start with [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/)
 
-[Apply to join Thundrr](https://www.thundrr.co/join){: .button}
+[Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

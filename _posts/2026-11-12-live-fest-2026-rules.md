@@ -122,4 +122,4 @@ LIVE Fest 2026 keeps Power, Fandom, Talent, and Crossover, and it adds the publi
 > **Tip** Treat older blog posts carefully. A Diamond Track cutoff or a 2025 round date is a different campaign. The 2026 campaign page is the one to follow.
 {: .callout .tip}
 
-[Apply to join Thundrr](https://www.thundrr.co/join){: .button}
+[Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

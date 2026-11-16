@@ -94,4 +94,4 @@ Ask who your contact will be and how you'll reach them. At Thundrr, every creato
 
 New to agencies? Start with [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/) or go straight to [how to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/). On fees and whether an agency takes your Diamonds, read [Do TikTok LIVE agencies take your Diamonds?](/blog/do-tiktok-live-agencies-take-your-diamonds/).
 
-[Apply to join Thundrr](https://www.thundrr.co/join){: .button}
+[Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

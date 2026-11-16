@@ -131,4 +131,4 @@ Results for the network include "Ranked top three in LIVE Fest: US 2023" and "LI
 > **Heads up** Anyone who promises a LIVE Fest rank or a viewer count is guessing. TikTok scores the campaign.
 {: .callout .warn}
 
-[Apply to join Thundrr](https://www.thundrr.co/join){: .button}
+[Apply to join Thundrr](https://www.thundrr.co/join/){: .button}
