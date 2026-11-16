@@ -27,7 +27,7 @@ guides:
   logo_footer: https://cdn.prod.website-files.com/683f98497507d77677d89804/6862c30e5de5b0fb91a05188_var1.png
   default_image: https://cdn.prod.website-files.com/654e6334636e875f348b0297/6a6f6c370b6b45baecbda1e0_DSC06616.jpg
   default_image_alt: A Thundrr creator receiving a tournament prize cheque
-  join_url: https://www.thundrr.co/join
+  join_url: https://www.thundrr.co/join/
   ga_id: G-0YGVG14X39
 
 exclude:

@@ -123,4 +123,4 @@ Thundrr is free to join, with no fee, no cut of your Diamonds, and no contract.
 
 More reading: [How to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/) and [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/). For how Gifts become Diamonds and US dollars, read [TikTok Diamonds to USD: how LIVE Gifts turn into money](/blog/tiktok-diamonds-to-usd/).
 
-[Apply to join Thundrr](https://www.thundrr.co/join){: .button}
+[Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

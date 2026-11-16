@@ -130,4 +130,4 @@ Every creator gets a dedicated creator manager, one tap away in app messages. Th
 
 New here? Start with [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/) or [How to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/).
 
-[Apply to join Thundrr](https://www.thundrr.co/join){: .button}
+[Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

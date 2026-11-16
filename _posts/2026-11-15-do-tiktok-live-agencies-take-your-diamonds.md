@@ -111,4 +111,4 @@ If you're new to agencies, start with [what a TikTok LIVE agency is](/blog/what-
 
 More reading: [How to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/) and [How to get more gifts on TikTok LIVE](/blog/how-to-get-more-gifts-on-tiktok-live/). For how Diamonds turn into US dollars, read [TikTok Diamonds to USD: how LIVE Gifts turn into money](/blog/tiktok-diamonds-to-usd/).
 
-[Apply to join Thundrr](https://www.thundrr.co/join){: .button}
+[Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

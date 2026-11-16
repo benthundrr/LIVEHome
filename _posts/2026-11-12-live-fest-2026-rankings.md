@@ -116,4 +116,4 @@ A manager can help you turn that page into a week you can actually host. At Thun
 > **Heads up** Screenshot the rate on your campaign page before a round starts. Videos and rules agree on the rates above, and a later in-app update is the one that counts.
 {: .callout .warn}
 
-[Apply to join Thundrr](https://www.thundrr.co/join){: .button}
+[Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

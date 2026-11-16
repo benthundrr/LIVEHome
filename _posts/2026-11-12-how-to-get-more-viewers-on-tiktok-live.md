@@ -139,4 +139,4 @@ TikTok decides which LIVEs are recommended. A promise of a viewer count or a pay
 > **Heads up** No agency can place your LIVE on the For You feed. Recommendation stays with TikTok.
 {: .callout .warn}
 
-[Apply to join Thundrr](https://www.thundrr.co/join){: .button}
+[Apply to join Thundrr](https://www.thundrr.co/join/){: .button}
