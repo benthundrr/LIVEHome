@@ -20,6 +20,10 @@ layout: null
     <loc>https://www.thundrr.co/join/</loc>
   </url>
   <url>
+    <loc>https://www.thundrr.co/contact/</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
     <loc>{{ '/blog/' | absolute_url }}</loc>
     {%- if g_lm != '' %}
     <lastmod>{{ g_lm }}</lastmod>

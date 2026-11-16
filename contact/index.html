@@ -1,0 +1,68 @@
+---
+layout: null
+permalink: /contact/
+title: Contact Thundrr
+accent: Thundrr
+seo_title: "Contact Thundrr | TikTok LIVE Agency & Creator Network"
+description: "Contact Thundrr, the TikTok LIVE agency and creator network. Email info@thundrr.co or apply to join as a creator."
+---
+{%- assign g_title_html = page.title | escape -%}
+{%- if page.accent -%}
+  {%- assign g_acc = page.accent | escape -%}
+  {%- assign g_acc_html = '<span class="accent">' | append: g_acc | append: '</span>' -%}
+  {%- assign g_title_html = g_title_html | replace_first: g_acc, g_acc_html -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include guides/head.html %}
+<style>.contact-hero .post-h1{max-width:none}.contact-actions{margin-top:28px}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": {{ page.title | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Thundrr",
+    "url": "https://www.thundrr.co/",
+    "email": "info@thundrr.co"
+  }
+}
+</script>
+</head>
+<body>
+{% include guides/nav.html %}
+
+<main class="page" id="main">
+  <header class="hero-b contact-hero">
+    <div class="shell b-wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span class="here here-keep" aria-current="page">Contact</span>
+      </nav>
+      <div class="live"><span class="live-badge"><i></i>LIVE</span><span class="live-tx">Contact</span></div>
+      <h1 class="post-h1 kin">{{ g_title_html }}</h1>
+      <p class="lede">Thundrr is a TikTok LIVE agency and creator network. For questions, press, or brand inquiries, email us.</p>
+      <div class="contact-actions">
+        <a class="btn btn-1" href="mailto:info@thundrr.co">info@thundrr.co</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="shell b-wrap">
+    <div class="prose">
+      <h2 id="join-h">Want to join as a creator?</h2>
+      <p><a class="btn btn-1" href="https://www.thundrr.co/join/">Apply<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></p>
+    </div>
+  </div>
+</main>
+
+{% include guides/footer.html %}
+
+<script src="{{ '/assets/guides/guides.js' | relative_url }}" defer></script>
+</body>
+</html>
