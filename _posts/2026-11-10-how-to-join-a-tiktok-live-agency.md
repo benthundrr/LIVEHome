@@ -5,7 +5,7 @@ seo_title: "How to Join a TikTok LIVE Agency, Step by Step | Thundrr"
 description: "How to join a TikTok LIVE agency: check your eligibility, find your invitation code in Agency Center, and accept the invitation in the TikTok app."
 summary: "Eligibility, your invitation code, and accepting an agency invitation in the TikTok app."
 date: 2026-11-10
-last_modified_at: 2026-11-14
+last_modified_at: 2026-11-17
 icon: manager
 takeaways:
   - "You join a TikTok LIVE agency inside the TikTok app by accepting its invitation."
@@ -47,7 +47,7 @@ Joining a TikTok LIVE agency, which TikTok calls a Creator Network, happens insi
 4. **Accept in the app** Read the invitation, check it's from Thundrr, and accept it.
 {: .steps}
 
-> **Tip** Thundrr's official TikTok account is @thundrr.co. Make sure the invitation matches before you accept.
+> **Tip** Thundrr's TikTok account is @thundrr.co. Make sure the invitation matches before you accept.
 {: .callout .tip}
 
 {% include cta.html title="Ready to apply?" text="Thundrr is free to join, with no fee, no cut of your Diamonds, and no contract." %}
