@@ -7,6 +7,14 @@ url: https://www.thundrr.co
 baseurl: ""
 timezone: America/Los_Angeles
 
+# Legacy Webflow paths. jekyll-redirect-from is on the GitHub Pages whitelist.
+# Each path has a no-slash page and a trailing-slash page so both return 200.
+plugins:
+  - jekyll-redirect-from
+
+redirect_from:
+  json: false
+
 markdown: kramdown
 kramdown:
   input: GFM
