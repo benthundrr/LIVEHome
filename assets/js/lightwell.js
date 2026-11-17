@@ -8,7 +8,6 @@
   if(d.getElementById('viewport')) return;
   if(!d.body || !d.body.classList.contains('lw-site')) return;
 
-  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   root.classList.add('anim');
 
   var REGIONS = {
@@ -26,104 +25,62 @@
     return null;
   }
 
-  /* ---------- dust in the shaft ---------- */
+  /* ---------- dust in the light: drawn once, then a still background ---------- */
   (function(){
-    var cv = d.querySelector('.lw-dust'), shaft = d.querySelector('.lw-shaft');
-    if(!cv || !shaft || !cv.getContext) return;
-    var ctx = cv.getContext('2d');
+    var host = d.querySelector('.lw-dust'), shaft = d.querySelector('.lw-shaft');
+    if(!host || !shaft) return;
     var coarse = window.matchMedia('(pointer:coarse)').matches;
     var TILT = 14 * Math.PI / 180;
     var DX = Math.sin(TILT), DY = Math.cos(TILT);
-    var W = 0, H = 0, g = null, parts = [], raf = 0, prev = 0;
+    var url = null;
 
-    function measure(){
-      var dpr = 1;
-      W = window.innerWidth; H = window.innerHeight;
-      cv.width = Math.round(W * dpr);
-      cv.height = Math.round(H * dpr);
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      ctx.fillStyle = 'rgb(228,236,255)';
-      g = { x:shaft.offsetLeft + shaft.offsetWidth / 2, y:shaft.offsetTop,
-            half:shaft.offsetWidth / 2, len:shaft.offsetHeight };
-    }
-    function light(x, y){
-      var rx = x - g.x, ry = y - g.y;
-      var t = rx * DX + ry * DY;
-      if(t < 0) return 0;
-      var across = 1 - Math.abs(rx * DY - ry * DX) / (g.half * 0.9);
-      if(across <= 0) return 0;
-      var along = 1 - t / (g.len * 0.8);
-      if(along <= 0) return 0;
-      return across * across * (3 - 2 * across) * along;
-    }
-    function spawn(p){
-      for(var k = 0; k < 6; k++){
-        if(Math.random() < 0.78){
-          var t = Math.random() * g.len * 0.72, s = (Math.random() * 2 - 1) * g.half * 0.75;
-          p.x = g.x + t * DX + s * DY;
-          p.y = g.y + t * DY - s * DX;
-        } else {
-          p.x = Math.random() * W;
-          p.y = Math.random() * H;
-        }
-        if(p.x > 0 && p.x < W && p.y > 0 && p.y < H) break;
+    function paint(){
+      var VW = window.innerWidth, VH = window.innerHeight;
+      var g = { x:shaft.offsetLeft + shaft.offsetWidth / 2, y:shaft.offsetTop,
+                half:shaft.offsetWidth / 2, len:shaft.offsetHeight };
+      function light(x, y){
+        var rx = x - g.x, ry = y - g.y, t = rx * DX + ry * DY;
+        if(t < 0) return 0;
+        var across = 1 - Math.abs(rx * DY - ry * DX) / (g.half * 0.9);
+        if(across <= 0) return 0;
+        var along = 1 - t / (g.len * 0.8);
+        if(along <= 0) return 0;
+        return across * across * (3 - 2 * across) * along;
       }
-      p.r  = 0.45 + Math.random() * 1.1;
-      p.vx = (Math.random() - 0.5) * 6;
-      p.vy = (Math.random() - 0.3) * 5;
-      p.ph = Math.random() * 6.2832;
-      p.tw = 0.4 + Math.random() * 0.9;
-      return p;
-    }
-    var tint = 0;
-    function draw(dt, now){
-      var want = root.classList.contains('lw-blue') ? 1 : 0;
-      tint += (want - tint) * Math.min(dt * 2.5, 1);
-      ctx.fillStyle = 'rgb(' + Math.round(228 - 118 * tint) + ',' + Math.round(236 - 76 * tint) + ',255)';
-      ctx.clearRect(0, 0, W, H);
-      for(var i = 0; i < parts.length; i++){
-        var p = parts[i];
-        p.x += (p.vx + Math.sin(now * 0.0004 + p.ph) * 2.2) * dt;
-        p.y += p.vy * dt;
-        if(p.x < -20 || p.x > W + 20 || p.y < -20 || p.y > H + 20){ spawn(p); continue; }
-        var a = (0.035 + light(p.x, p.y) * 0.62) * (0.65 + 0.35 * Math.sin(now * 0.0012 * p.tw + p.ph));
-        if(a < 0.02) continue;
+      var cv = d.createElement('canvas');
+      if(!cv.getContext) return;
+      cv.width = VW; cv.height = VH;
+      var ctx = cv.getContext('2d');
+      ctx.fillStyle = 'rgb(228,236,255)';
+      var n = 80 * (coarse ? 0.6 : 1) * (VW < 768 ? 0.7 : 1);
+      for(var i = 0; i < n; i++){
+        var x, y;
+        if(Math.random() < 0.8){
+          var t = Math.random() * g.len * 0.72, sd = (Math.random() * 2 - 1) * g.half * 0.75;
+          x = g.x + t * DX + sd * DY; y = g.y + t * DY - sd * DX;
+        } else { x = Math.random() * VW; y = Math.random() * VH; }
+        var a = (0.04 + light(x, y) * 0.62) * (0.6 + Math.random() * 0.4);
+        if(a < 0.03) continue;
         ctx.globalAlpha = a;
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, 6.2832);
+        ctx.arc(x, y, 0.45 + Math.random() * 1.2, 0, 6.2832);
         ctx.fill();
       }
-      ctx.globalAlpha = 1;
+      cv.toBlob(function(blob){
+        if(!blob) return;
+        if(url) URL.revokeObjectURL(url);
+        url = URL.createObjectURL(blob);
+        host.style.backgroundImage = 'url(' + url + ')';
+      });
     }
-    function loop(now){
-      raf = requestAnimationFrame(loop);
-      if(now - prev < 40) return;
-      if(window.__scrolling){ prev = now; return; }
-      var dt = prev ? Math.min((now - prev) / 1000, 0.1) : 0.033;
-      prev = now;
-      draw(dt, now);
-    }
-    function start(){ if(!raf && !reduce){ prev = 0; raf = requestAnimationFrame(loop); } }
-    function stop(){ if(raf){ cancelAnimationFrame(raf); raf = 0; } }
 
-    measure();
-    for(var i = 0, n = coarse ? 24 : (W < 768 ? 34 : 64); i < n; i++) parts.push(spawn({}));
-    if(reduce) draw(0, 0); else start();
-    d.addEventListener('visibilitychange', function(){ if(d.hidden) stop(); else start(); });
-    var scrollIdle;
-    window.addEventListener('scroll', function(){
-      window.__scrolling = true;
-      clearTimeout(scrollIdle);
-      scrollIdle = setTimeout(function(){ window.__scrolling = false; }, 180);
-    }, { passive:true });
-    var lastW = W, rzd;
+    paint();
+    var lastW = window.innerWidth, resizeTimer;
     window.addEventListener('resize', function(){
-      clearTimeout(rzd);
-      rzd = setTimeout(function(){
-        measure();
-        if(W !== lastW){ lastW = W; parts.forEach(spawn); }
-        if(reduce) draw(0, 0);
-      }, 160);
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function(){
+        if(window.innerWidth !== lastW){ lastW = window.innerWidth; paint(); }
+      }, 200);
     }, { passive:true });
   })();
 
