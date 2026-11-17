@@ -573,8 +573,7 @@ html:not(.anim) .word>i,html:not(.anim) .split.kinetic .kch,html:not(.anim) .rai
   opacity:1;transform:none;filter:none;clip-path:none}
 
 /* off-screen and hidden-tab effects hold still */
-html.lw-paused *,html.lw-paused *::before,html.lw-paused *::after,
-.lw-off,.lw-off *,.lw-off *::before,.lw-off *::after{animation-play-state:paused!important}
+html.lw-paused *,html.lw-paused *::before,html.lw-paused *::after{animation-play-state:paused!important}
 
 /* presses sink, then release slowly */
 .btn:active,.nav-cta:active,.sheet-cta:active,.region-chip:active,.home-btn:active,.homefab.is-on:active,.top.is-on:active,
@@ -1212,6 +1211,22 @@ html.anim .sheet.is-open>*{animation:lwIn .46s var(--ease) both}
 .tword::after{filter:none;top:-4%;bottom:-4%;left:-8%;width:46%;
   background:radial-gradient(closest-side,rgba(157,184,255,.38) 0%,rgba(157,184,255,.12) 55%,rgba(157,184,255,0) 100%)}
 .tt-hearts svg{filter:none}
+
+/* ============================================================
+   LIGHTWELL · build 08064 — Chrome pass 2
+   · the room (shade, clouds, light, dust) is one still layer: no canvas,
+     nothing in the background animates, so Chrome never repaints it
+   · off-screen pausing touches only the things that animate,
+     so a section entering or leaving the screen doesn't restyle
+     every element inside it
+   ============================================================ */
+.lw-dust{position:absolute;inset:0;width:auto;height:auto;display:block;background:no-repeat 0 0 / 100% 100%;will-change:auto;animation:none}
+/* the room holds still: one layer, painted once */
+.lw-cloud{animation:none;will-change:auto}
+
+.lw-off .vig *,.lw-off .vig *::after,.lw-off .tt-hearts i,.lw-off .live-dot,.lw-off .live-dot::before,.lw-off .marquee-track,
+.lw-off .pcard,.lw-off .gb-galaxy,.lw-off .ebar-glove,.lw-off .lp-live i,.lw-off .tword::before,.lw-off .tword::after,
+.lw-off .fcard,.marquee.lw-off .marquee-track{animation-play-state:paused!important}
 
 /* ============================================================
    LIGHTWELL · the rest of the site
