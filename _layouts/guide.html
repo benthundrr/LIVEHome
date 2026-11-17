@@ -93,7 +93,7 @@
 </script>
 {%- endif %}
 </head>
-<body>
+<body class="lw-site">
 {% include guides/nav.html %}
 
 <main class="page" id="main">
@@ -210,6 +210,7 @@
   <nav class="b-sheet-nav" data-toc aria-label="In this guide">{{ g_toc }}</nav>
 </div>
 
+<script src="{{ '/assets/js/lightwell.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/guides/guides.js' | relative_url }}" defer></script>
 </body>
 </html>

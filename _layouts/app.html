@@ -55,7 +55,7 @@
 </script>
 {%- endif %}
 </head>
-<body>
+<body class="lw-site">
 {% include guides/nav.html %}
 
 <main class="page" id="main">
@@ -92,6 +92,7 @@
 
 {% include guides/footer.html %}
 
+<script src="{{ '/assets/js/lightwell.js' | relative_url }}" defer></script>
 <script src="{{ '/assets/guides/guides.js' | relative_url }}" defer></script>
 </body>
 </html>
