@@ -1,44 +1,98 @@
 <a class="skip" href="#main">Skip to content</a>
 <div class="prog" id="prog"></div>
-<div class="atmos" aria-hidden="true"><div class="atmos-mesh"></div><div class="atmos-grid"></div><div class="atmos-vig"></div></div>
+<div class="atmos" aria-hidden="true">
+  <div class="lw-room"></div>
+  <div class="lw-clouds"><i class="lw-cloud c1"></i><i class="lw-cloud c2"></i></div>
+  <div class="lw-vig"></div>
+  <div class="lw-shaft"></div>
+  <div class="lw-shaft lw-shaft-blue"></div>
+  <canvas class="lw-dust"></canvas>
+</div>
 
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="Thundrr home">
       <img src="{{ site.guides.logo }}" alt="Thundrr">
     </a>
-    <nav class="nav-links" aria-label="Site">
-      <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
+
+    <a class="home-btn" href="/#live-home" aria-label="Back to home"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/></svg><span>Home</span></a>
+
+    <div class="switch" id="switch" role="tablist" aria-label="Choose program">
+      <span class="switch-thumb" id="switchThumb"></span>
+      <a class="switch-btn is-on" role="tab" aria-selected="true" href="/#live-home" data-view="live">LIVE</a>
+      <a class="switch-btn" role="tab" aria-selected="false" href="/#shop-home" data-view="shop">Shop</a>
+      <a class="switch-btn" role="tab" aria-selected="false" href="/#go-home" data-view="go">GO</a>
+    </div>
+
+    <nav class="nav-links" id="navLinks" aria-label="Sections">
       <a class="nav-link" href="/#live-app">The App</a>
       <a class="nav-link" href="/#live-process">Onboarding</a>
       <a class="nav-link" href="/#live-team">Team</a>
-      <a class="nav-link" href="/#live-divisions">Divisions</a>
+      <a class="nav-link" href="/#live-divisions">Programs</a>
       <a class="nav-link" href="/#live-why">Benefits</a>
-      <a class="nav-link{% if page.url == '/app/' %} is-active{% endif %}" href="/app/"{% if page.url == '/app/' %} aria-current="page"{% endif %}>App</a>
       <a class="nav-link{% if page.url == '/blog/' or page.layout == 'guide' %} is-active{% endif %}" href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' or page.layout == 'guide' %} aria-current="page"{% endif %}>Guides</a>
     </nav>
-    <a class="nav-cta" href="{{ site.guides.join_url }}">
+
+    <button class="region-chip" id="regionChip" type="button" aria-haspopup="dialog" aria-controls="regionModal">
+      <span class="flag" data-region-flag>🇺🇸</span>
+      <span data-region-short>US</span>
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+
+    <a class="nav-cta" href="{{ site.guides.join_url }}" data-apply>
       <span>Apply now</span>
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
-    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><span></span><span></span><span></span></button>
+
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sheet"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <div class="sheet" id="sheet">
-  <p class="sheet-label">Menu</p>
-  <nav class="sheet-nav" aria-label="Site">
-    <a href="{{ '/' | relative_url }}">Home<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
-    <a href="/#live-app">The App<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
-    <a href="/#live-process">Onboarding<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
-    <a href="/#live-team">Team<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
-    <a href="/#live-divisions">Divisions<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
-    <a href="/#live-why">Benefits<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
-    <a href="/app/"{% if page.url == '/app/' %} class="is-active" aria-current="page"{% endif %}>App<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
-    <a href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' or page.layout == 'guide' %} class="is-active" aria-current="page"{% endif %}>Guides<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></a>
+  <p class="sheet-label">Program</p>
+  <div class="sheet-switch" id="sheetSwitch">
+    <a class="switch-btn is-on" href="/#live-home" data-view="live">LIVE</a>
+    <a class="switch-btn" href="/#shop-home" data-view="shop">Shop</a>
+    <a class="switch-btn" href="/#go-home" data-view="go">GO</a>
+  </div>
+  <p class="sheet-label">Apply from</p>
+  <div class="sheet-regions" id="sheetRegions">
+    <button type="button" data-region="us" data-flag="🇺🇸" data-short="US"><span class="flag">🇺🇸</span><span>Thundrr US</span></button>
+    <button type="button" data-region="latam" data-flag="🌎" data-short="LATAM"><span class="flag">🌎</span><span>Thundrr LATAM</span></button>
+    <button type="button" data-region="uk" data-flag="🇬🇧" data-short="UK"><span class="flag">🇬🇧</span><span>Thundrr UK</span></button>
+    <button type="button" data-region="au" data-flag="🇦🇺" data-short="AU/NZ"><span class="flag">🇦🇺</span><span>Thundrr AU/NZ</span></button>
+  </div>
+  <p class="sheet-label">Sections</p>
+  <nav class="sheet-nav" id="sheetNav" aria-label="Sections">
+    <a href="/#live-home"><span class="sn" aria-hidden="true">+</span><span>Home</span><svg class="sa" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="/#live-app"><span class="sn" aria-hidden="true">01</span><span>The App</span><svg class="sa" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="/#live-process"><span class="sn" aria-hidden="true">02</span><span>Onboarding</span><svg class="sa" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="/#live-team"><span class="sn" aria-hidden="true">03</span><span>Team</span><svg class="sa" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="/#live-divisions"><span class="sn" aria-hidden="true">04</span><span>Programs</span><svg class="sa" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="/#live-why"><span class="sn" aria-hidden="true">05</span><span>Benefits</span><svg class="sa" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' or page.layout == 'guide' %} class="is-active" aria-current="page"{% endif %}><span class="sn" aria-hidden="true">↗</span><span>Guides</span><svg class="sa" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </nav>
-  <a class="sheet-cta" href="{{ site.guides.join_url }}">
-    <span>Apply now</span>
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-  </a>
+  <div class="sheet-dock">
+    <a class="sheet-cta" href="{{ site.guides.join_url }}" data-apply>
+      <span>Apply now</span>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</div>
+
+<div class="rmodal" id="regionModal" role="dialog" aria-modal="true" aria-labelledby="regionTitle" aria-hidden="true">
+  <div class="rmodal-box">
+    <button class="modal-x" id="regionX" type="button" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <p class="rmodal-title" id="regionTitle">Where are you applying from?</p>
+    <p class="rmodal-sub">Pick your region and we'll open the right TikTok LIVE application for it.</p>
+    <div class="rgrid" id="rgrid">
+      <a class="rcard" data-region="us" href="https://www.tiktok.com/t/ZTDDdEtB8/" target="_blank" rel="noopener"><span class="flag">🇺🇸</span><span><b>United States</b><span>Los Angeles HQ · PT hours</span></span><svg class="go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a class="rcard" data-region="latam" href="https://www.tiktok.com/t/ZMk1B9spE/" target="_blank" rel="noopener"><span class="flag">🌎</span><span><b>Latin America</b><span>Español y português</span></span><svg class="go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a class="rcard" data-region="uk" href="https://www.tiktok.com/t/ZMk1BQ1xH/" target="_blank" rel="noopener"><span class="flag">🇬🇧</span><span><b>United Kingdom</b><span>GMT / BST hours</span></span><svg class="go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a class="rcard" data-region="au" href="https://www.tiktok.com/t/ZS6RL85mg/" target="_blank" rel="noopener"><span class="flag">🇦🇺</span><span><b>Australia</b><span>AEST hours</span></span><svg class="go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <p class="rmodal-note">Want to manage creators instead of streaming? <a href="https://wkf.ms/3COWZi3" target="_blank" rel="noopener">Apply as a creator manager</a>.</p>
+  </div>
 </div>
