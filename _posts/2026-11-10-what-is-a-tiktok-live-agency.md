@@ -2,22 +2,21 @@
 title: "What is a TikTok LIVE agency?"
 accent: "TikTok LIVE agency?"
 seo_title: "What Is a TikTok LIVE Agency? | Thundrr"
-description: "A TikTok LIVE agency, or Creator Network, is an independent company that coaches LIVE creators. What agencies do, how they're paid, and who should join."
+description: "A TikTok LIVE agency (also called a TikTok agency or Creator Network) coaches LIVE creators. What they do, how they're paid, and who should join."
 summary: "What LIVE agencies do, how they get paid, and how to tell if joining one is right for you."
 date: 2026-11-10
-last_modified_at: 2026-11-15
+last_modified_at: 2026-11-18
 icon: agency
 takeaways:
   - "A TikTok LIVE agency, which TikTok calls a Creator Network, is an independent company that helps LIVE creators grow."
   - "TikTok says Creator Networks are independent third parties, and it doesn't endorse or sponsor them."
   - "You join inside the TikTok app by accepting an agency invitation."
   - "A legitimate network shouldn't charge you to join. Thundrr is free to join, with no fee, no cut of your Diamonds, and no contract."
-  - "At Thundrr, creators keep their full share of their earnings, and TikTok pays the agency separately."
 faq:
   - q: "Is a Creator Network the same as a TikTok LIVE agency?"
     a: "Yes. Creator Network is TikTok's official term, and TikTok notes that networks are sometimes referred to as TikTok LIVE agencies."
   - q: "Does it cost money to join a TikTok LIVE agency?"
-    a: "It shouldn't. A legitimate network doesn't charge a joining fee. Thundrr is free to join, with no fee, no cut of your Diamonds, and no contract, and TikTok pays the agency separately."
+    a: "It shouldn't. A legitimate network doesn't charge a joining fee. Thundrr is free to join, with no fee, no cut of your Diamonds, and no contract."
   - q: "Are TikTok LIVE agencies affiliated with TikTok?"
     a: "No. Networks register through TikTok's LIVE Backstage platform and TikTok reviews them, but TikTok says they are independent third-party businesses that it doesn't endorse or sponsor."
   - q: "How do I join a TikTok LIVE agency?"
@@ -28,7 +27,7 @@ faq:
 
 ## What a Creator Network is, in TikTok's terms
 
-A TikTok LIVE agency, which TikTok calls a LIVE Creator Network, is an independent company that helps TikTok LIVE creators grow. It coaches creators on streaming, scheduling, LIVE Battles and audience engagement, and helps them understand TikTok's LIVE policies.
+A TikTok LIVE agency, which TikTok calls a LIVE Creator Network, is an independent company that helps TikTok LIVE creators grow. TikTok agency and TikTok LIVE agency are commonly used for the same thing: a Creator Network. It coaches creators on streaming, scheduling, LIVE Battles and audience engagement, and helps them understand TikTok's LIVE policies.
 
 In its [guide to Creator Networks](https://www.tiktok.com/live/creator-networks/en/blog/tiktok-live-creator-networks-guide), TikTok describes them as "third parties independent from TikTok dedicated to supporting creators through livestream operations, educational resources, and development guidance." It adds that they are "sometimes referred to as TikTok LIVE agencies."
 
@@ -41,9 +40,9 @@ In its [guide to Creator Networks](https://www.tiktok.com/live/creator-networks/
 
 TikTok lists the kinds of support a network may offer: onboarding, help planning and scheduling LIVEs, moderation guidance, performance insights, community support, and policy guidance. Its [comparison of networks and solo creators](https://www.tiktok.com/live/creator-networks/en/blog/tiktok-live-creator-network-vs-individual-creator) also mentions creative training and account safety support.
 
-At Thundrr, every creator gets a dedicated creator manager. Managers keep a daily, direct, 1:1 line of communication with each creator in the THUNDRR LIVE app's messages at app.thundrr.co.
+At Thundrr, every creator gets a dedicated creator manager.
 
-The app also puts your LIVE in one place:
+The THUNDRR LIVE app puts your LIVE in one place:
 
 - **Your dashboard** Diamonds, LIVE hours and active days, plus LIVE recaps and your performance history.
 - **Coaching any time** THUNDRR AI, the in-app LIVE coach, and the LIVE Guides.
@@ -61,7 +60,7 @@ In 2022, Rest of World profiled the violinist Omari Dillard, then a Thundrr crea
 
 On TikTok LIVE, viewers use Coins to send virtual Gifts, and Gifts generate Diamonds for the creator. TikTok's [Help Center](https://support.tiktok.com/en/live-gifts-wallet/tiktok-live/live-gifts-on-tiktok) says the number of Diamonds is one of several factors behind a creator's LIVE rewards under its Reward Policy. TikTok sets those rewards.
 
-At Thundrr, creators keep their full share of their earnings, and TikTok pays the agency separately. Business Insider reported this model in 2023, when a TikTok spokesperson said the program was free for creators to join and that creators kept their full share of gift revenue.
+Business Insider reported in 2023 that a TikTok spokesperson said the program was free for creators to join.
 
 Thundrr is free to join, with no fee, no cut of your Diamonds, and no contract.
 
@@ -77,7 +76,6 @@ TikTok says networks work alongside creators while creators keep their own creat
 | What you get | On your own | With Thundrr |
 |---|---|---|
 | A dedicated creator manager | No | Yes |
-| A daily 1:1 line to your manager | No | Yes |
 | A creator community in the THUNDRR app | No | Yes |
 | Your LIVE stats and recaps in one app | No | Yes |
 | Coaching on schedule and LIVE Battles | No | Yes |
