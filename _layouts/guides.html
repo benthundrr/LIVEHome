@@ -20,6 +20,58 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page.title | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "description": {{ page.summary | jsonify }},
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {%- assign g_seen = "|" -%}
+      {%- assign g_pos = 0 -%}
+      {%- assign g_comma = false -%}
+      {%- comment -%}Newest three first, then the rest in the order the topic sections show them, each guide once.{%- endcomment -%}
+      {%- for p in site.posts limit:3 -%}
+        {%- assign g_pos = g_pos | plus: 1 -%}
+        {%- assign g_seen = g_seen | append: p.slug | append: "|" -%}
+        {%- if g_comma -%},{%- endif -%}
+        {"@type":"ListItem","position":{{ g_pos }},"url":{{ p.url | absolute_url | jsonify }},"name":{{ p.title | jsonify }}}
+        {%- assign g_comma = true -%}
+      {%- endfor -%}
+      {%- for topic in site.data.guide_topics.order -%}
+        {%- for p in site.posts -%}
+          {%- assign g_topic = site.data.guide_topics.by_slug[p.slug] -%}
+          {%- if g_topic == topic.id -%}
+            {%- assign g_mark = "|" | append: p.slug | append: "|" -%}
+            {%- unless g_seen contains g_mark -%}
+              {%- assign g_pos = g_pos | plus: 1 -%}
+              {%- assign g_seen = g_seen | append: p.slug | append: "|" -%}
+              {%- if g_comma -%},{%- endif -%}
+              {"@type":"ListItem","position":{{ g_pos }},"url":{{ p.url | absolute_url | jsonify }},"name":{{ p.title | jsonify }}}
+              {%- assign g_comma = true -%}
+            {%- endunless -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+      {%- for p in site.posts -%}
+        {%- unless site.data.guide_topics.by_slug[p.slug] -%}
+          {%- assign g_mark = "|" | append: p.slug | append: "|" -%}
+          {%- unless g_seen contains g_mark -%}
+            {%- assign g_pos = g_pos | plus: 1 -%}
+            {%- assign g_seen = g_seen | append: p.slug | append: "|" -%}
+            {%- if g_comma -%},{%- endif -%}
+            {"@type":"ListItem","position":{{ g_pos }},"url":{{ p.url | absolute_url | jsonify }},"name":{{ p.title | jsonify }}}
+            {%- assign g_comma = true -%}
+          {%- endunless -%}
+        {%- endunless -%}
+      {%- endfor -%}
+    ]
+  }
+}
+</script>
 </head>
 <body class="lw-site">
 {% include guides/nav.html %}
@@ -38,17 +90,69 @@
     </div>
   </header>
 
-  <section class="shell gl-wrap" aria-label="All guides">
-    {%- if site.posts.size > 0 %}
+  {%- if site.posts.size > 0 -%}
+  <section class="shell gl-wrap g-topic" aria-labelledby="g-newest">
+    <h2 class="rel-h" id="g-newest">Newest guides</h2>
+    {%- if site.posts.size >= 3 -%}
+    <p class="lede">The three most recent guides.</p>
+    {%- else -%}
+    <p class="lede">The most recent guides.</p>
+    {%- endif -%}
     <div class="g-grid">
-      {%- for p in site.posts %}
+      {%- for p in site.posts limit:3 -%}
       {% include guides/card.html post=p %}
-      {%- endfor %}
+      {%- endfor -%}
     </div>
-    {%- else %}
-    <p class="g-empty">The first guides are on the way.</p>
-    {%- endif %}
   </section>
+
+  {%- for topic in site.data.guide_topics.order -%}
+    {%- assign g_has = false -%}
+    {%- for p in site.posts -%}
+      {%- assign g_topic = site.data.guide_topics.by_slug[p.slug] -%}
+      {%- if g_topic == topic.id -%}
+        {%- assign g_has = true -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if g_has -%}
+  <section class="shell gl-wrap g-topic" aria-labelledby="g-{{ topic.id }}">
+    <h2 class="rel-h" id="g-{{ topic.id }}">{{ topic.title | escape }}</h2>
+    <p class="lede">{{ topic.intro | escape }}</p>
+    <div class="g-grid">
+      {%- for p in site.posts -%}
+        {%- assign g_topic = site.data.guide_topics.by_slug[p.slug] -%}
+        {%- if g_topic == topic.id -%}
+      {% include guides/card.html post=p %}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign g_more = false -%}
+  {%- for p in site.posts -%}
+    {%- unless site.data.guide_topics.by_slug[p.slug] -%}
+      {%- assign g_more = true -%}
+    {%- endunless -%}
+  {%- endfor -%}
+  {%- if g_more -%}
+  <section class="shell gl-wrap g-topic" aria-labelledby="g-more">
+    <h2 class="rel-h" id="g-more">{{ site.data.guide_topics.more.title | default: "More guides" | escape }}</h2>
+    <p class="lede">{{ site.data.guide_topics.more.intro | default: "Guides that do not fall under the topics above." | escape }}</p>
+    <div class="g-grid">
+      {%- for p in site.posts -%}
+        {%- unless site.data.guide_topics.by_slug[p.slug] -%}
+      {% include guides/card.html post=p %}
+        {%- endunless -%}
+      {%- endfor -%}
+    </div>
+  </section>
+  {%- endif -%}
+  {%- else -%}
+  <section class="shell gl-wrap" aria-label="All guides">
+    <p class="g-empty">The first guides are on the way.</p>
+  </section>
+  {%- endif -%}
 
   {% include guides/end-cta.html %}
 </main>

@@ -1,0 +1,35 @@
+# Topic hub for /blog/. Keyed by post slug so new files in _posts
+# do not need a front-matter edit. A slug with no entry below is filed
+# under More guides, which stays hidden when every post is mapped.
+# The index lists posts inside a topic newest first.
+
+order:
+  - id: agencies
+    title: TikTok LIVE agencies
+    intro: "What a TikTok LIVE agency is, how joining and leaving works, how an agency compares with going solo, and whether an agency takes a cut of Diamonds."
+  - id: growing
+    title: Growing your TikTok LIVE
+    intro: "What TikTok LIVE requires, how to get more viewers and gifts, how to win Battles, and how Diamonds relate to USD."
+  - id: fest
+    title: TikTok LIVE Fest 2026
+    intro: "What TikTok LIVE Fest 2026 is, the rules for taking part, and how points and rankings work."
+
+more:
+  title: More guides
+  intro: "Guides that do not fall under the topics above."
+
+by_slug:
+  what-is-a-tiktok-live-agency: agencies
+  are-tiktok-live-agencies-legit: agencies
+  how-to-join-a-tiktok-live-agency: agencies
+  how-to-leave-a-tiktok-live-agency: agencies
+  tiktok-live-agency-vs-going-solo: agencies
+  do-tiktok-live-agencies-take-your-diamonds: agencies
+  tiktok-live-requirements: growing
+  how-to-get-more-viewers-on-tiktok-live: growing
+  how-to-get-more-gifts-on-tiktok-live: growing
+  how-to-win-tiktok-live-battles: growing
+  tiktok-diamonds-to-usd: growing
+  tiktok-live-fest-2026: fest
+  live-fest-2026-rules: fest
+  live-fest-2026-rankings: fest
