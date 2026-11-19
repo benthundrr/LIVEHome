@@ -446,6 +446,9 @@ html.js .graphic.in .gc-msg:nth-child(4){transition-delay:1.5s}
 .gl-hero .post-h1{font-size:clamp(38px,6vw,72px);max-width:none}
 .g-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .g-empty{padding:40px 0;font-size:16px;color:var(--text-muted)}
+.g-topic + .g-topic{margin-top:36px}
+.g-topic .lede{margin-top:8px;max-width:40em}
+.g-topic .g-grid{margin-top:18px}
 
 /* closing CTA */
 .end{padding:56px 0 8px}
@@ -589,6 +592,7 @@ footer{position:relative;z-index:2;padding:88px 0 0;border-top:1px solid var(--b
   .faq-a{padding-right:0}
   .rel-grid{grid-auto-columns:82%}
   .g-grid{grid-template-columns:1fr;gap:14px}
+  .g-topic + .g-topic{margin-top:28px}
   .end{padding:44px 0 4px}
   .cta{padding:48px 22px;border-radius:var(--r-lg)}
   .cta-p{font-size:15px}
