@@ -1,11 +1,11 @@
 ---
 title: "Are TikTok LIVE agencies legit?"
 accent: "agencies legit?"
-seo_title: "Are TikTok LIVE Agencies Legit? Red Flags | Thundrr"
-description: "Real TikTok LIVE agencies exist, and so do scams. Learn the red flags, how a real agency invitation works in the app, and how to verify any network."
+seo_title: "Are TikTok LIVE Agencies Legit? How to Spot a Scam | Thundrr"
+description: "Yes, real TikTok LIVE agencies and creator networks exist, and so do scams. Spot red flags, see how a real invite works in the app, and verify any agency."
 summary: "Red flags, how a real invitation works, and how to check any agency in a few minutes."
 date: 2026-11-10
-last_modified_at: 2026-11-15
+last_modified_at: 2026-11-20
 icon: safety
 takeaways:
   - "Real TikTok LIVE agencies, which TikTok calls Creator Networks, exist and are independent of TikTok."
