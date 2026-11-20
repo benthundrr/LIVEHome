@@ -7,6 +7,7 @@ summary: "What you get on your own, what a creator network adds, the trade-offs,
 date: 2026-11-19
 last_modified_at: 2026-11-19
 icon: agency
+image: "/assets/img/og/tiktok-live-agency-vs-going-solo.jpg"
 takeaways:
   - "Going solo, you still get TikTok's own LIVE tools, including LIVE Gifts, LIVE matches, LIVE Events and TikTok LIVE Campaigns."
   - "TikTok describes agencies, which it calls Creator Networks, as third parties independent from TikTok that support creators with LIVE operations, resources and guidance."

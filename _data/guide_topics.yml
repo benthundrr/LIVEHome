@@ -6,20 +6,54 @@
 order:
   - id: news
     title: TikTok LIVE news
+    label: LIVE news
     intro: "TikTok's latest rules for LIVE creators, including giveaways, free gifts and promotional claims."
   - id: agencies
     title: TikTok LIVE agencies
+    label: Agencies
     intro: "What a TikTok LIVE agency is, how joining and leaving works, how an agency compares with going solo, and whether an agency takes a cut of Diamonds."
   - id: growing
     title: Growing your TikTok LIVE
+    label: Grow your LIVE
     intro: "What TikTok LIVE requires, how to get more viewers and gifts, how to win Battles, and how Diamonds relate to USD."
   - id: fest
     title: TikTok LIVE Fest 2026
+    label: LIVE Fest 2026
     intro: "What TikTok LIVE Fest 2026 is, the rules for taking part, and how points and rankings work."
 
 more:
   title: More guides
+  label: Guides
   intro: "Guides that do not fall under the topics above."
+
+# Card photos. cover_frame in a post wins. Otherwise the cover hashes the
+# slug and picks from that topic's pool, so neighbouring cards vary and a
+# new post does not move the others. Pools are f01–f07 and f09 only.
+frames:
+  pools:
+    fest: [f06, f07, f05]
+    growing: [f01, f02]
+    agencies: [f04, f09]
+    news: [f03]
+    fallback: [f01, f02, f03, f04, f05, f06, f07, f09]
+  file:
+    f01: f01-creator-ringlight.webp
+    f02: f02-creator-couch-ringlight.webp
+    f03: f03-neon-welcome.webp
+    f04: f04-creator-dinner.webp
+    f05: f05-event-night.webp
+    f06: f06-museum-hall.webp
+    f07: f07-museum-dinner-stage.webp
+    f09: f09-team-dinner.webp
+  pos:
+    f01: "40% 30%"
+    f02: "55% 50%"
+    f03: "50% 30%"
+    f04: "60% 50%"
+    f05: "68% 28%"
+    f06: "50% 50%"
+    f07: "50% 50%"
+    f09: "64% 22%"
 
 by_slug:
   tiktok-live-giveaway-rules: news

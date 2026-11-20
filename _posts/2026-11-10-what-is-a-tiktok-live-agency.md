@@ -7,6 +7,7 @@ summary: "What LIVE agencies do, how they get paid, and how to tell if joining o
 date: 2026-11-10
 last_modified_at: 2026-11-18
 icon: agency
+image: "/assets/img/og/what-is-a-tiktok-live-agency.jpg"
 takeaways:
   - "A TikTok LIVE agency, which TikTok calls a Creator Network, is an independent company that helps LIVE creators grow."
   - "TikTok says Creator Networks are independent third parties, and it doesn't endorse or sponsor them."

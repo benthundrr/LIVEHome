@@ -7,6 +7,7 @@ summary: "What TikTok requires to go LIVE, what LIVE Gifts add, and why the LIVE
 date: 2026-11-17
 last_modified_at: 2026-11-17
 icon: safety
+image: "/assets/img/og/tiktok-live-requirements.jpg"
 takeaways:
   - "TikTok says you must be at least 18 to go LIVE, and it may ask you to confirm your age first."
   - "TikTok's Help Center lists 1,000 followers to go LIVE, and says that number may vary across regions."

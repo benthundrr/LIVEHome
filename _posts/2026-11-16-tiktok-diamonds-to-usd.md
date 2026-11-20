@@ -7,6 +7,8 @@ summary: "How Coins, Gifts and Diamonds connect, what TikTok publishes about the
 date: 2026-11-16
 last_modified_at: 2026-11-16
 icon: diamond
+cover_frame: f02
+image: "/assets/img/og/tiktok-diamonds-to-usd.jpg"
 takeaways:
   - "Viewers buy Coins, spend them on Gifts, and TikTok converts the Gifts you receive into Diamonds."
   - "TikTok sets the Gift-to-Diamond conversion rate and can change it, so there's no fixed rate to quote."

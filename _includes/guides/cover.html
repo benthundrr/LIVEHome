@@ -1,0 +1,63 @@
+{%- comment -%}
+  C2 variant 1 card cover. Frame: cover_frame, else a stable hash of the slug
+  into that topic's pool in _data/guide_topics.yml. Title: cover_title, else
+  the title before the first colon. The accent phrase is wrapped when it sits
+  inside that title. Keep this hash in sync with scripts/build_og.py.
+{%- endcomment -%}
+{%- assign cv_post = include.post -%}
+{%- assign cv_topic = site.data.guide_topics.by_slug[cv_post.slug] -%}
+{%- assign cv_pool = site.data.guide_topics.frames.pools[cv_topic] -%}
+{%- if cv_pool == nil or cv_pool.size == 0 -%}
+  {%- assign cv_pool = site.data.guide_topics.frames.pools.fallback -%}
+{%- endif -%}
+{%- assign cv_file = nil -%}
+{%- if cv_post.cover_frame -%}
+  {%- assign cv_id = cv_post.cover_frame -%}
+  {%- assign cv_file = site.data.guide_topics.frames.file[cv_id] -%}
+{%- endif -%}
+{%- unless cv_file -%}
+  {%- assign cv_hash = 0 -%}
+  {%- assign cv_map = "abcdefghijklmnopqrstuvwxyz0123456789-" -%}
+  {%- assign cv_chars = cv_post.slug | split: "" -%}
+  {%- for cv_ch in cv_chars -%}
+    {%- assign cv_parts = cv_map | split: cv_ch -%}
+    {%- assign cv_before = cv_parts | first -%}
+    {%- assign cv_pos = cv_before | size -%}
+    {%- assign cv_hash = cv_hash | plus: cv_pos | plus: forloop.index -%}
+  {%- endfor -%}
+  {%- assign cv_idx = cv_hash | modulo: cv_pool.size -%}
+  {%- assign cv_id = cv_pool[cv_idx] -%}
+  {%- assign cv_file = site.data.guide_topics.frames.file[cv_id] -%}
+{%- endunless -%}
+{%- assign cv_focus = site.data.guide_topics.frames.pos[cv_id] | default: "50% 40%" -%}
+{%- assign cv_label = "" -%}
+{%- for cv_topic_row in site.data.guide_topics.order -%}
+  {%- if cv_topic_row.id == cv_topic -%}
+    {%- assign cv_label = cv_topic_row.label | default: cv_topic_row.title -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if cv_label == "" -%}
+  {%- assign cv_label = site.data.guide_topics.more.label | default: "Guides" -%}
+{%- endif -%}
+{%- if cv_post.cover_title -%}
+  {%- assign cv_title = cv_post.cover_title | strip -%}
+{%- else -%}
+  {%- assign cv_title = cv_post.title | split: ":" | first | strip -%}
+{%- endif -%}
+{%- capture cv_html -%}{{ cv_title | escape }}{%- endcapture -%}
+{%- if cv_post.accent and cv_title contains cv_post.accent -%}
+  {%- comment -%}A sentinel keeps the tail when the accent is the last phrase. Liquid drops a trailing empty split.{%- endcomment -%}
+  {%- assign cv_acc = cv_post.accent -%}
+  {%- assign cv_marked = cv_title | append: "¶" -%}
+  {%- assign cv_parts = cv_marked | split: cv_acc -%}
+  {%- assign cv_last = cv_parts | last | remove: "¶" -%}
+  {%- assign cv_head_len = cv_title.size | minus: cv_last.size | minus: cv_acc.size -%}
+  {%- assign cv_head = cv_title | slice: 0, cv_head_len -%}
+  {%- capture cv_html -%}{{ cv_head | escape }}<em>{{ cv_acc | escape }}</em>{{ cv_last | escape }}{%- endcapture -%}
+{%- endif -%}
+<span class="g-cover cv cv-c2 lab-kicker{% if cv_title.size > 46 %} xlong{% elsif cv_title.size > 38 %} long{% endif %}"{% if cv_topic %} data-topic="{{ cv_topic | escape }}"{% endif %}>
+  <img class="cv-ph" src="{{ cv_file | prepend: '/assets/img/covers/' | relative_url }}" alt="" width="800" height="800" style="--pos:{{ cv_focus }}" loading="lazy" decoding="async">
+  <span class="cv-shade"></span>
+  <img class="cv-mark" src="{{ '/assets/img/covers/wordmark.png' | relative_url }}" alt="" width="600" height="147" loading="lazy" decoding="async">
+  <span class="cv-txt"><span class="cv-lab">{{ cv_label | escape }}</span><span class="cv-t">{{ cv_html }}</span></span>
+</span>

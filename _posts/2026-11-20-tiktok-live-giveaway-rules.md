@@ -7,6 +7,7 @@ summary: "TikTok's new US creator guide on giveaways, free gifts and gambling-st
 date: 2026-11-20
 last_modified_at: 2026-11-20
 icon: safety
+image: "/assets/img/og/tiktok-live-giveaway-rules.jpg"
 takeaways:
   - "On November 17, 2026, TikTok Shop US published a creator guide on giveaways and promotional claims in TikTok Shop LIVEs and short videos."
   - "Free giveaways must use TikTok Shop's official LIVE Giveaway feature, be free to enter, offer an item valued below $500 and have clearly stated terms."

@@ -7,6 +7,7 @@ summary: "The types of LIVE restriction, how appeals work, what an agency can an
 date: 2026-11-20
 last_modified_at: 2026-11-20
 icon: safety
+image: "/assets/img/og/tiktok-live-ban-restriction.jpg"
 takeaways:
   - "TikTok can stop a LIVE, restrict specific LIVE features, temporarily block you from going LIVE, revoke LIVE access or ban an account."
   - "TikTok says your inbox notice describes which feature was restricted, the reason and the period of time."

@@ -7,6 +7,8 @@ summary: "What to check before you request to leave, how switching works, and th
 date: 2026-11-18
 last_modified_at: 2026-11-18
 icon: agency
+cover_frame: f09
+image: "/assets/img/og/how-to-leave-a-tiktok-live-agency.jpg"
 takeaways:
   - "TikTok calls agencies Creator Networks, and you join one through Agency Center in the TikTok app."
   - "TikTok's policy says you can be in only one Creator Network at a time."

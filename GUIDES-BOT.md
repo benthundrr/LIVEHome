@@ -1,8 +1,9 @@
 # TikTok LIVE Guides — how Grok Bot writes a guide
 
-Each guide is **one new Markdown file** in `_posts/`. Never edit, move or delete any other file.
+Each guide is **one new Markdown file** in `_posts/`, plus its social image at `/assets/img/og/<slug>.jpg`. Never edit, move or delete any other file.
 The site builds everything else from that file: the page design, title tag, description, canonical link,
 Open Graph and Twitter tags, Article and Breadcrumb data, the Guides page card, "More guides" and the sitemap.
+The card photo is automatic. The social image is not: generate it and set `image:` (see below).
 
 Live URL of a guide: `https://www.thundrr.co/blog/<slug>/`
 
@@ -36,6 +37,7 @@ summary: "Scoring, timing and how to pick your matchups."
 date: 2026-11-12
 last_modified_at: 2026-11-12
 icon: battle
+image: "/assets/img/og/how-tiktok-live-battles-work.jpg"
 takeaways:
   - "First short takeaway sentence."
   - "Second short takeaway sentence."
@@ -56,10 +58,25 @@ faq:
 | `date` | Today. Must match the date in the file name. |
 | `last_modified_at` | Same as `date`. When you edit an existing guide later, set it to that day. |
 | `icon` | One of: `agency`, `battle`, `gift`, `diamond`, `schedule`, `growth`, `manager`, `safety` |
+| `image` | This guide's social image, `/assets/img/og/<slug>.jpg`. Generate the file first (see below). |
+| `cover_title` | Optional. Words on the card photo. If you leave it out, the card uses the title before the first colon. |
+| `cover_frame` | Optional. One of `f01`, `f02`, `f03`, `f04`, `f05`, `f06`, `f07`, `f09`. If you leave it out, the card picks a frame from that topic. |
 | `takeaways` | 3 to 5 short sentences. They appear in the Key takeaways box at the top. |
 | `faq` | Optional. 2 to 5 questions. Shown as a Questions section at the end. |
 
-Do not add `layout`, `author`, `image` or anything else. The byline is always THUNDRR and the site adds it. You may mention Andrew Andrawes as founder inside the post text.
+Do not add `layout` or `author`. The byline is always THUNDRR and the site adds it. You may mention Andrew Andrawes as founder inside the post text.
+
+### Card cover and social image
+
+The Guides card photo is automatic. It uses the title (the words before a colon, unless you set `cover_title`), the accent phrase when those words are in that title, and the topic label from `_data/guide_topics.yml`. You do not draw it in the post.
+
+Each new guide needs its own social image. From the repo root:
+
+```
+python3 scripts/build_og.py <slug>
+```
+
+That writes `/assets/img/og/<slug>.jpg`. Set `image:` to that path and commit the jpg with the guide. The page head uses `image` for `og:image` and `twitter:image` and makes the URL absolute.
 
 ---
 
@@ -84,8 +101,8 @@ Do not add `layout`, `author`, `image` or anything else. The byline is always TH
 **Stat tiles** — 2 to 4 numbers. Only numbers from the approved facts list (section 5):
 
 ```markdown
-- **4** regions we recruit in
-- **48h** usual application review
+- **1,500+** creators in the network
+- **4** steps from apply to a LIVE plan
 {: .stats}
 ```
 
@@ -94,7 +111,7 @@ Do not add `layout`, `author`, `image` or anything else. The byline is always TH
 ```markdown
 | What you get | On your own | With Thundrr |
 |---|---|---|
-| A named manager | No | Yes |
+| A dedicated creator manager | No | Yes |
 | Fee to join | None | None |
 {: .compare}
 ```
@@ -168,13 +185,11 @@ Only use facts from this list or from https://www.thundrr.co. Never invent numbe
 percentages, follower minimums, rankings, quotes or creator names. If you can't confirm something, leave it out.
 
 - Thundrr is a TikTok LIVE agency and creator network of 1,500+ creators, headquartered in Los Angeles.
-- Thundrr recruits creators in the United States, Latin America, the United Kingdom and Australia.
-- No agency fees. Thundrr doesn't take a percentage of creator earnings. TikTok pays creators directly.
-- Every creator gets a named manager.
-- Applications are reviewed by hand, usually within 48 hours.
+- No agency fees. Thundrr doesn't take a percentage of creator earnings.
+- Every creator gets a dedicated creator manager.
+- Applications are reviewed by hand.
 - Joining works in four steps: Apply, Intro call, Join and get onboarded, Go LIVE with a plan.
 - Creators can usually switch from another agency once their current agreement allows it. Thundrr won't ask anyone to break a contract.
-- Thundrr can raise account issues through a direct channel. No outcome is ever promised. Never explain that as an official partnership.
 
 If a paragraph needs Ben to check a claim, start it with `[DRAFT – replace]` — it shows as a yellow tag on the page.
 
@@ -202,4 +217,5 @@ If a paragraph needs Ben to check a claim, start it with `[DRAFT – replace]` �
 - [ ] Every class line sits directly under its block
 - [ ] Only the includes and graphic names listed above
 - [ ] Ends with the Apply button
+- [ ] `image` is `/assets/img/og/<slug>.jpg` and that file is in the pull request
 - [ ] Brand rules and facts list followed

@@ -7,6 +7,7 @@ summary: "Red flags, how a real invitation works, and how to check any agency in
 date: 2026-11-10
 last_modified_at: 2026-11-20
 icon: safety
+image: "/assets/img/og/are-tiktok-live-agencies-legit.jpg"
 takeaways:
   - "Real TikTok LIVE agencies, which TikTok calls Creator Networks, exist and are independent of TikTok."
   - "A real invitation arrives inside the TikTok app, and you accept it in Agency Center."

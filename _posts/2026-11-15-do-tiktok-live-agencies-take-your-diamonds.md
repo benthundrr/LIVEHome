@@ -7,6 +7,7 @@ summary: "How Coins, Gifts and Diamonds flow, how agencies get paid, and what to
 date: 2026-11-15
 last_modified_at: 2026-11-17
 icon: diamond
+image: "/assets/img/og/do-tiktok-live-agencies-take-your-diamonds.jpg"
 takeaways:
   - "Viewers buy Coins, send Gifts, and TikTok converts those Gifts into Diamonds in your account."
   - "TikTok's Virtual Items Policy bars transferring Diamonds to a third party unless TikTok allows it in writing."
