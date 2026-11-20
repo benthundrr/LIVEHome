@@ -7,6 +7,7 @@ summary: "Every LIVE Fest 2026 date TikTok has published so far, and the ones it
 date: 2026-11-20
 last_modified_at: 2026-11-20
 icon: schedule
+image: "/assets/img/og/live-fest-2026-schedule.jpg"
 takeaways:
   - "TikTok's LIVE Fest page dates Power League from November 20 to December 6, 2026. It is running now."
   - "Fandom League runs December 9 to 15, and the global finals run December 17 to 21, according to the same page."

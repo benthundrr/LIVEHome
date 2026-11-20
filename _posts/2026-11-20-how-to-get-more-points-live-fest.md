@@ -7,6 +7,7 @@ summary: "Tactics for every round, built only on the LIVE Fest scoring TikTok ha
 date: 2026-11-20
 last_modified_at: 2026-11-20
 icon: growth
+image: "/assets/img/og/how-to-get-more-points-live-fest.jpg"
 takeaways:
   - "TikTok's Power League video shows FEST Gifts and Vault Gifts at 1 Coin = 2 points, double regular Gifts. Confirm on your campaign page."
   - "Bonus Hour and Double Blast are both 2x points, and Double Blast can't run during Bonus Hour, so plan them as two separate windows."
