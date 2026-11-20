@@ -1,9 +1,9 @@
 ---
 title: "TikTok LIVE bans and restrictions: how to get access back"
 accent: "get access back"
-seo_title: "TikTok LIVE Ban or Restriction? How to Appeal | Thundrr"
-description: "Banned or restricted on TikTok LIVE? The types of LIVE restriction, how to read your notice, how TikTok appeals work and how to avoid it happening again."
-summary: "The types of LIVE restriction, how appeals work, what an agency can and can't do, and how to prevent it."
+seo_title: "How to Get Unbanned on TikTok LIVE | Thundrr"
+description: "How to get unbanned on TikTok LIVE: read your restriction notice, appeal in the app, see how long restrictions last and avoid getting banned again."
+summary: "How to get unbanned on TikTok LIVE, the types of restriction, how appeals work and how to prevent it."
 date: 2026-11-20
 last_modified_at: 2026-11-20
 icon: safety
@@ -16,8 +16,8 @@ takeaways:
 faq:
   - q: "Why was I banned from going LIVE on TikTok?"
     a: "TikTok restricts LIVE access when a session or account breaks its Community Guidelines or LIVE standards. Your notice in Inbox, under System notifications, should name the restricted feature, the reason and the period of time."
-  - q: "How do I appeal a TikTok LIVE restriction?"
-    a: "TikTok says you can submit an appeal from your system notifications if you believe feature access was removed by mistake. For a banned account, open the ban notification, tap Appeal and follow the instructions."
+  - q: "How do I get unbanned on TikTok LIVE?"
+    a: "Appeal through TikTok. TikTok says you can submit an appeal from your system notifications if you believe LIVE feature access was removed by mistake. For a banned account, open the ban notification, tap Appeal and follow the instructions. If the restriction is temporary, TikTok says it notifies you when access is restored."
   - q: "How long does a TikTok LIVE restriction last?"
     a: "It depends on the violation. TikTok says the notice tells you the period of time, that repeated violations across multiple LIVEs may mean a longer suspension, such as several days, and that it notifies you when access is restored."
   - q: "Can a TikTok LIVE agency get my ban lifted?"
@@ -49,6 +49,17 @@ TikTok also restricts LIVE sessions to viewers 18 and older when they contain co
 TikTok's LIVE feature guidelines say you get a notification in your in-app inbox that describes which feature was restricted, the reason and the period of time. A record is also kept in your system notifications.
 
 If you're LIVE when it happens, TikTok says you also get a pop-up during your LIVE. While a feature is restricted, it may be greyed out or unavailable, and TikTok says it notifies you once access is restored.
+
+## How to get unbanned on TikTok LIVE
+
+Getting unbanned on TikTok LIVE goes through TikTok, and only TikTok can lift a LIVE ban or restriction. Here's the short version of what TikTok says to do, with the details in the sections below.
+
+1. **Read your notice** TikTok's LIVE feature guidelines say your inbox notice describes which feature was restricted, the reason and the period of time.
+2. **Wait out a temporary restriction** If the notice gives a period of time, TikTok says it notifies you once access is restored.
+3. **Appeal if it was a mistake** TikTok says you can submit an appeal from your system notifications if you believe feature access was removed by mistake.
+4. **Appeal a banned account** TikTok says to open the ban notification, tap Appeal and follow the instructions.
+5. **Take policy training if offered** For certain first violations, TikTok says completing optional in-app policy training may lift eligible restrictions.
+{: .steps}
 
 ## How to check what happened
 
