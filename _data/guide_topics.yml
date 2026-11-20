@@ -4,6 +4,9 @@
 # The index lists posts inside a topic newest first.
 
 order:
+  - id: news
+    title: TikTok LIVE news
+    intro: "TikTok's latest rules for LIVE creators, including giveaways, free gifts and promotional claims."
   - id: agencies
     title: TikTok LIVE agencies
     intro: "What a TikTok LIVE agency is, how joining and leaving works, how an agency compares with going solo, and whether an agency takes a cut of Diamonds."
@@ -19,6 +22,7 @@ more:
   intro: "Guides that do not fall under the topics above."
 
 by_slug:
+  tiktok-live-giveaway-rules: news
   what-is-a-tiktok-live-agency: agencies
   are-tiktok-live-agencies-legit: agencies
   how-to-join-a-tiktok-live-agency: agencies
