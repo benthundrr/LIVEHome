@@ -1621,3 +1621,41 @@ html.js body.lw-site :is(.take,.prose ul.cards,.prose ul.stats,.tbl,.prose>table
   html.js body.lw-site :is(.take,.prose ul.cards,.prose ul.stats,.tbl,.prose>table,.prose blockquote,.prose ol.steps,.graphic,.cta-inline,.g-bio,.faq,.g-card,.cta){
     opacity:1!important;filter:none!important;transform:none!important;transition:none!important}
 }
+
+/* ---------- guide covers · C2 variant 1 ----------------------------
+   Video frame, graded to THUNDRR blue, title on the dark side.
+   Plain uppercase topic word. No pill, no dot, no topic border.
+   cqw sizes track the card width. The old icon grid is turned off. */
+body.lw-site .g-cover.cv{
+  display:block;place-items:normal;aspect-ratio:16/9;overflow:hidden;
+  container-type:inline-size;isolation:isolate;
+  font-family:Montserrat,system-ui,sans-serif;color:#EEF1F8;text-align:left;
+  background:radial-gradient(70% 100% at 0% 110%,rgba(47,107,255,.30),transparent 60%),#04050A}
+body.lw-site .g-cover.cv::after{content:none;background:none}
+body.lw-site .g-cover.cv > *{position:absolute;z-index:2}
+body.lw-site .g-cover.cv .cv-ph{
+  top:0;right:0;bottom:0;left:auto;z-index:0;width:62%;height:100%;max-width:none;
+  object-fit:cover;object-position:var(--pos,50% 40%);
+  filter:grayscale(1) contrast(1.18) brightness(.95)}
+body.lw-site .g-cover.cv-c2::before{
+  content:'';position:absolute;top:0;right:0;bottom:0;width:62%;z-index:1;
+  mix-blend-mode:color;background:#2F6BFF;opacity:.82}
+body.lw-site .g-cover.cv .cv-shade{inset:0;z-index:1;background:
+  linear-gradient(90deg,#04050A 0%,#04050A 38%,rgba(4,5,10,.6) 54%,rgba(4,5,10,0) 80%),
+  linear-gradient(0deg,rgba(4,5,10,.6) 0%,transparent 40%)}
+body.lw-site .g-cover.cv .cv-mark{
+  left:6cqw;top:5.6cqw;height:3cqw;width:auto;max-width:none;opacity:.85}
+body.lw-site .g-cover.cv .cv-txt{
+  left:6cqw;right:36cqw;bottom:6cqw;
+  display:flex;flex-direction:column;align-items:flex-start;gap:2.6cqw}
+body.lw-site .g-cover.cv .cv-t{
+  position:static;left:auto;right:auto;bottom:auto;margin:0;
+  font-weight:800;font-size:var(--fs,7.6cqw);line-height:1.06;letter-spacing:-.025em;
+  text-wrap:balance;display:-webkit-box;-webkit-box-orient:vertical;
+  -webkit-line-clamp:3;overflow:hidden}
+body.lw-site .g-cover.cv.long .cv-t{--fs:6.5cqw}
+body.lw-site .g-cover.cv.xlong .cv-t{--fs:5.4cqw}
+body.lw-site .g-cover.cv .cv-t em{font-style:normal;color:#9DB8FF}
+body.lw-site .g-cover.cv.lab-kicker .cv-lab{
+  font-size:2.3cqw;font-weight:600;letter-spacing:.24em;text-transform:uppercase;
+  color:#9DB8FF;line-height:1;background:none;border:0;padding:0}

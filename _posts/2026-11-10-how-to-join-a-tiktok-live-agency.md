@@ -7,6 +7,8 @@ summary: "Eligibility, your invitation code, and accepting an agency invitation 
 date: 2026-11-10
 last_modified_at: 2026-11-17
 icon: manager
+cover_frame: f04
+image: "/assets/img/og/how-to-join-a-tiktok-live-agency.jpg"
 takeaways:
   - "You join a TikTok LIVE agency inside the TikTok app by accepting its invitation."
   - "Your invitation code is in Agency Center, under Settings and privacy, Creator tools, LIVE Center."

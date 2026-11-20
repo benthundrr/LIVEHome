@@ -7,6 +7,8 @@ summary: "Dates, leagues, and the sign-up steps TikTok has published for LIVE Fe
 date: 2026-11-12
 last_modified_at: 2026-11-14
 icon: schedule
+cover_frame: f07
+image: "/assets/img/og/tiktok-live-fest-2026.jpg"
 takeaways:
   - "TikTok calls LIVE Fest 2026 its flagship year-end celebration of LIVE creators and their communities."
   - "The public LIVE Fest page dates Power League from November 20 to December 6, and global finals from December 17 to December 21."

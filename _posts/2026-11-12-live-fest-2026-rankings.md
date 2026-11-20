@@ -7,6 +7,8 @@ summary: "How Gifts, Votes, tracks, and bonuses become LIVE Fest 2026 points."
 date: 2026-11-12
 last_modified_at: 2026-11-14
 icon: diamond
+cover_frame: f05
+image: "/assets/img/og/live-fest-2026-rankings.jpg"
 takeaways:
   - "Points rank creators. TikTok says top creators receive rewards and honor titles."
   - "In the Power League video, regular Gifts are 1 Coin = 1 point, FEST Gifts and Vault Gifts are 1 Coin = 2 points, and 1 Vote = 1 point."

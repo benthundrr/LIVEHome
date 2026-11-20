@@ -7,6 +7,7 @@ summary: "Why TikTok LIVE views stay low, and what to change so more people can 
 date: 2026-11-12
 last_modified_at: 2026-11-14
 icon: growth
+image: "/assets/img/og/how-to-get-more-viewers-on-tiktok-live.jpg"
 takeaways:
   - "TikTok LIVE views stay low when the stream is shown to fewer people, or when new viewers leave in the opening moments."
   - "A LIVE can miss the For You feed when it breaks Community Guidelines, streams unoriginal content, or looks unattended."

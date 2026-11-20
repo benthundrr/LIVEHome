@@ -7,6 +7,7 @@ summary: "LIVE goals, small Gift prompts, real thank-yous, and the gift baiting 
 date: 2026-11-14
 last_modified_at: 2026-11-16
 icon: gift
+image: "/assets/img/og/how-to-get-more-gifts-on-tiktok-live.jpg"
 takeaways:
   - "TikTok says viewers send Gifts to show appreciation for content in real time, so the show comes first."
   - "A LIVE goal and a clear small Gift prompt tell viewers exactly how to take part."

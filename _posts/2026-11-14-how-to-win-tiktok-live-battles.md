@@ -7,6 +7,7 @@ summary: "Match points, opponents, Power-ups and timing, based on how TikTok say
 date: 2026-11-14
 last_modified_at: 2026-11-14
 icon: battle
+image: "/assets/img/og/how-to-win-tiktok-live-battles.jpg"
 takeaways:
   - "TikTok calls a LIVE Battle a LIVE match. It's a co-host format where creators compete solo or in teams."
   - "TikTok's LIVE Studio help says each Coin of a Gift counts as one match point, each like as three, and the most points wins."

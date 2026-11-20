@@ -2,6 +2,9 @@
 {%- assign g_desc = page.description | default: page.summary | strip_html | strip_newlines -%}
 {%- assign g_canon = page.url | absolute_url -%}
 {%- assign g_img = page.image | default: site.guides.default_image -%}
+{%- unless g_img contains '://' -%}
+{%- assign g_img = g_img | absolute_url -%}
+{%- endunless -%}
 {%- assign g_img_alt = page.image_alt | default: site.guides.default_image_alt -%}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">

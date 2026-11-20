@@ -41,3 +41,4 @@ guides:
 exclude:
   - GUIDES-BOT.md
   - README.md
+  - scripts

@@ -7,6 +7,8 @@ summary: "Eligibility, fan Votes, rewards, and the conduct rules TikTok publishe
 date: 2026-11-12
 last_modified_at: 2026-11-14
 icon: safety
+cover_frame: f06
+image: "/assets/img/og/live-fest-2026-rules.jpg"
 takeaways:
   - "You must be 18, or 19 in Korea, live in a listed region, and keep an eligible personal account."
   - "Fans collect Votes from missions and send them manually. One Vote equals one point."
