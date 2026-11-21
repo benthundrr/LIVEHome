@@ -1,20 +1,30 @@
 {%- comment -%}
-  Stable slug hash, the same character sum as guides/cover.html.
-  Index is (hash / 3) mod the pool size so neighbouring slugs spread out.
+  Inline photos and the mobile cover for a guide post.
+  Posts are ordered by filename (date, then slug). Rank in that list
+  selects a pair from the 28-photo pool: photos 2*(rank mod 14) and the
+  next one. Neighbouring posts therefore never share an inline photo,
+  and across every 14 posts each photo is used once. The mobile cover
+  is a third frame, offset so it is neither inline photo. team-dinner
+  and creator-dinner stay on disk but are not in this pool.
 {%- endcomment -%}
-{%- assign gp_hash = 0 -%}
-{%- assign gp_map = "abcdefghijklmnopqrstuvwxyz0123456789-" -%}
-{%- assign gp_chars = page.slug | split: "" -%}
-{%- for gp_ch in gp_chars -%}
-  {%- assign gp_parts = gp_map | split: gp_ch -%}
-  {%- assign gp_pos = gp_parts | first | size -%}
-  {%- assign gp_hash = gp_hash | plus: gp_pos | plus: forloop.index -%}
-{%- endfor -%}
 {%- assign gp_pool = site.data.guide_photos.pool -%}
-{%- assign gp_n = gp_pool.size -%}
-{%- assign gp_idx = gp_hash | divided_by: 3 | modulo: gp_n -%}
-{%- assign gp_cover = gp_pool[gp_idx] -%}
-{%- assign gp_i1 = gp_idx | plus: 1 | modulo: gp_n -%}
-{%- assign gp_i2 = gp_idx | plus: 2 | modulo: gp_n -%}
+{%- assign gp_half = gp_pool.size | divided_by: 2 -%}
+{%- assign gp_ordered = site.posts | sort: "path" -%}
+{%- assign gp_rank = 0 -%}
+{%- for gp_post in gp_ordered -%}
+  {%- if gp_post.url == page.url -%}
+    {%- assign gp_rank = forloop.index0 -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign gp_pair = gp_rank | modulo: gp_half -%}
+{%- assign gp_i1 = gp_pair | times: 2 -%}
+{%- assign gp_i2 = gp_i1 | plus: 1 -%}
+{%- assign gp_cycle = gp_rank | divided_by: gp_half | modulo: 2 -%}
+{%- if gp_cycle == 0 -%}
+  {%- assign gp_ci = gp_pair | plus: 3 | modulo: gp_half | plus: gp_half -%}
+{%- else -%}
+  {%- assign gp_ci = gp_pair | plus: 8 | modulo: gp_half -%}
+{%- endif -%}
 {%- assign gp_p1 = gp_pool[gp_i1] -%}
 {%- assign gp_p2 = gp_pool[gp_i2] -%}
+{%- assign gp_cover = gp_pool[gp_ci] -%}
