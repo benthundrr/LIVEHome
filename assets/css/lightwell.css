@@ -1771,3 +1771,44 @@ html.anim body.lw-site.is-guide .mock-cta .face{
   body.lw-site.is-guide .b-bar-cta{background:#2F6BFF;border-radius:12px}
   body.lw-site.is-guide .mock-cta-c .face::after{display:none}
 }
+
+/* ============================================================
+   LIGHTWELL · Safari toolbar
+   iOS 26 paints the area behind the floating address pill with the
+   root background (and any full-screen fixed layer's background-color).
+   The room's bottom-center at 390×844 is #070E1F; the root was #04050A,
+   so the pill sat on a black slab. /join/ has no .lw-room and keeps #04050A.
+   ============================================================ */
+:root{--lw-chrome:#070E1F}
+html:has(.lw-room),
+html:has(.lw-room) body{
+  background-color:var(--lw-chrome);
+  min-height:100%}
+/* the fixed room is what Safari samples at the bottom edge; the gradient
+   painted by .lw-room still covers it, so the page look does not change */
+.atmos{background-color:var(--lw-chrome)}
+/* closed full-screen layers must not hand Safari a near-black background */
+.sheet:not(.is-open),
+.modal:not(.is-open),
+.rmodal:not(.is-open),
+.amodal:not(.is-open),
+body:not(.toc-open) .b-scrim,
+body:not(.toc-open) .b-sheet{
+  background-color:transparent;
+  background-image:none;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none}
+@media (max-width:768px){
+  /* ease the vignette's darker corners into the toolbar color */
+  .atmos::after{
+    content:"";
+    position:absolute;
+    left:0;right:0;bottom:0;
+    height:calc(env(safe-area-inset-bottom,0px) + 24px);
+    pointer-events:none;
+    background:linear-gradient(to bottom,transparent,var(--lw-chrome))}
+  /* the footer is the last section: carry the same color past the
+     document end so overscroll and the safe area are not raw root black */
+  html:has(.lw-room) footer{
+    box-shadow:0 180px 0 180px var(--lw-chrome)}
+}
