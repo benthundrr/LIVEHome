@@ -1,0 +1,27 @@
+# Inline and mobile-cover photos for guide posts.
+# Index is (slug hash / 3) mod 4, using the same character hash as
+# _includes/guides/cover.html. The next two slots are the inline photos,
+# so a post never repeats a frame. live-fest-2026-fandom-league lands on
+# the stage photo, then the ring light. Never add the prize-cheque photo
+# or yacht frames f08/f10.
+pool:
+  - file: team-dinner.webp
+    alt: A Thundrr team dinner
+    w: 800
+    h: 800
+    pos: 64% 22%
+  - file: creator-dinner.webp
+    alt: Thundrr creators at a dinner
+    w: 800
+    h: 800
+    pos: 60% 50%
+  - file: stage-event.webp
+    alt: Thundrr creators at an agency event
+    w: 1400
+    h: 1050
+    pos: center 30%
+  - file: creator-ringlight.webp
+    alt: A Thundrr creator going LIVE
+    w: 800
+    h: 800
+    pos: 40% 30%

@@ -1,0 +1,72 @@
+{%- comment -%}
+  Guide body extras, applied in the layout so _posts stay untouched.
+  Drops any inline CTA already in the post, inserts one after the first
+  paragraph, and on a long guide adds two photos: the first right after
+  that CTA (the approved panel sits on a photo) and the second before the
+  4th h2. At most one inline CTA remains; the end CTA is separate.
+{%- endcomment -%}
+{%- assign g_photo_1 = '' -%}
+{%- assign g_photo_2 = '' -%}
+{%- if gp_p1 -%}
+  {%- capture g_photo_1 -%}<figure class="guide-photo mock-photo"><img src="{{ gp_p1.file | prepend: '/assets/img/guides/' | relative_url }}" alt="{{ gp_p1.alt | escape }}" width="{{ gp_p1.w }}" height="{{ gp_p1.h }}" style="object-position:{{ gp_p1.pos }}" loading="lazy" decoding="async"></figure>{%- endcapture -%}
+{%- endif -%}
+{%- if gp_p2 -%}
+  {%- capture g_photo_2 -%}<figure class="guide-photo mock-photo"><img src="{{ gp_p2.file | prepend: '/assets/img/guides/' | relative_url }}" alt="{{ gp_p2.alt | escape }}" width="{{ gp_p2.w }}" height="{{ gp_p2.h }}" style="object-position:{{ gp_p2.pos }}" loading="lazy" decoding="async"></figure>{%- endcapture -%}
+{%- endif -%}
+
+{%- assign g_h2n = g_body | split: '<h2' | size | minus: 1 -%}
+{%- assign g_stripped = g_body | split: '<aside class="cta-inline' | first -%}
+{%- assign g_cta_parts = g_body | split: '<aside class="cta-inline' -%}
+{%- for g_cta_part in g_cta_parts offset: 1 -%}
+  {%- assign g_cta_rest = g_cta_part | split: '</aside>' -%}
+  {%- assign g_cta_after = '' -%}
+  {%- for g_cta_piece in g_cta_rest offset: 1 -%}
+    {%- if forloop.first -%}
+      {%- assign g_cta_after = g_cta_piece -%}
+    {%- else -%}
+      {%- assign g_cta_after = g_cta_after | append: '</aside>' | append: g_cta_piece -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign g_stripped = g_stripped | append: g_cta_after -%}
+{%- endfor -%}
+{%- assign g_body = g_stripped -%}
+
+{%- capture g_inline_cta -%}{% include guides/proof-cta.html %}{%- endcapture -%}
+{%- if g_h2n >= 2 -%}
+  {%- assign g_inline_cta = g_inline_cta | append: g_photo_1 -%}
+{%- endif -%}
+{%- if g_body contains '</p>' -%}
+  {%- assign g_marked = g_body | append: '¶END¶' -%}
+  {%- assign g_bits = g_marked | split: '</p>' -%}
+  {%- assign g_joined = '' -%}
+  {%- for g_bit in g_bits -%}
+    {%- if forloop.first -%}
+      {%- assign g_joined = g_bit | append: '</p>' | append: g_inline_cta -%}
+    {%- else -%}
+      {%- assign g_joined = g_joined | append: g_bit -%}
+      {%- unless forloop.last -%}
+        {%- assign g_joined = g_joined | append: '</p>' -%}
+      {%- endunless -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign g_body = g_joined | remove: '¶END¶' -%}
+{%- else -%}
+  {%- assign g_body = g_inline_cta | append: g_body -%}
+{%- endif -%}
+
+{%- if g_h2n >= 4 -%}
+  {%- assign g_h2parts = g_body | split: '<h2' -%}
+  {%- assign g_built = '' -%}
+  {%- for g_sec in g_h2parts -%}
+    {%- if forloop.first -%}
+      {%- assign g_built = g_sec -%}
+    {%- else -%}
+      {%- assign g_h2i = forloop.index | minus: 1 -%}
+      {%- if g_h2i == 4 -%}
+        {%- assign g_built = g_built | append: g_photo_2 -%}
+      {%- endif -%}
+      {%- assign g_built = g_built | append: '<h2' | append: g_sec -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign g_body = g_built -%}
+{%- endif -%}

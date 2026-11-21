@@ -1659,3 +1659,115 @@ body.lw-site .g-cover.cv .cv-t em{font-style:normal;color:#9DB8FF}
 body.lw-site .g-cover.cv.lab-kicker .cv-lab{
   font-size:2.3cqw;font-weight:600;letter-spacing:.24em;text-transform:uppercase;
   color:#9DB8FF;line-height:1;background:none;border:0;padding:0}
+
+/* ---------- guide posts · mobile C2 --------------------------------
+   Social-proof panel, full-width article, rounded inset media.
+   Scoped to body.is-guide. Homepage, /join/, /app/ and /blog/ are untouched.
+   The <=640px block is the approved variant-c2.css. */
+body.lw-site.is-guide .guide-cover{display:none}
+body.lw-site.is-guide .mock-cta-c{
+  display:block;max-width:560px;margin:28px auto;padding:32px 28px 26px;
+  border:0;border-radius:20px;text-align:center;overflow:visible;
+  background:
+    radial-gradient(120% 80% at 50% 0%, rgba(47,107,255,.22), transparent 70%),
+    #0B101C;
+  box-shadow:inset 0 0 0 1px rgba(228,234,255,.10)}
+body.lw-site.is-guide .mock-cta-c::before,
+body.lw-site.is-guide .mock-cta-c::after{display:none}
+body.lw-site.is-guide .mock-proof-lead{
+  margin:0 0 16px;text-align:center;font-size:22px;font-weight:500;
+  letter-spacing:-.03em;line-height:1.2;color:#C4CAD8}
+body.lw-site.is-guide .mock-proof-lead b{
+  display:block;font-size:28px;font-weight:800;color:#EEF1F8;
+  letter-spacing:-.04em;margin-bottom:4px}
+body.lw-site.is-guide .mock-wall{margin:0 0 20px}
+body.lw-site.is-guide .mock-wall-faces{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding-left:0}
+body.lw-site.is-guide .mock-cta-c .face{
+  width:56px;height:56px;margin-left:0;
+  box-shadow:0 0 0 2px #0B101C, 0 8px 18px -8px rgba(0,0,0,.8)}
+body.lw-site.is-guide .mock-cta-c .ci-tx{
+  display:flex;flex-direction:column;gap:8px;text-align:center;margin:0 0 16px}
+body.lw-site.is-guide .mock-cta-c .ci-tx b{
+  display:block;margin:0;font-size:18px;font-weight:700;color:#EEF1F8}
+body.lw-site.is-guide .mock-cta-c .ci-tx span{
+  font-size:14.5px;line-height:1.5;color:#C4CAD8}
+body.lw-site.is-guide .mock-cta-c .mock-apply{
+  display:flex;width:100%;justify-content:center;align-items:center;
+  height:52px;border-radius:14px;background:#2F6BFF;color:#fff;
+  font-weight:700;font-size:16px;
+  box-shadow:0 12px 28px -12px rgba(47,107,255,.95)}
+body.lw-site.is-guide .guide-photo{margin:28px 0 12px}
+body.lw-site.is-guide .guide-photo img{
+  display:block;width:100%;height:320px;object-fit:cover;border-radius:20px}
+body.lw-site.is-guide .mock-cta .face,
+body.lw-site.is-guide .mock-proof .face,
+html.anim body.lw-site.is-guide .mock-cta .face{
+  opacity:1;transform:none}
+
+@media (max-width:640px){
+  body.lw-site.is-guide{--gut:20px}
+  body.lw-site.is-guide .b-main,
+  body.lw-site.is-guide .b-wrap > .prose{
+    background:none !important;box-shadow:none !important;border:0 !important;
+    border-radius:0 !important;padding:0 !important;
+    -webkit-backdrop-filter:none !important;backdrop-filter:none !important}
+  body.lw-site.is-guide .b-main::before,
+  body.lw-site.is-guide .b-wrap > .prose::before,
+  body.lw-site.is-guide .b-main::after{display:none !important}
+  body.lw-site.is-guide .shell.b-wrap.b-grid{padding-left:0;padding-right:0}
+  body.lw-site.is-guide .shell.b-wrap.b-grid .b-bar{
+    margin-left:0;margin-right:0;width:100%;padding-left:12px;padding-right:12px}
+  body.lw-site.is-guide .hero-b .shell.b-wrap,
+  body.lw-site.is-guide .b-main .prose,
+  body.lw-site.is-guide .b-main .take,
+  body.lw-site.is-guide .b-main .faq,
+  body.lw-site.is-guide .b-main .g-bio{padding-left:20px;padding-right:20px}
+  body.lw-site.is-guide .prose{
+    font-size:17px;font-weight:500;line-height:1.6;color:#C4CAD8}
+  body.lw-site.is-guide .live-badge i{display:none !important}
+  body.lw-site.is-guide .hero-b .live-badge,
+  body.lw-site.is-guide .end .live-badge,
+  body.lw-site.is-guide .cta .live-badge{
+    background:none !important;padding:0 !important;border-radius:0 !important;
+    color:#9DB8FF !important;font-weight:700;letter-spacing:.08em;
+    animation:none !important;box-shadow:none !important}
+  body.lw-site.is-guide .guide-cover{
+    display:block;position:relative;margin:12px 12px 0;width:auto;
+    overflow:hidden;border-radius:20px;background:#0A0D16}
+  body.lw-site.is-guide .guide-cover img{
+    display:block;width:100%;height:210px;object-fit:cover}
+  body.lw-site.is-guide .guide-cover::after{
+    content:"";position:absolute;inset:auto 0 0 0;height:42%;pointer-events:none;
+    background:linear-gradient(to top, #04050A, transparent)}
+  body.lw-site.is-guide .hero-b{padding:18px 0 16px}
+  body.lw-site.is-guide .take,
+  body.lw-site.is-guide .take-in{
+    background:none !important;box-shadow:none !important;border-radius:0 !important}
+  body.lw-site.is-guide .take::before,
+  body.lw-site.is-guide .take-in::before{display:none !important}
+  body.lw-site.is-guide .b-main .take{margin:4px 0 24px;padding:0 20px !important}
+  body.lw-site.is-guide .take-in{padding:0 !important}
+  body.lw-site.is-guide .take-list li{
+    border-top:1px solid rgba(255,255,255,.08);padding:12px 0}
+  body.lw-site.is-guide .prose ul.cards li,
+  body.lw-site.is-guide .prose ul.stats li,
+  body.lw-site.is-guide .prose blockquote.callout,
+  body.lw-site.is-guide .g-bio{
+    background:none !important;box-shadow:none !important;border:0 !important;border-radius:0 !important}
+  body.lw-site.is-guide .prose blockquote.callout{
+    padding:14px 0 14px 16px !important;border-left:2px solid #9DB8FF !important}
+  body.lw-site.is-guide .prose blockquote.callout::before{display:none !important}
+  body.lw-site.is-guide .prose table,
+  body.lw-site.is-guide .tbl,
+  body.lw-site.is-guide .prose .tbl{
+    display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  body.lw-site.is-guide .guide-photo{
+    position:relative;left:auto;right:auto;width:auto;max-width:none;margin:28px -8px 8px}
+  body.lw-site.is-guide .guide-photo img{
+    height:250px;border-radius:20px}
+  body.lw-site.is-guide .mock-cta-c{
+    max-width:none;margin:24px -8px 16px;padding:28px 20px 22px !important}
+  body.lw-site.is-guide .b-bar-cta{background:#2F6BFF;border-radius:12px}
+  body.lw-site.is-guide .mock-cta-c .face::after{display:none}
+}

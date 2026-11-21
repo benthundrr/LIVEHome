@@ -9,6 +9,8 @@
 {%- assign g_draft = '[DRAFT – replace]' -%}
 {%- assign g_draft_html = '<span class="draft">[DRAFT – replace]</span>' -%}
 {%- assign g_body = content | replace: g_draft, g_draft_html -%}
+{% include guides/photo-picks.html %}
+{% include guides/compose-body.html %}
 {%- assign g_title_html = page.title | escape -%}
 {%- if page.accent -%}
   {%- assign g_acc = page.accent | escape -%}
@@ -93,11 +95,16 @@
 </script>
 {%- endif %}
 </head>
-<body class="lw-site">
+<body class="lw-site is-guide">
 {% include guides/nav.html %}
 
 <main class="page" id="main">
 <article>
+  {%- if gp_cover -%}
+  <figure class="guide-cover mock-cover">
+    <img src="{{ gp_cover.file | prepend: '/assets/img/guides/' | relative_url }}" alt="{{ gp_cover.alt | escape }}" width="{{ gp_cover.w }}" height="{{ gp_cover.h }}" style="object-position:{{ gp_cover.pos }}" decoding="async">
+  </figure>
+  {%- endif -%}
   <header class="hero-b">
     <div class="shell b-wrap">
       <nav class="crumbs" aria-label="Breadcrumb">
