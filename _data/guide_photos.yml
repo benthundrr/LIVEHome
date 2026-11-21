@@ -1,27 +1,149 @@
-# Inline and mobile-cover photos for guide posts.
-# Index is (slug hash / 3) mod 4, using the same character hash as
-# _includes/guides/cover.html. The next two slots are the inline photos,
-# so a post never repeats a frame. live-fest-2026-fandom-league lands on
-# the stage photo, then the ring light. Never add the prize-cheque photo
-# or yacht frames f08/f10.
+# Inline photos and the mobile cover on guide posts.
+# _includes/guides/photo-picks.html walks posts in filename order
+# (date, then slug) and gives each post the pair at 2*(rank mod 14).
+# The pool is exactly 28: the 26 new agency photos, then stage-event
+# and creator-ringlight. team-dinner.webp and creator-dinner.webp are
+# not in the rotation. Do not add the prize-cheque photo.
+# pos is object-position. Portrait frames are biased toward the subject
+# so a landscape object-fit: cover crop keeps faces and signs.
 pool:
-  - file: team-dinner.webp
-    alt: A Thundrr team dinner
-    w: 800
-    h: 800
-    pos: 64% 22%
-  - file: creator-dinner.webp
-    alt: Thundrr creators at a dinner
-    w: 800
-    h: 800
-    pos: 60% 50%
+  - file: hq-pink-studio-group.webp
+    alt: "A group of creators posing together in a bright pink room with a neon TikTok logo."
+    w: 1200
+    h: 930
+    pos: "center 22%"
+  - file: live-fest-entrance.webp
+    alt: "Outdoor TikTok LIVE Fest entrance sign under palm trees at sunset."
+    w: 1200
+    h: 1600
+    pos: "center 58%"
+  - file: creator-tiktok-stage.webp
+    alt: "A creator sitting in a director chair on a colorful TikTok stage."
+    w: 1200
+    h: 1600
+    pos: "center 38%"
+  - file: la-party-balloon-group.webp
+    alt: "Four people posing together at a party in front of a white and blue balloon wall."
+    w: 1200
+    h: 1797
+    pos: "center 36%"
+  - file: hq-live-stage-group.webp
+    alt: "A large group of creators posing on a colorful TikTok LIVE stage."
+    w: 1200
+    h: 900
+    pos: "center 24%"
+  - file: museum-tiktok-logo.webp
+    alt: "A large illuminated TikTok logo sculpture in a blue-lit museum hall."
+    w: 1200
+    h: 1600
+    pos: "center 42%"
+  - file: creator-going-live.webp
+    alt: "A creator going LIVE on camera under studio lights in front of a TikTok LIVE sign."
+    w: 1200
+    h: 2133
+    pos: "center 34%"
+  - file: vidcon-step-and-repeat.webp
+    alt: "Two people posing in front of a TikTok Destination Creation step-and-repeat backdrop."
+    w: 1200
+    h: 1600
+    pos: "center 38%"
+  - file: hq-studio-stairs-group.webp
+    alt: "Creators sitting together on bleacher-style stairs lined with TikTok pillows."
+    w: 1200
+    h: 1600
+    pos: "center 34%"
+  - file: live-fest-graffiti-wall.webp
+    alt: "Two people posing in front of a handwritten LIVE Fest mural wall."
+    w: 1200
+    h: 1600
+    pos: "center 58%"
+  - file: la-party-creators.webp
+    alt: "Three people smiling together at a party with a balloon backdrop."
+    w: 1200
+    h: 1797
+    pos: "center 38%"
+  - file: vidcon-tiktok-art.webp
+    alt: "A geometric TikTok logo art installation lit with colorful lights."
+    w: 1200
+    h: 1600
+    pos: "center 48%"
+  - file: live-fest-red-carpet.webp
+    alt: "A group of creators posing on a red carpet in front of a TikTok LIVE Fest backdrop."
+    w: 1200
+    h: 1600
+    pos: "center 32%"
+  - file: retreat-tiktok-logo.webp
+    alt: "A person standing beside a large three-dimensional TikTok logo sculpture."
+    w: 1200
+    h: 1600
+    pos: "center 42%"
+  - file: hq-tiktok-set-group.webp
+    alt: "Creators posing on a TikTok studio set with a large logo backdrop."
+    w: 1200
+    h: 900
+    pos: "center 24%"
+  - file: summit-audience.webp
+    alt: "An audience facing a stage screen at the Creator Network Partner Summit in Los Angeles."
+    w: 1200
+    h: 1600
+    pos: "center 55%"
+  - file: live-fest-booth.webp
+    alt: "Three people in formal outfits posing at a TikTok LIVE Fest booth."
+    w: 1200
+    h: 1600
+    pos: "center 42%"
+  - file: event-90s-night.webp
+    alt: "People in colorful 90s-inspired outfits talking at a pink TikTok event."
+    w: 1200
+    h: 1001
+    pos: "center 32%"
+  - file: hq-workplace-moment-group.webp
+    alt: "A group of creators posing by a TikTok workplace-moment sign and logo sculpture."
+    w: 1200
+    h: 1600
+    pos: "center 38%"
+  - file: trip-tiktok-backdrop.webp
+    alt: "Two people posing in front of a large TikTok logo on a dark stage backdrop."
+    w: 1200
+    h: 1600
+    pos: "center 40%"
+  - file: la-party-team-group.webp
+    alt: "A group of five people posing together at a party with a balloon backdrop."
+    w: 1200
+    h: 1797
+    pos: "center 36%"
+  - file: museum-creator-networks.webp
+    alt: "A TikTok Creator Networks column in a museum hall with a dinosaur skeleton in the background."
+    w: 1200
+    h: 1600
+    pos: "center 45%"
+  - file: vidcon-entrance.webp
+    alt: "The exterior of a conference building with VidCon banners."
+    w: 1200
+    h: 1600
+    pos: "center 45%"
+  - file: event-tiktok-live-conversation.webp
+    alt: "A group of people talking together at a TikTok LIVE event."
+    w: 1200
+    h: 801
+    pos: "center 42%"
+  - file: hq-pink-studio-logo-cube.webp
+    alt: "Four creators sitting on a TikTok-logo cube in a neon-lit pink studio."
+    w: 1200
+    h: 887
+    pos: "center 24%"
   - file: stage-event.webp
-    alt: Thundrr creators at an agency event
+    alt: "Thundrr creators at an agency event"
     w: 1400
     h: 1050
-    pos: center 30%
+    pos: "center 30%"
+  - file: live-fest-event-friends.webp
+    alt: "Three people smiling at an event, one holding a TikTok-branded lion plush."
+    w: 1200
+    h: 800
+    pos: "center 45%"
   - file: creator-ringlight.webp
-    alt: A Thundrr creator going LIVE
+    alt: "A Thundrr creator going LIVE"
     w: 800
     h: 800
-    pos: 40% 30%
+    pos: "40% 30%"
