@@ -1,8 +1,8 @@
 ---
 title: "What TikTok LIVE Fest 2026 is and how to join"
 accent: "how to join"
-seo_title: "TikTok LIVE Fest 2026: How to Join | Thundrr"
-description: "TikTok LIVE Fest 2026 is the year-end LIVE celebration. Here are the dates, leagues, and sign-up steps TikTok has published."
+seo_title: "TikTok LIVE Fest 2026: Dates, Leagues, Prizes & Tokyo | Thundrr"
+description: "Power League Nov 20 to Dec 6, Fandom League Dec 9 to 15, Global Finals Dec 17 to 21, the prizes, and the 2027 Tokyo gala. How to sign up and what each league scores."
 summary: "Dates, leagues, and the sign-up steps TikTok has published for LIVE Fest 2026."
 date: 2026-11-12
 last_modified_at: 2026-11-14
@@ -31,6 +31,14 @@ faq:
 ## What LIVE Fest 2026 is
 
 TikTok LIVE Fest 2026 is the year-end celebration for LIVE creators and viewers. TikTok's [LIVE Fest page](https://www.tiktok.com/livefest) calls it the world's largest annual LIVE celebration, connecting creators and fans across 90+ countries and regions, and the page currently says LIVE Fest is ongoing.
+
+### More LIVE Fest 2026 guides
+
+- [LIVE Fest 2026 schedule](/blog/live-fest-2026-schedule/)
+- [How to get more points in LIVE Fest](/blog/how-to-get-more-points-live-fest/)
+- [Power League tracks and rounds](/blog/live-fest-2026-power-league/)
+- [LIVE Fest rules](/blog/live-fest-2026-rules/)
+- [How rankings and scoring work](/blog/live-fest-2026-rankings/)
 
 TikTok's November 11, 2026 announcement describes it as the flagship celebration of the creativity, passion, and connections in the LIVE community. In-app competitions run through the end of December. Regional events begin in January 2027 across Southeast Asia, Latin America, Europe, and the United States, ahead of a global gala in Tokyo.
 
