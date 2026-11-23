@@ -1,11 +1,11 @@
 ---
 title: "TikTok LIVE requirements 2026: age, followers and access"
 accent: "followers and access"
-seo_title: "TikTok LIVE Requirements 2026: Age and Followers | Thundrr"
-description: "What TikTok says you need to go LIVE in 2026, the extra rules for LIVE Gifts, and the common reasons the LIVE button is missing from your account."
+seo_title: "How Many Followers to Go LIVE on TikTok? 2026 | Thundrr"
+description: "TikTok's Help Center lists 1,000 followers and age 18+ to go LIVE. The number may vary by region, plus LIVE Gifts rules and why the LIVE button is missing."
 summary: "What TikTok requires to go LIVE, what LIVE Gifts add, and why the LIVE button might be missing."
 date: 2026-11-17
-last_modified_at: 2026-11-17
+last_modified_at: 2026-11-23
 icon: safety
 image: "/assets/img/og/tiktok-live-requirements.jpg"
 takeaways:
