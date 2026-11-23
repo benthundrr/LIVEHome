@@ -1863,3 +1863,9 @@ body.lw-site .prose .award-card-body h3{
 @media (max-width:700px){
   body.lw-site .award-cards{grid-template-columns:1fr}
 }
+
+/* live-app card: one quick reveal. The nested blur fades (card > viz > phone > gifts)
+   and the 30ms-per-letter headline stacked into a slow glow-in. */
+#live-app .appwrap.rv{filter:none;transition-duration:.3s}
+#live-app .appwrap .rv,#live-app .appwrap .rv.lift{filter:none;transition-duration:.3s;transition-delay:0ms}
+#live-app .split.kinetic .kch{filter:none;transition-duration:.28s;transition-delay:calc(var(--k,0ms) * .35)}
