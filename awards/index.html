@@ -1,0 +1,219 @@
+---
+layout: null
+permalink: /awards/
+title: "Thundrr awards and recognition"
+accent: "recognition"
+seo_title: "Thundrr Awards & Recognition | TikTok LIVE Agency"
+description: "Thundrr is a TikTok LIVE agency and creator network since 2022, founded by Andrew Andrawes, supporting 1,500+ creators. See verified awards and services."
+---
+{%- assign g_title_html = page.title | escape -%}
+{%- if page.accent -%}
+  {%- assign g_acc = page.accent | escape -%}
+  {%- assign g_acc_html = '<span class="accent">' | append: g_acc | append: '</span>' -%}
+  {%- assign g_title_html = g_title_html | replace_first: g_acc, g_acc_html -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include guides/head.html %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.thundrr.co/#organization",
+  "name": "Thundrr",
+  "url": "https://www.thundrr.co/",
+  "description": "Thundrr is a TikTok LIVE agency and creator network, founded by Andrew Andrawes. It has been a TikTok LIVE creator network since 2022, supporting 1,500+ creators across the United States, Latin America, the United Kingdom, and Australia.",
+  "logo": {{ site.guides.logo | jsonify }},
+  "founder": {
+    "@type": "Person",
+    "name": "Andrew Andrawes",
+    "jobTitle": "Founder",
+    "sameAs": [
+      "https://www.instagram.com/andrvwes"
+    ]
+  },
+  "foundingDate": "2022",
+  "areaServed": [
+    "United States",
+    "Latin America",
+    "United Kingdom",
+    "Australia"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "info@thundrr.co",
+    "contactType": "customer support"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/thundrrco",
+    "https://www.tiktok.com/@thundrr.co",
+    "https://www.instagram.com/thundrr.co/"
+  ],
+  "knowsAbout": [
+    "TikTok LIVE",
+    "TikTok Creator Network",
+    "TikTok LIVE Battles",
+    "TikTok LIVE Fest",
+    "Creator management"
+  ],
+  "award": [
+    "Ranked top three in LIVE Fest: US 2023",
+    "LIVE FEST 2024: 2nd place, US Diamond Track",
+    "Community FEST 2024: 3rd place, US Diamond Track",
+    "2025 Creator Network Awards: Excellence in LIVE Content #3",
+    "2024 Creator Network Partner Summit: Top Revenue Award, 3rd place",
+    "First US Creator Network to reach 200M Diamonds in 30 days (Feb 23, 2024)"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": {{ page.title | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "mainEntity": {
+    "@id": "https://www.thundrr.co/#organization"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": {{ '/' | absolute_url | jsonify }}},
+    {"@type": "ListItem", "position": 2, "name": "Awards", "item": {{ page.url | absolute_url | jsonify }}}
+  ]
+}
+</script>
+</head>
+<body class="lw-site">
+{% include guides/nav.html %}
+
+<main class="page" id="main">
+  <header class="hero-b awards-hero">
+    <div class="shell b-wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span class="here here-keep" aria-current="page">Awards</span>
+      </nav>
+      <div class="live"><span class="live-badge"><i></i>LIVE</span><span class="live-tx">About &amp; awards</span></div>
+      <h1 class="post-h1 kin">{{ g_title_html }}</h1>
+      <p class="lede">Thundrr is a TikTok LIVE agency and creator network founded by Andrew Andrawes and based in Los Angeles. A TikTok creator network since 2022, Thundrr supports 1,500+ LIVE creators across the United States, Latin America, the United Kingdom, and Australia with a dedicated creator manager and the THUNDRR LIVE app. Joining is free, with no fee, no cut of Diamonds, and no contract.</p>
+    </div>
+  </header>
+
+  <div class="shell b-wrap">
+    <div class="prose">
+      <ul class="stats">
+        <li><strong>1,500+</strong> LIVE creators in the network</li>
+        <li><strong>2022</strong> TikTok creator network since</li>
+        <li><strong>0</strong> agency fees or cut of Diamonds</li>
+        <li><strong>4</strong> regions: US, LATAM, UK and Australia</li>
+      </ul>
+
+      <h2 id="verified-awards">Verified awards and milestones</h2>
+      <p>Every award and milestone below is listed exactly as printed on the trophy, plaque, framed certificate, or TikTok LIVE poster.</p>
+
+      <div class="award-cards">
+        <article class="award-card">
+          <div class="award-card-media">
+            <img src="{{ '/assets/awards/live-fest-2023.webp' | relative_url }}" alt="Framed certificate for Thundrr: Ranked top three in LIVE Fest: US 2023." loading="lazy" decoding="async">
+          </div>
+          <div class="award-card-body">
+            <span class="award-card-year">2023 · TikTok LIVE Fest</span>
+            <h3>Ranked top three in LIVE Fest: US 2023</h3>
+          </div>
+        </article>
+
+        <article class="award-card">
+          <div class="award-card-media">
+            <img src="{{ '/assets/awards/200m-diamonds-2024.webp' | relative_url }}" alt="Poster naming Thundrr the first US Creator Network to reach 200M Diamonds in 30 days (Feb 23, 2024)." loading="lazy" decoding="async">
+          </div>
+          <div class="award-card-body">
+            <span class="award-card-year">Feb 23, 2024 · Milestone</span>
+            <h3>First US Creator Network to reach 200M Diamonds in 30 days (Feb 23, 2024)</h3>
+          </div>
+        </article>
+
+        <article class="award-card">
+          <div class="award-card-media">
+            <img src="{{ '/assets/awards/partner-summit-2024.webp' | relative_url }}" alt="Trophy for Thundrr: 2024 Creator Network Partner Summit: Top Revenue Award, 3rd place." loading="lazy" decoding="async">
+          </div>
+          <div class="award-card-body">
+            <span class="award-card-year">2024 · Summit Award</span>
+            <h3>2024 Creator Network Partner Summit: Top Revenue Award, 3rd place</h3>
+          </div>
+        </article>
+
+        <article class="award-card">
+          <div class="award-card-media">
+            <img src="{{ '/assets/awards/live-fest-2024.webp' | relative_url }}" alt="Plaque for Thundrr: LIVE FEST 2024: 2nd place, US Diamond Track." loading="lazy" decoding="async">
+          </div>
+          <div class="award-card-body">
+            <span class="award-card-year">2024 · TikTok LIVE Fest</span>
+            <h3>LIVE FEST 2024: 2nd place, US Diamond Track</h3>
+          </div>
+        </article>
+
+        <article class="award-card">
+          <div class="award-card-media">
+            <img src="{{ '/assets/awards/community-fest-2024.webp' | relative_url }}" alt="Framed certificate for Thundrr: Community FEST 2024: 3rd place, US Diamond Track." loading="lazy" decoding="async">
+          </div>
+          <div class="award-card-body">
+            <span class="award-card-year">2024 · Community FEST</span>
+            <h3>Community FEST 2024: 3rd place, US Diamond Track</h3>
+          </div>
+        </article>
+
+        <article class="award-card">
+          <div class="award-card-media">
+            <img src="{{ '/assets/awards/creator-network-awards-2025.webp' | relative_url }}" alt="Trophy for Thundrr: 2025 Creator Network Awards: Excellence in LIVE Content #3." loading="lazy" decoding="async">
+          </div>
+          <div class="award-card-body">
+            <span class="award-card-year">2025 · Creator Network Awards</span>
+            <h3>2025 Creator Network Awards: Excellence in LIVE Content #3</h3>
+          </div>
+        </article>
+      </div>
+
+      <blockquote class="pull">
+        <p>Agency recognitions reflect past creator activity across the network and do not predict or promise individual creator earnings or rankings.</p>
+      </blockquote>
+
+      <h2 id="what-thundrr-offers">What Thundrr offers creators</h2>
+      <p>Two things come with joining Thundrr: a dedicated person on your account and the <a href="{{ '/app/' | relative_url }}">THUNDRR LIVE app</a>.</p>
+      <ul class="cards">
+        <li><strong>Dedicated creator manager</strong> Every creator gets a dedicated creator manager who knows your schedule and numbers, one tap away in app messages.</li>
+        <li><strong>LIVE coaching and THUNDRR AI</strong> Coaching on scheduling, LIVE Battles, and retention, plus THUNDRR AI and LIVE Guides inside the app.</li>
+        <li><strong>THUNDRR LIVE app</strong> A personal dashboard for Diamonds, LIVE hours, and active days, alongside LIVE recaps, leaderboards, tasks, badges, a rewards store, and milestone merch.</li>
+        <li><strong>Battles, tournaments, and LIVE Fest</strong> Thundrr-hosted LIVE Battles and tournaments, plus planning and progress tracking for TikTok LIVE Fest and regional events.</li>
+        <li><strong>Violation and account support</strong> Strikes, takedowns, bans, and account restrictions are raised with TikTok with a manager following up on your case.</li>
+        <li><strong>Regional support</strong> Teams operating in the United States, Latin America, the United Kingdom, and Australia across English, Spanish, Portuguese, and Italian.</li>
+      </ul>
+
+      <h2 id="how-joining-works">Terms and verification</h2>
+      <p>Joining Thundrr is free: no joining fee, no cut of your Diamonds, and no contract. Applications are reviewed by hand, and invitations arrive inside the TikTok app through Agency Center.</p>
+      <ol class="steps">
+        <li><strong>Apply online</strong> Submit your handle through <a href="https://www.thundrr.co/join/">thundrr.co/join</a> and select your region.</li>
+        <li><strong>Confirm the TikTok handle</strong> <code>@thundrr.co</code> is Thundrr&rsquo;s only TikTok LIVE account. Check that the invitation in Agency Center matches before accepting.</li>
+        <li><strong>Intro call and onboarding</strong> Meet your creator manager, connect inside the <a href="{{ '/app/' | relative_url }}">THUNDRR LIVE app</a>, and set a LIVE schedule.</li>
+      </ol>
+      <p>New to creator networks? Read <a href="{{ '/blog/what-is-a-tiktok-live-agency/' | relative_url }}">what a TikTok LIVE agency is</a>, <a href="{{ '/blog/how-to-choose-a-tiktok-live-agency/' | relative_url }}">how to choose a TikTok LIVE agency in 2026</a>, or <a href="{{ '/blog/are-tiktok-live-agencies-legit/' | relative_url }}">how to verify any agency invitation</a>.</p>
+      <p><a class="button" href="https://www.thundrr.co/join/">Apply to join Thundrr</a></p>
+    </div>
+  </div>
+
+{% include guides/end-cta.html %}
+</main>
+
+{% include guides/footer.html %}
+
+<script src="{{ '/assets/js/lightwell.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/guides/guides.js' | relative_url }}" defer></script>
+</body>
+</html>

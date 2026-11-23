@@ -114,7 +114,7 @@ Thundrr is a [TikTok LIVE agency](https://www.thundrr.co/) and creator network f
 - **0** fees to join
 {: .stats}
 
-Thundrr's results:
+Thundrr's results (also listed on [Thundrr's awards and recognition page](/awards/)):
 
 - Ranked top three in LIVE Fest: US 2023.
 - LIVE FEST 2024: 2nd place, US Diamond Track.
@@ -126,6 +126,6 @@ Thundrr's results:
 > A network's ranking reflects its creators' work, and it doesn't predict what any one creator will earn.
 {: .pull}
 
-Ready to start? [How to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/) walks through every step. Already streaming? Read [How to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/), [How to get more gifts on TikTok LIVE without begging](/blog/how-to-get-more-gifts-on-tiktok-live/) and [How to win TikTok LIVE Battles](/blog/how-to-win-tiktok-live-battles/). For how Diamonds and agency pay work, read [Do TikTok LIVE agencies take your Diamonds?](/blog/do-tiktok-live-agencies-take-your-diamonds/).
+Ready to compare options or start? Read [how to choose a TikTok LIVE agency in 2026](/blog/how-to-choose-a-tiktok-live-agency/) or follow [how to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/) step by step. Already streaming? Read [How to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/), [How to get more gifts on TikTok LIVE without begging](/blog/how-to-get-more-gifts-on-tiktok-live/) and [How to win TikTok LIVE Battles](/blog/how-to-win-tiktok-live-battles/). For how Diamonds and agency pay work, read [Do TikTok LIVE agencies take your Diamonds?](/blog/do-tiktok-live-agencies-take-your-diamonds/).
 
 [Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

@@ -23,6 +23,7 @@
         <div class="foot-links">
           <a href="{{ '/' | relative_url }}">Our team</a>
           <a href="{{ '/' | relative_url }}">Questions</a>
+          <a href="/awards/"{% if page.url == '/awards/' %} class="is-here"{% endif %}>Awards</a>
           <a href="/app/"{% if page.url == '/app/' %} class="is-here"{% endif %}>The LIVE app</a>
           <a href="{{ '/blog/' | relative_url }}"{% if page.url == '/blog/' or page.layout == 'guide' %} class="is-here"{% endif %}>Guides</a>
           <a href="https://wkf.ms/3COWZi3" target="_blank" rel="noopener">Careers</a>
