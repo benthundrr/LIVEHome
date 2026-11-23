@@ -71,7 +71,7 @@ A real network can tell you who runs it, show where it's based, and point to res
 | Creator Network since | A clear start date | 2022 |
 | Cost to join | None | Free, no fee, no cut of Diamonds, no contract |
 
-Results TikTok itself issued are harder to fake than screenshots of earnings. Thundrr's include "Ranked top three in LIVE Fest: US 2023", "LIVE FEST 2024: 2nd place, US Diamond Track", and "First US Creator Network to reach 200M Diamonds in 30 days (Feb 23, 2024)".
+Results TikTok itself issued are harder to fake than screenshots of earnings. Thundrr's include "Ranked top three in LIVE Fest: US 2023", "LIVE FEST 2024: 2nd place, US Diamond Track", and "First US Creator Network to reach 200M Diamonds in 30 days (Feb 23, 2024)" — see the full list on [Thundrr's awards and recognition page](/awards/).
 
 > The fastest test is simple: a real agency invites you inside TikTok and never asks for money or your password.
 {: .pull}
@@ -93,6 +93,6 @@ Ask who your contact will be and how you'll reach them. At Thundrr, every creato
 > **Tip** If an agency won't answer these questions before you accept, keep looking.
 {: .callout .tip}
 
-New to agencies? Start with [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/) or go straight to [how to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/). On fees and whether an agency takes your Diamonds, read [Do TikTok LIVE agencies take your Diamonds?](/blog/do-tiktok-live-agencies-take-your-diamonds/).
+New to agencies? Start with [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/), use our [2026 checklist for choosing a TikTok LIVE agency](/blog/how-to-choose-a-tiktok-live-agency/), or go straight to [how to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/). On fees and whether an agency takes your Diamonds, read [Do TikTok LIVE agencies take your Diamonds?](/blog/do-tiktok-live-agencies-take-your-diamonds/).
 
 [Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

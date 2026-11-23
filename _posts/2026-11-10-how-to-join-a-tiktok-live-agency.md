@@ -87,6 +87,6 @@ Thundrr is a [TikTok LIVE agency](https://www.thundrr.co/) and creator network b
 - **2022** Creator Network since
 {: .stats}
 
-Our results include "LIVE FEST 2024: 2nd place, US Diamond Track" and "Community FEST 2024: 3rd place, US Diamond Track". Still deciding? Start with [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/)
+Our results include "LIVE FEST 2024: 2nd place, US Diamond Track" and "Community FEST 2024: 3rd place, US Diamond Track" (see all six on [Thundrr's awards and recognition page](/awards/)). Still comparing options? Read [how to choose a TikTok LIVE agency in 2026](/blog/how-to-choose-a-tiktok-live-agency/) or [What is a TikTok LIVE agency?](/blog/what-is-a-tiktok-live-agency/).
 
 [Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

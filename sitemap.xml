@@ -24,6 +24,10 @@ layout: null
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
+    <loc>https://www.thundrr.co/awards/</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
     <loc>{{ '/blog/' | absolute_url }}</loc>
     {%- if g_lm != '' %}
     <lastmod>{{ g_lm }}</lastmod>
