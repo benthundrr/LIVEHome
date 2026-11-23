@@ -5,7 +5,7 @@ seo_title: "How to Leave a TikTok LIVE Agency in 2026 | Thundrr"
 description: "What TikTok's own pages say about leaving a TikTok LIVE agency in 2026, switching to a new creator network, cooling-down periods and second accounts."
 summary: "What to check before you request to leave, how switching works, and the mistakes that can cost you."
 date: 2026-11-18
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-23
 icon: agency
 cover_frame: f09
 image: "/assets/img/og/how-to-leave-a-tiktok-live-agency.jpg"
@@ -111,7 +111,7 @@ When you pick your next network, check who you're dealing with. TikTok says a ne
 
 ## Leaving or joining Thundrr
 
-Thundrr is a TikTok LIVE agency founded by Andrew Andrawes. It has been a TikTok creator network since 2022 and works with 1,500+ creators.
+Thundrr is a [TikTok LIVE agency](https://www.thundrr.co/) founded by Andrew Andrawes. It has been a TikTok creator network since 2022 and works with 1,500+ creators.
 
 - **1,500+** creators in the network
 - **2022** a TikTok creator network since

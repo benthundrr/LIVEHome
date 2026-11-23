@@ -5,7 +5,7 @@ seo_title: "Do TikTok LIVE Agencies Take Your Diamonds? | Thundrr"
 description: "How TikTok LIVE agencies get paid: how Coins, Gifts and Diamonds flow, where TikTok's agency bonuses fit, and the questions to ask before you join."
 summary: "How Coins, Gifts and Diamonds flow, how agencies get paid, and what to ask before you join."
 date: 2026-11-15
-last_modified_at: 2026-11-17
+last_modified_at: 2026-11-23
 icon: diamond
 image: "/assets/img/og/do-tiktok-live-agencies-take-your-diamonds.jpg"
 takeaways:
@@ -66,7 +66,7 @@ An agency's own agreement is a separate matter. Any fee or share an agency charg
 
 ## Thundrr's model, stated plainly
 
-Thundrr is a TikTok LIVE agency and creator network founded by Andrew Andrawes. It has been a TikTok creator network since 2022 and works with 1,500+ creators.
+Thundrr is a [TikTok LIVE agency](https://www.thundrr.co/) and creator network founded by Andrew Andrawes. It has been a TikTok creator network since 2022 and works with 1,500+ creators.
 
 - **1,500+** creators in the network
 - **2022** a TikTok creator network since

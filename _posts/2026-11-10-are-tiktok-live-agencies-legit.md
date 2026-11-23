@@ -5,7 +5,7 @@ seo_title: "Are TikTok LIVE Agencies Legit? How to Spot a Scam | Thundrr"
 description: "Yes, real TikTok LIVE agencies and creator networks exist, and so do scams. Spot red flags, see how a real invite works in the app, and verify any agency."
 summary: "Red flags, how a real invitation works, and how to check any agency in a few minutes."
 date: 2026-11-10
-last_modified_at: 2026-11-20
+last_modified_at: 2026-11-23
 icon: safety
 image: "/assets/img/og/are-tiktok-live-agencies-legit.jpg"
 takeaways:
@@ -61,7 +61,7 @@ In its [post on agency invitations](https://www.tiktok.com/live/creator-networks
 
 ## How to verify Thundrr or any agency
 
-A real network can tell you who runs it, show where it's based, and point to results you can check. Here's how Thundrr measures up.
+A real network can tell you who runs it, show where it's based, and point to results you can check. Here's how Thundrr, a [TikTok LIVE agency](https://www.thundrr.co/) and creator network, measures up.
 
 | Check | What to look for | Thundrr |
 |---|---|---|

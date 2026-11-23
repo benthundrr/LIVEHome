@@ -5,7 +5,7 @@ seo_title: "TikTok LIVE Agency vs Going Solo: Pros and Cons | Thundrr"
 description: "The pros and cons of a TikTok LIVE agency vs going solo: what TikTok gives every creator, what a creator network adds, the trade-offs and a checklist."
 summary: "What you get on your own, what a creator network adds, the trade-offs, and a checklist to decide."
 date: 2026-11-19
-last_modified_at: 2026-11-19
+last_modified_at: 2026-11-23
 icon: agency
 image: "/assets/img/og/tiktok-live-agency-vs-going-solo.jpg"
 takeaways:
@@ -125,7 +125,7 @@ Answer these honestly. If most of your answers lean toward wanting support, an a
 
 ## Where Thundrr fits in
 
-Thundrr is a TikTok LIVE agency founded by Andrew Andrawes. It has been a TikTok creator network since 2022 and works with 1,500+ creators.
+Thundrr is a [TikTok LIVE agency](https://www.thundrr.co/) founded by Andrew Andrawes. It has been a TikTok creator network since 2022 and works with 1,500+ creators.
 
 - **1,500+** creators in the network
 - **2022** a TikTok creator network since
