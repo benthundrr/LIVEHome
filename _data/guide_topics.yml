@@ -7,7 +7,7 @@ order:
   - id: news
     title: TikTok LIVE news
     label: LIVE news
-    intro: "TikTok's latest rules for LIVE creators, including giveaways, free gifts and promotional claims."
+    intro: "TikTok's latest rules and tools for LIVE creators, including giveaways, promotional claims and AI diagnosis reports."
   - id: agencies
     title: TikTok LIVE agencies
     label: Agencies
@@ -57,6 +57,7 @@ frames:
 
 by_slug:
   tiktok-live-giveaway-rules: news
+  tiktok-live-ai-diagnosis: news
   what-is-a-tiktok-live-agency: agencies
   are-tiktok-live-agencies-legit: agencies
   how-to-join-a-tiktok-live-agency: agencies
