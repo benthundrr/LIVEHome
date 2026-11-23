@@ -1,11 +1,11 @@
 ---
 title: "What TikTok LIVE Fest 2026 is and how to join"
 accent: "how to join"
-seo_title: "TikTok LIVE Fest 2026: Dates, Leagues, Prizes & Tokyo | Thundrr"
-description: "Power League Nov 20 to Dec 6, Fandom League Dec 9 to 15, Global Finals Dec 17 to 21, the prizes, and the 2027 Tokyo gala. How to sign up and what each league scores."
-summary: "Dates, leagues, and the sign-up steps TikTok has published for LIVE Fest 2026."
+seo_title: "TikTok LIVE Fest 2026: Dates and How to Join | Thundrr"
+description: "When is TikTok LIVE Fest 2026? This guide covers league dates, how to sign up, what each league scores, and the Global Finals."
+summary: "When LIVE Fest 2026 is, how to join, and what each league covers."
 date: 2026-11-12
-last_modified_at: 2026-11-14
+last_modified_at: 2026-11-23
 icon: schedule
 cover_frame: f07
 image: "/assets/img/og/tiktok-live-fest-2026.jpg"
@@ -30,7 +30,7 @@ faq:
 
 ## What LIVE Fest 2026 is
 
-TikTok LIVE Fest 2026 is the year-end celebration for LIVE creators and viewers. TikTok's [LIVE Fest page](https://www.tiktok.com/livefest) calls it the world's largest annual LIVE celebration, connecting creators and fans across 90+ countries and regions, and the page currently says LIVE Fest is ongoing.
+TikTok LIVE Fest 2026 is TikTok's year-end celebration for LIVE creators and viewers, with in-app leagues from November 20 through the Global Finals on December 17 to 21. TikTok's [LIVE Fest page](https://www.tiktok.com/livefest) calls it the world's largest annual LIVE celebration, connecting creators and fans across 90+ countries and regions, and the page currently says LIVE Fest is ongoing.
 
 ### More LIVE Fest 2026 guides
 
@@ -116,7 +116,7 @@ Leaderboards can move. The rules say the points on a board may contain errors, a
 
 Creators enter on their own campaign page. TikTok's published rules do not describe a separate agency leaderboard for 2026. A creator network can help you read that page, keep a schedule, and tell viewers how support works. It cannot place you on a board.
 
-Thundrr is a TikTok LIVE agency and creator network of 1,500+ creators, and a creator network since 2022. Founded by Andrew Andrawes, it is free to join, with no fee, no cut of your Diamonds, and no contract. Every creator gets a dedicated creator manager.
+Thundrr is a [TikTok LIVE agency](https://www.thundrr.co/) and creator network of 1,500+ creators, and a creator network since 2022. Founded by Andrew Andrawes, it is free to join, with no fee, no cut of your Diamonds, and no contract. Every creator gets a dedicated creator manager.
 
 - **1,500+** creators
 - **2022** creator network since

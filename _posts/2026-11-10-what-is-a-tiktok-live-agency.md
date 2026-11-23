@@ -5,7 +5,7 @@ seo_title: "What Is a TikTok LIVE Agency? | Thundrr"
 description: "A TikTok LIVE agency (also called a TikTok agency or Creator Network) coaches LIVE creators. What they do, how they're paid, and who should join."
 summary: "What LIVE agencies do, how they get paid, and how to tell if joining one is right for you."
 date: 2026-11-10
-last_modified_at: 2026-11-18
+last_modified_at: 2026-11-23
 icon: agency
 image: "/assets/img/og/what-is-a-tiktok-live-agency.jpg"
 takeaways:
@@ -107,7 +107,7 @@ Scam invitations exist, so check before you accept anything. Our full checklist 
 
 ## Thundrr's verified results
 
-Thundrr is a TikTok LIVE agency and creator network founded by Andrew Andrawes and based in Los Angeles. Since 2022, it has supported 1,500+ LIVE creators across the US. Creators also get the [THUNDRR LIVE app](/app/), with LIVE stats, THUNDRR AI coaching, tournaments and rewards in one place.
+Thundrr is a [TikTok LIVE agency](https://www.thundrr.co/) and creator network founded by Andrew Andrawes and based in Los Angeles. Since 2022, it has supported 1,500+ LIVE creators across the US. Creators also get the [THUNDRR LIVE app](/app/), with LIVE stats, THUNDRR AI coaching, tournaments and rewards in one place.
 
 - **1,500+** LIVE creators across the US
 - **200M** Diamonds in 30 days, the first US Creator Network to reach it (Feb 23, 2024)
