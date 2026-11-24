@@ -1,11 +1,11 @@
 ---
 title: "How to get more points in TikTok LIVE Fest 2026"
 accent: "LIVE Fest 2026"
-seo_title: "How to Get More Points in LIVE Fest 2026 | Thundrr"
-description: "Practical ways to earn more LIVE Fest 2026 points, built only on the scoring TikTok has published: Bonus Hour, Double Blast, Votes, FEST Gifts and matches."
+seo_title: "LIVE Fest 2026 Points: How Scoring Works + Tips | Thundrr"
+description: "How TikTok LIVE Fest 2026 points work and how to earn more, using only the scoring TikTok has published: Votes, FEST Gifts, Bonus Hour, Double Blast and matches."
 summary: "Tactics for every round, built only on the LIVE Fest scoring TikTok has published."
 date: 2026-11-20
-last_modified_at: 2026-11-20
+last_modified_at: 2026-11-24
 icon: growth
 image: "/assets/img/og/how-to-get-more-points-live-fest.jpg"
 takeaways:
