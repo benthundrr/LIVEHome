@@ -1,11 +1,11 @@
 ---
 title: "TikTok Shop LIVE giveaway rules (Nov 2026): what creators need to know"
 accent: "what creators need to know"
-seo_title: "TikTok LIVE Giveaway Rules (Nov 2026): What Creators Need to Know | Thundrr"
-description: "TikTok Shop's new US creator guide sets the rules for giveaways and free gifts on LIVE: use the official LIVE Giveaway feature, keep it under $500, no wheels or lucky draws."
+seo_title: "How to Do a Giveaway on TikTok LIVE (2026 Rules) | Thundrr"
+description: "How to run a giveaway on TikTok LIVE in 2026: use TikTok's LIVE Giveaway feature, follow the published US creator rules, and avoid wheels or lucky draws."
 summary: "TikTok's new US creator guide on giveaways, free gifts and gambling-style mechanics on LIVE, and what to change before your next stream."
 date: 2026-11-20
-last_modified_at: 2026-11-20
+last_modified_at: 2026-11-24
 icon: safety
 image: "/assets/img/og/tiktok-live-giveaway-rules.jpg"
 takeaways:
