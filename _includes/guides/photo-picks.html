@@ -18,6 +18,8 @@
 {%- endcomment -%}
 {%- assign gp_u = -1 -%}
 {%- assign gp_s = -1 -%}
+{%- assign gp_c = -1 -%}
+{%- assign gp_k = -1 -%}
 {%- assign gp_i = -1 -%}
 {%- for gp_post in gp_ordered -%}
   {%- if gp_post.slug == "live-fest-2026-us-creators" -%}
@@ -25,6 +27,12 @@
   {%- endif -%}
   {%- if gp_post.slug == "tiktok-shop-live-group-deal" -%}
     {%- assign gp_s = forloop.index0 -%}
+  {%- endif -%}
+  {%- if gp_post.slug == "live-fest-2026-small-creators" -%}
+    {%- assign gp_c = forloop.index0 -%}
+  {%- endif -%}
+  {%- if gp_post.slug == "tiktok-live-stream-key" -%}
+    {%- assign gp_k = forloop.index0 -%}
   {%- endif -%}
   {%- if gp_post.url == page.url -%}
     {%- assign gp_i = forloop.index0 -%}
@@ -35,6 +43,18 @@
   {%- if gp_i == gp_u -%}
     {%- assign gp_rank = gp_s -%}
   {%- elsif gp_i > gp_u and gp_i <= gp_s -%}
+    {%- assign gp_rank = gp_i | minus: 1 -%}
+  {%- endif -%}
+{%- endif -%}
+{%- comment -%}
+  live-fest-2026-small-creators sorts before tiktok-live-stream-key, which
+  is already published on 2026-11-25. Move this guide to just after that
+  post so the stream key page keeps its photos.
+{%- endcomment -%}
+{%- if gp_c >= 0 and gp_k > gp_c -%}
+  {%- if gp_i == gp_c -%}
+    {%- assign gp_rank = gp_k -%}
+  {%- elsif gp_i > gp_c and gp_i <= gp_k -%}
     {%- assign gp_rank = gp_i | minus: 1 -%}
   {%- endif -%}
 {%- endif -%}
