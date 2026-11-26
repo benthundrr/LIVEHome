@@ -5,7 +5,7 @@ seo_title: "How Many Followers to Go LIVE on TikTok? 2026 | Thundrr"
 description: "TikTok's Help Center lists 1,000 followers and age 18+ to go LIVE. The number may vary by region, plus LIVE Gifts rules and why the LIVE button is missing."
 summary: "What TikTok requires to go LIVE, what LIVE Gifts add, and why the LIVE button might be missing."
 date: 2026-11-17
-last_modified_at: 2026-11-23
+last_modified_at: 2026-11-26
 icon: safety
 image: "/assets/img/og/tiktok-live-requirements.jpg"
 takeaways:
@@ -15,6 +15,8 @@ takeaways:
   - "A missing LIVE button usually comes down to age, followers, location or account standing."
   - "No agency can grant LIVE access or skip TikTok's requirements, Thundrr included."
 faq:
+  - q: "What are the requirements to go LIVE on TikTok?"
+    a: "TikTok's Help Center says you must be at least 18 and have 1,000 followers, a number that may vary across regions. LIVE also has to be available where you are, and TikTok asks you to follow its Community Guidelines and Terms of Service."
   - q: "How many followers do you need to go LIVE on TikTok in 2026?"
     a: "TikTok's Help Center lists 1,000 followers to go LIVE and notes that this may vary across regions. Other TikTok pages say only that you need the required number of followers for your region, so check what your own app shows."
   - q: "Can you go LIVE on TikTok without followers?"
@@ -26,6 +28,8 @@ faq:
   - q: "Can Thundrr get me LIVE access?"
     a: "No. Only TikTok grants LIVE access, and no agency can bypass its requirements. A Thundrr creator manager can help you understand the requirements."
 ---
+
+**Quick answer:** TikTok's Help Center lists 1,000 followers and a minimum age of 18 to go LIVE, and notes that the follower number may vary across regions. LIVE also has to be available where you live, and your account needs to follow TikTok's Community Guidelines.
 
 ## What TikTok requires to go LIVE
 
