@@ -170,6 +170,7 @@ Every guide uses at least three different blocks, one Apply panel, and ends with
 ## 4. Brand rules
 
 - Thundrr is a TikTok LIVE agency and creator network. Never call Thundrr an official TikTok partner, a partner agency, or partnered with TikTok. Never write "Official TikTok LIVE Agency". Guides cover TikTok LIVE only: never mention TikTok Shop, Thundrr Shop, Thundrr GO, or travel and hotel programs.
+- Never claim @thundrr.co is the only Thundrr handle, Thundrr's only TikTok LIVE handle, or Thundrr's only TikTok LIVE account. Thundrr recruits from many handles. Never write that another account recruiting for Thundrr isn't us.
 - Say "LIVE Battles" or "Battles". Never "PK".
 - Never write "X, not Y" contrast sentences (for example "An agency, not a middleman"). Say the thing directly.
 - No emojis. No mention of Discord.
@@ -219,3 +220,4 @@ If a paragraph needs Ben to check a claim, start it with `[DRAFT â€“ replace]` â
 - [ ] Ends with the Apply button
 - [ ] `image` is `/assets/img/og/<slug>.jpg` and that file is in the pull request
 - [ ] Brand rules and facts list followed
+- [ ] Never claim @thundrr.co is the only Thundrr handle

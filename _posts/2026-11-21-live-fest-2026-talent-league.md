@@ -148,7 +148,4 @@ Thundrr's results in TikTok events include "Ranked top three in LIVE Fest: US 20
 
 {% include graphic.html name="manager" caption="A creator manager can help you check your Talent track and keep the days you said you would go LIVE." %}
 
-> **Heads up** @thundrr.co is Thundrr's only TikTok LIVE handle. If another account says it's recruiting for Thundrr, it isn't us.
-{: .callout .warn}
-
 [Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

@@ -117,7 +117,4 @@ Joining is free, with no fee and no contract. Thundrr takes no cut of your Diamo
 
 Thundrr's results in TikTok events include 'Ranked top three in LIVE Fest: US 2023', LIVE FEST 2024: 2nd Place, US Diamond Track, and Community FEST 2024: 3rd Place, US Diamond Track. A past result doesn't predict a 2026 rank, and no agency can promise one. TikTok runs the LIVE Fest leaderboards.
 
-> **Heads up** @thundrr.co is Thundrr's only TikTok LIVE handle. If another account says it's recruiting for Thundrr, it isn't us.
-{: .callout .warn}
-
 [Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

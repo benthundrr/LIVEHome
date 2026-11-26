@@ -146,7 +146,4 @@ No agency can hand you a stream key or promise a LIVE Fest rank. Your access com
 
 {% include graphic.html name="manager" caption="Your creator manager is one tap away in app messages when you're setting up a LIVE." %}
 
-> **Heads up** @thundrr.co is Thundrr's only TikTok LIVE handle. If another account says it's recruiting for Thundrr, it isn't us.
-{: .callout .warn}
-
 [Apply to join Thundrr](https://www.thundrr.co/join/){: .button}
