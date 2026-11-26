@@ -5,7 +5,7 @@ seo_title: "LIVE Fest 2026 Points: How Scoring Works + Tips | Thundrr"
 description: "How TikTok LIVE Fest 2026 points work and how to earn more, using only the scoring TikTok has published: Votes, FEST Gifts, Bonus Hour, Double Blast and matches."
 summary: "Tactics for every round, built only on the LIVE Fest scoring TikTok has published."
 date: 2026-11-20
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-26
 icon: growth
 image: "/assets/img/og/how-to-get-more-points-live-fest.jpg"
 takeaways:
@@ -24,7 +24,7 @@ faq:
   - q: "Do LIVE Fest Votes count automatically?"
     a: "No. TikTok's Event Rules say Votes must be sent manually, and 1 Vote = 1 point. Unused Votes expire at the end of the global finals. Confirm on your campaign page."
   - q: "Can an agency get me more LIVE Fest points?"
-    a: "No agency can add points or place you on a leaderboard. TikTok scores the campaign. A creator network can help you read your campaign page and plan your LIVEs."
+    a: "No agency can add points or place you on a leaderboard. TikTok scores the campaign. A creator network can help you read your campaign page and plan your LIVEs. Wondering whether an agency can help? See [can a TikTok LIVE agency help in LIVE Fest?](/blog/tiktok-live-agency-live-fest/)."
 ---
 
 ## What earns points
