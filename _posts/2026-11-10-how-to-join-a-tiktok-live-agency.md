@@ -33,7 +33,7 @@ An agency can only help you if you can go LIVE and collect Diamonds. TikTok's [H
 
 - **Age** You must be at least 18, or 19 in South Korea.
 - **Location** You must live where LIVE Gifts are available.
-- **LIVE access** You must be eligible to go LIVE.
+- **LIVE access** You must be eligible to go LIVE. See [TikTok LIVE requirements](/blog/tiktok-live-requirements/) for age and followers.
 - **Good standing** Your account must follow TikTok's Community Guidelines and Terms of Service.
 {: .cards}
 

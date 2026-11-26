@@ -35,7 +35,7 @@ TikTok's Event Rules say LIVE Fest 2026 is a celebration for LIVE creators and v
 You are eligible only if all of these are true:
 
 - **Age** You are at least 18, or 19 in Korea.
-- **LIVE access** Creators must already meet TikTok's requirements to go LIVE.
+- **LIVE access** Creators must already meet TikTok's [requirements to go LIVE](/blog/tiktok-live-requirements/).
 - **Region** You live in a region on the Event Rules list.
 - **Account** The account is not a Business Account, an Organizational Account, an account used to promote an e-commerce business, or a government, politician, or political party account.
 - **Independence** You are not an employee, officer, or contractor of TikTok, and you are not using a VPN or another tool that hides your location.
