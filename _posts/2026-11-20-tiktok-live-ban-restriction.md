@@ -157,9 +157,6 @@ Thundrr can't lift a TikTok restriction or ban, and no agency can. What you do g
 
 {% include graphic.html name="manager" caption="Your creator manager is one message away in the THUNDRR app." %}
 
-> **Heads up** @thundrr.co is Thundrr's only TikTok LIVE handle. If another account says it's recruiting for Thundrr, it isn't us.
-{: .callout .warn}
-
 To learn more about agencies, read [what a TikTok LIVE agency is](/blog/what-is-a-tiktok-live-agency/), compare a [TikTok LIVE agency vs going solo](/blog/tiktok-live-agency-vs-going-solo/), or see [how to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/).
 
 [Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

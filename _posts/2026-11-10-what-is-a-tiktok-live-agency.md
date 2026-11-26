@@ -100,7 +100,7 @@ You only go LIVE once in a while, because the support pays off only when you sho
 Scam invitations exist, so check before you accept anything. Our full checklist is in [Are TikTok LIVE agencies legit?](/blog/are-tiktok-live-agencies-legit/)
 
 1. **Use the in-app flow** TikTok's [agency invite page](https://www.tiktok.com/tcn/agency_invite) puts your invitation code under Settings and privacy, Creator tools, LIVE Center, Agency Center.
-2. **Check the account** Make sure the name on the invitation matches the network you've been talking to. @thundrr.co is Thundrr's only TikTok LIVE handle.
+2. **Check the account** Make sure the name on the invitation matches the network you've been talking to.
 3. **Never pay or share your login** TikTok says it will never ask for your password, and a real network doesn't need it either.
 4. **Get the terms in writing** Ask about any fees, any minimum hours, and how to leave before you accept.
 {: .steps}

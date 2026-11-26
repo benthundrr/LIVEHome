@@ -115,9 +115,6 @@ Every creator gets a dedicated creator manager, one tap away in app messages in 
 
 {% include graphic.html name="manager" caption="Your creator manager is one message away in the THUNDRR app." %}
 
-> **Heads up** @thundrr.co is Thundrr's only TikTok LIVE handle. If another account says it's recruiting for Thundrr, it isn't us.
-{: .callout .warn}
-
 More Diamonds start with more viewers and more Gifts. Read [how to get more viewers on TikTok LIVE](/blog/how-to-get-more-viewers-on-tiktok-live/), [how to get more gifts on TikTok LIVE](/blog/how-to-get-more-gifts-on-tiktok-live/) and [how to win TikTok LIVE Battles](/blog/how-to-win-tiktok-live-battles/).
 
 New to agencies? Start with [what a TikTok LIVE agency is](/blog/what-is-a-tiktok-live-agency/) and [how to join a TikTok LIVE agency](/blog/how-to-join-a-tiktok-live-agency/).

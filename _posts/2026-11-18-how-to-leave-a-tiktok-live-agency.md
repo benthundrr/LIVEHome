@@ -125,9 +125,6 @@ Every creator gets a dedicated creator manager, one tap away in app messages in 
 
 The THUNDRR LIVE app also shows your Diamonds, LIVE hours and active days on your dashboard, and you can compete in battles and tournaments hosted by Thundrr.
 
-> **Heads up** @thundrr.co is Thundrr's only TikTok LIVE handle. If another account says it's recruiting for Thundrr, it isn't us.
-{: .callout .warn}
-
 Still deciding whether you need a network at all? Start with [what a TikTok LIVE agency is](/blog/what-is-a-tiktok-live-agency/), then check the [TikTok LIVE requirements](/blog/tiktok-live-requirements/).
 
 [Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

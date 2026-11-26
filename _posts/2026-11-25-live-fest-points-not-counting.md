@@ -125,7 +125,4 @@ No agency can fix a TikTok leaderboard or promise a LIVE Fest rank. TikTok runs 
 
 {% include graphic.html name="manager" caption="A creator manager can help you plan your LIVE Fest bonus windows." %}
 
-> **Heads up** @thundrr.co is Thundrr's only TikTok LIVE handle. If another account says it's recruiting for Thundrr, it isn't us.
-{: .callout .warn}
-
 [Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

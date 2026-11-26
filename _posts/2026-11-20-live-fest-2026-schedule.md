@@ -136,7 +136,4 @@ Thundrr's results in past TikTok events include:
 
 A past result doesn't predict a 2026 rank. TikTok runs the LIVE Fest leaderboards, and no agency can promise a place on them.
 
-> **Heads up** @thundrr.co is Thundrr's only TikTok LIVE handle. If another account says it's recruiting for Thundrr, it isn't us.
-{: .callout .warn}
-
 [Apply to join Thundrr](https://www.thundrr.co/join/){: .button}

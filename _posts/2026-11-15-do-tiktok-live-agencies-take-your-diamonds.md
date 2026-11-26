@@ -90,9 +90,6 @@ Every Thundrr creator gets a dedicated creator manager, one tap away in app mess
 
 The THUNDRR LIVE app also shows your Diamonds, LIVE hours and active days on your dashboard, with LIVE recaps after you stream. THUNDRR AI, the in-app LIVE coach, answers questions any time.
 
-> **Heads up** @thundrr.co is Thundrr's only TikTok LIVE handle. If another account says it's recruiting for Thundrr, it isn't us.
-{: .callout .warn}
-
 ## Questions to ask any agency
 
 TikTok notes that Creator Networks are independent businesses, and that it doesn't endorse, sponsor or take responsibility for their business activities. The agreement is between you and the agency, so ask these before you join.
