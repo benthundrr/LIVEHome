@@ -99,6 +99,8 @@ Scoring shifts slightly at the finals. The rules add a line for the global final
 
 Votes matter all the way through. TikTok's rules say Votes have to be sent manually, and unused Votes expire at the end of the global finals. Who can take part, and what can remove you, is in [LIVE Fest 2026 eligibility, prizes and rules](/blog/live-fest-2026-rules/).
 
+What happens once Power League closes on December 6 is in [what happens after LIVE Fest Power League ends](/blog/after-live-fest-power-league/).
+
 ## What TikTok hasn't confirmed
 
 Some Power League details people search for aren't public. TikTok shows them in the app, or hasn't published them at all.
