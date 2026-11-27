@@ -5,7 +5,7 @@ seo_title: "How Many Followers to Go LIVE on TikTok? 2026 | Thundrr"
 description: "TikTok's Help Center lists 1,000 followers and age 18+ to go LIVE. The number may vary by region, plus LIVE Gifts rules and why the LIVE button is missing."
 summary: "What TikTok requires to go LIVE, what LIVE Gifts add, and why the LIVE button might be missing."
 date: 2026-11-17
-last_modified_at: 2026-11-26
+last_modified_at: 2026-11-27
 icon: safety
 image: "/assets/img/og/tiktok-live-requirements.jpg"
 takeaways:
@@ -45,7 +45,7 @@ TikTok's Help Center page [What is TikTok LIVE?](https://support.tiktok.com/en/l
 
 TikTok's [age requirements page](https://support.tiktok.com/en/safety-hc/account-and-user-safety/age-requirements-for-tiktok-live) says you must be aged 18 or older to go LIVE. TikTok may ask you to confirm your age before you go LIVE, depending on factors such as your location or whether you've already done so.
 
-TikTok bases your LIVE eligibility on your confirmed age. If it can't confirm your age, you won't be able to go LIVE. TikTok's [Community Guidelines](https://www.tiktok.com/community-guidelines/en/accounts-features) repeat the rule: you must be 18 and older to go LIVE.
+TikTok bases your LIVE eligibility on your confirmed age. If it can't confirm your age, you won't be able to go LIVE. TikTok's [Community Guidelines](https://www.tiktok.com/community-guidelines/en/accounts-features) repeat the rule: you must be 18 and older to go LIVE. For the badge TikTok gives some LIVE creators, read [how to get the TikTok LIVE Pro badge](/blog/tiktok-live-pro-badge/).
 
 ### The follower rule
 
