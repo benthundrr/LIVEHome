@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#030303">
+<meta name="theme-color" content="#15171E" media="(max-width: 768px)">
+<meta name="theme-color" content="#030303" media="(min-width: 769px)">
 <title>Thundrr | TikTok LIVE Agency &amp; Creator Network</title>
 <meta name="description" content="Thundrr is a TikTok LIVE agency and creator network since 2022, with 1,500+ creators. Free to join: no fee, no cut of Diamonds, no contract.">
 <link rel="canonical" href="https://www.thundrr.co/">
@@ -4515,6 +4516,25 @@ html .div-card.has-floor::after,html .cta.starlit.has-floor::after,html .appwrap
   mask-image:radial-gradient(ellipse at center,#000 55%,transparent 100%);
   -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
   -webkit-mask-size:100% 100%;mask-size:100% 100%}
+/* Phones only. The page itself stays #04050A. These rules touch the
+   screen edges: Safari's status bar, the home-indicator / overscroll
+   strip, and a short feather on the hero glow. */
+@media (max-width:768px){
+  html{background-color:#0A1424}
+  body::after{
+    content:"";
+    position:fixed;
+    z-index:30;
+    left:0;right:0;bottom:0;
+    height:env(safe-area-inset-bottom,0px);
+    pointer-events:none;
+    background:linear-gradient(to top,#0A1830 0%,#071018 100%);
+  }
+  .led-stage{
+    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 88%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0%,#000 88%,transparent 100%);
+  }
+}
 </style>
 </head>
 <body>
@@ -6483,8 +6503,10 @@ function applyAccent(view){
   document.documentElement.style.setProperty('--acc-1', a[0]);
   document.documentElement.style.setProperty('--acc-2', a[1]);
   document.documentElement.setAttribute('data-div', (VIEWS[view].parent || view));
-  var meta = $('meta[name="theme-color"]');
-  if(meta) meta.setAttribute('content', '#030303');
+  $$('meta[name="theme-color"]').forEach(function(meta){
+    var media = meta.getAttribute('media') || '';
+    meta.setAttribute('content', media.indexOf('max-width') !== -1 ? '#15171E' : '#030303');
+  });
 }
 
 function syncHomeFab(){
