@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#212B42" media="(max-width: 768px)">
-<meta name="theme-color" content="#030303" media="(min-width: 769px)">
+<meta name="theme-color" content="#030303">
 <title>Thundrr | TikTok LIVE Agency &amp; Creator Network</title>
 <meta name="description" content="Thundrr is a TikTok LIVE agency and creator network since 2022, with 1,500+ creators. Free to join: no fee, no cut of Diamonds, no contract.">
 <link rel="canonical" href="https://www.thundrr.co/">
@@ -4516,38 +4515,6 @@ html .div-card.has-floor::after,html .cta.starlit.has-floor::after,html .appwrap
   mask-image:radial-gradient(ellipse at center,#000 55%,transparent 100%);
   -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
   -webkit-mask-size:100% 100%;mask-size:100% 100%}
-
-/* phones: the screen's top and bottom were a flat #04050A / theme-color #030303,
-   while the blue glow is painted on an inner canvas that ends in a hard clip.
-   Keep that glow's color going through the page background and under the
-   safe areas, and tint Safari's bars to the same navy. Desktop is unchanged. */
-@media (max-width:768px){
-  html{
-    background-color:#212B42;
-    background-image:
-      radial-gradient(ellipse 140% 42% at 50% -8%, #2A3A58 0%, rgba(42,58,88,0) 70%),
-      radial-gradient(ellipse 160% 55% at 50% 112%, rgba(22,64,160,.72) 0%, rgba(16,40,100,.42) 38%, rgba(33,43,66,0) 72%);
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-  }
-  body{background:transparent}
-  .atmos{
-    top:calc(env(safe-area-inset-top, 0px) * -1);
-    right:0;
-    bottom:calc(env(safe-area-inset-bottom, 0px) * -1);
-    left:0;
-  }
-  .lw-room{
-    background:radial-gradient(ellipse 120% 90% at 50% 34%, #243450 0%, #212B42 58%, #212B42 100%);
-  }
-  .lw-vig{
-    background:radial-gradient(ellipse 150% 120% at 50% 40%, transparent 58%, rgba(8,14,32,.28) 100%);
-  }
-  .led-stage{
-    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 88%,transparent 100%);
-    mask-image:linear-gradient(to bottom,#000 0%,#000 88%,transparent 100%);
-  }
-}
 </style>
 </head>
 <body>
@@ -6516,10 +6483,8 @@ function applyAccent(view){
   document.documentElement.style.setProperty('--acc-1', a[0]);
   document.documentElement.style.setProperty('--acc-2', a[1]);
   document.documentElement.setAttribute('data-div', (VIEWS[view].parent || view));
-  $$('meta[name="theme-color"]').forEach(function(meta){
-    var media = meta.getAttribute('media') || '';
-    meta.setAttribute('content', media.indexOf('max-width') !== -1 ? '#212B42' : '#030303');
-  });
+  var meta = $('meta[name="theme-color"]');
+  if(meta) meta.setAttribute('content', '#030303');
 }
 
 function syncHomeFab(){
