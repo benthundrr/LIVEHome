@@ -5,7 +5,7 @@ seo_title: "What Happens After LIVE Fest Power League Ends? | Thundrr"
 description: "What happens when TikTok LIVE Fest 2026 Power League ends on December 6: final totals, rewards, Votes, the global finals path and Fandom League next."
 summary: "Final totals, rewards, Votes and the leagues that come next, based on what TikTok has published."
 date: 2026-11-26
-last_modified_at: 2026-11-26
+last_modified_at: 2026-11-27
 icon: schedule
 image: "/assets/img/og/after-live-fest-power-league.jpg"
 cover_title: "After Power League ends"
@@ -44,7 +44,7 @@ The campaign itself keeps going. TikTok's November 11 [newsroom announcement](ht
 
 ## Final totals and the path to the global finals
 
-Don't treat the number on the board at the end of December 6 as final. TikTok's Event Rules say the points shown on a leaderboard may contain errors, and TikTok confirms the final totals after each module ends. Confirm on your campaign page.
+Don't treat the number on the board at the end of December 6 as final. TikTok's Event Rules say the points shown on a leaderboard may contain errors, and TikTok confirms the final totals after each module ends. Confirm on your campaign page. To see where you stand, read [how to check your LIVE Fest rank and if you advanced](/blog/how-to-check-live-fest-rank/).
 
 TikTok's Power League one-pager in the app describes three rounds. The day-by-day dates for each round are on your campaign page.
 
