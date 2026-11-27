@@ -4510,16 +4510,15 @@ html .div-card.has-floor::after,html .cta.starlit.has-floor::after,html .appwrap
   .wins-cv,.wins-grid{height:108px}
   .wins-band+.shell .seam{margin-top:34px}
 }
-/* the hero's dot field fades before the canvas edge, including the corners.
-   closest-side ends the fade on each side, not at the far corner, so the
-   middle of every edge reaches transparent instead of staying a hard box. */
+/* the hero's dot field fades before the canvas edge, including the corners */
 .led-cv{
-  -webkit-mask-image:radial-gradient(ellipse closest-side at center,#000 80%,transparent 100%);
-  mask-image:radial-gradient(ellipse closest-side at center,#000 80%,transparent 100%);
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 55%,transparent 100%);
+  mask-image:radial-gradient(ellipse at center,#000 55%,transparent 100%);
   -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
   -webkit-mask-size:100% 100%;mask-size:100% 100%}
-/* Phones only. The page itself stays #04050A. These rules touch
-   Safari's status bar and the home-indicator / overscroll strip. */
+/* Phones only. The page itself stays #04050A. These rules touch the
+   screen edges: Safari's status bar, the home-indicator / overscroll
+   strip, and a short feather on the hero glow. */
 @media (max-width:768px){
   html{background-color:#0A1424}
   body::after{
@@ -4530,6 +4529,10 @@ html .div-card.has-floor::after,html .cta.starlit.has-floor::after,html .appwrap
     height:env(safe-area-inset-bottom,0px);
     pointer-events:none;
     background:linear-gradient(to top,#0A1830 0%,#071018 100%);
+  }
+  .led-stage{
+    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 88%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0%,#000 88%,transparent 100%);
   }
 }
 </style>
