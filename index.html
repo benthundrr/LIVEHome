@@ -4476,22 +4476,45 @@ html .div-card.has-floor::after,html .cta.starlit.has-floor::after,html .appwrap
     mask-composite:intersect}
   .pw-stage::after{background:radial-gradient(closest-side,rgba(4,5,10,.6) 0%,rgba(4,5,10,0) 100%)}
 }
+/* phones only: the cycling photos sit behind the headline, so mute them.
+   Desktop (and anything wider than 768px) keeps the values above. */
+@media (max-width:768px){
+  .pw-slide img{opacity:.4;filter:saturate(.35)}
+  .pw-wall::after{display:block;background:rgba(3,3,3,.76)}
+}
 
 /* ============================================================
    LIGHTWELL · build 08072 — live wins ticker (Battle design)
    Sits where the scrolling strip used to, right under the LIVE hero.
    ============================================================ */
-.wins-band{position:relative;padding:14px 0;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+.wins-band{position:relative;padding:14px 0;border:0;border-radius:28px}
 .wins-band[hidden]{display:none}
-.wins-in{width:100%;max-width:var(--shell);margin:0 auto;padding:0 var(--gut)}
-.wins-cv{display:block;width:100%;height:118px}
+/* the hairlines fade out at the ends so they don't form a hard box around the grid */
+.wins-band::before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;
+  background:
+    linear-gradient(90deg,transparent 0%,rgba(255,255,255,.06) 16%,rgba(255,255,255,.06) 84%,transparent 100%) top/100% 1px no-repeat,
+    linear-gradient(90deg,transparent 0%,rgba(255,255,255,.06) 16%,rgba(255,255,255,.06) 84%,transparent 100%) bottom/100% 1px no-repeat}
+.wins-in{position:relative;width:100%;max-width:var(--shell);margin:0 auto;padding:0 var(--gut)}
+.wins-cv{position:relative;z-index:1;display:block;width:100%;height:118px}
+/* unlit dot grid only: the ticker stays sharp, the rectangle fades out */
+.wins-grid{position:absolute;z-index:0;left:var(--gut);right:var(--gut);top:0;height:118px;pointer-events:none;
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 32%,transparent 100%);
+  mask-image:radial-gradient(ellipse at center,#000 32%,transparent 100%);
+  -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+  -webkit-mask-size:100% 100%;mask-size:100% 100%}
 .wins-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .wins-band+.shell .seam{margin-top:56px}
 @media (max-width:768px){
   .wins-band{padding:10px 0}
-  .wins-cv{height:108px}
+  .wins-cv,.wins-grid{height:108px}
   .wins-band+.shell .seam{margin-top:34px}
 }
+/* the hero's dot field fades before the canvas edge, including the corners */
+.led-cv{
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 55%,transparent 100%);
+  mask-image:radial-gradient(ellipse at center,#000 55%,transparent 100%);
+  -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+  -webkit-mask-size:100% 100%;mask-size:100% 100%}
 </style>
 </head>
 <body>
@@ -7532,28 +7555,8 @@ if(window.matchMedia('(hover:hover) and (pointer:fine)').matches && !reduce){
     }
     S.chart = chartCells; S.glowChart = glowFor(chartCells);
 
-    /* the edges melt into the room (on one column, only around the logo) */
-    S.vignette = function(c){
-      c.save(); c.globalCompositeOperation = 'destination-in';
-      if(wide){
-        var hz = c.createLinearGradient(0, 0, DW, 0);
-        hz.addColorStop(0, 'rgba(0,0,0,0)'); hz.addColorStop(.3, 'rgba(0,0,0,1)'); hz.addColorStop(.92, 'rgba(0,0,0,1)'); hz.addColorStop(1, 'rgba(0,0,0,.35)');
-        c.fillStyle = hz; c.fillRect(0, 0, DW, DH);
-        var vt = c.createLinearGradient(0, 0, 0, DH);
-        vt.addColorStop(0, 'rgba(0,0,0,0)'); vt.addColorStop(.12, 'rgba(0,0,0,1)'); vt.addColorStop(.86, 'rgba(0,0,0,1)'); vt.addColorStop(1, 'rgba(0,0,0,0)');
-        c.fillStyle = vt; c.fillRect(0, 0, DW, DH);
-      } else {
-        var top = Math.max(0, (ly - size * 0.95) * dpr), full = Math.max(top + 1, (ly - size * 0.5) * dpr);
-        var fs = Math.min(0.99, (full - top) / Math.max(1, DH - top));
-        var vm = c.createLinearGradient(0, top, 0, DH);
-        vm.addColorStop(0, 'rgba(0,0,0,0)'); vm.addColorStop(fs, 'rgba(0,0,0,1)'); vm.addColorStop(.94, 'rgba(0,0,0,1)'); vm.addColorStop(1, 'rgba(0,0,0,0)');
-        c.clearRect(0, 0, DW, top); c.fillStyle = vm; c.fillRect(0, top, DW, DH - top);
-        var hm = c.createLinearGradient(0, 0, DW, 0);
-        hm.addColorStop(0, 'rgba(0,0,0,.15)'); hm.addColorStop(.18, 'rgba(0,0,0,1)'); hm.addColorStop(.82, 'rgba(0,0,0,1)'); hm.addColorStop(1, 'rgba(0,0,0,.15)');
-        c.fillStyle = hm; c.fillRect(0, 0, DW, DH);
-      }
-      c.restore();
-    };
+    /* the rectangular edge fade moved to the .led-cv CSS mask, so this no longer cuts a box */
+    S.vignette = function(){};
     stage.classList.add('is-drawn');
 
     if(wallShown || reduce){
@@ -7972,9 +7975,19 @@ if(window.matchMedia('(hover:hover) and (pointer:fine)').matches && !reduce){
     TXT_Y = rows - 8; BAR_Y = Math.max(3, Math.floor((TXT_Y - 3) / 2));
     barL = 12; barR = cols - 13;
 
-    /* the unlit grid */
-    base = document.createElement('canvas'); base.width = cv.width; base.height = cv.height;
-    var bc = base.getContext('2d'), p = pitch * dpr, s = Math.max(1, Math.round(p * 0.16));
+    /* the unlit grid, on its own layer so the CSS mask can fade its edges */
+    var grid = band.querySelector('.wins-grid');
+    if(!grid){
+      grid = document.createElement('canvas');
+      grid.className = 'wins-grid';
+      grid.setAttribute('aria-hidden', 'true');
+      cv.parentNode.insertBefore(grid, cv);
+    }
+    grid.width = cv.width; grid.height = cv.height;
+    base = grid;
+    var bc = grid.getContext('2d'), p = pitch * dpr, s = Math.max(1, Math.round(p * 0.16));
+    bc.setTransform(1, 0, 0, 1, 0, 0);
+    bc.clearRect(0, 0, grid.width, grid.height);
     bc.fillStyle = 'rgba(70,92,170,.16)';
     for(var j = 0; j < rows; j++) for(var i = 0; i < cols; i++){
       var x = Math.round(ox * dpr + (i + .5) * p), y = Math.round(oy * dpr + (j + .5) * p);
@@ -8015,7 +8028,7 @@ if(window.matchMedia('(hover:hover) and (pointer:fine)').matches && !reduce){
     var split = Math.round(barL + (barR - barL) * fill);
     var fade = local > CYCLE - 0.45 ? c01(1 - (local - (CYCLE - 0.45)) / 0.45) : 1;
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
-    ctx.clearRect(0, 0, cv.width, cv.height); ctx.drawImage(base, 0, 0);
+    ctx.clearRect(0, 0, cv.width, cv.height);
     /* end icons fly in, the winner's glove glows */
     ends.forEach(function(c){
       var k = first ? eOut((local - c.fd) / 0.5) : 1;
