@@ -5,7 +5,7 @@ seo_title: "How to Leave a TikTok LIVE Agency in 2026 | Thundrr"
 description: "What TikTok's own pages say about leaving a TikTok LIVE agency in 2026, switching to a new creator network, cooling-down periods and second accounts."
 summary: "What to check before you request to leave, how switching works, and the mistakes that can cost you."
 date: 2026-11-18
-last_modified_at: 2026-11-23
+last_modified_at: 2026-11-27
 icon: agency
 cover_frame: f09
 image: "/assets/img/og/how-to-leave-a-tiktok-live-agency.jpg"
@@ -26,6 +26,8 @@ faq:
     a: "No. TikTok's policy says networks shouldn't invite a creator who has already joined another Creator Network."
   - q: "How do I leave Thundrr?"
     a: "Thundrr has no contract, so there's no contract to break. Message your creator manager in the THUNDRR app and they'll talk it through with you."
+  - q: "How do I leave a creator network on TikTok?"
+    a: "Check your agreement and Agency Center in the TikTok app, under Settings and privacy, Creator tools, LIVE Center, and talk to your agency before you request to leave. To switch, leave your current TikTok creator network and join the next one with a fresh invitation, because TikTok's policy says you can be in only one Creator Network at a time. After you leave, you may still be in a cooling-down period when other networks can't invite you, so go by what your app shows. Never use a second account to join another network, because TikTok treats that as a multi-account violation."
 ---
 
 ## How TikTok links you to an agency
