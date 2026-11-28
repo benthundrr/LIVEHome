@@ -5,7 +5,7 @@ seo_title: "LIVE Fest Power League 2026: Tracks and Rounds | Thundrr"
 description: "How TikTok LIVE Fest 2026 Power League works: track placement, three rounds, the Legend, Crown and Rising tracks, scoring and the path to global finals."
 summary: "How Power League places creators, how its three rounds run, and what TikTok hasn't confirmed yet."
 date: 2026-11-21
-last_modified_at: 2026-11-21
+last_modified_at: 2026-11-28
 icon: battle
 image: "/assets/img/og/live-fest-2026-power-league.jpg"
 takeaways:
@@ -61,7 +61,7 @@ TikTok's Power League one-pager in the app lays out the path. This is the order 
 3. **Round 3** The same three tracks continue. Top creators from Legend, Crown and Rising advance to the global finals.
 {: .steps}
 
-Points can follow you between rounds. TikTok's Event Rules say creators carry 5% of their points from one round to the next, up to a cap that varies by track. The cap is printed under that rule. Confirm on your campaign page.
+Points can follow you between rounds. TikTok's Event Rules say creators carry 5% of their points from one round to the next, up to a cap that varies by track. The cap is printed under that rule. Confirm on your campaign page. For the last stretch, use the [Power League final round checklist](/blog/live-fest-power-league-final-round/).
 
 Rising has a track history. TikTok's [Las Vegas recap](https://newsroom.tiktok.com/tiktok-live-celebrates-creators-at-global-live-fest-event-in-las-vegas?lang=en) lists Power League and Power League Rising Track among the seven LIVE Fest 2025 categories, with the top creator in each taking home that track's title.
 
