@@ -1,11 +1,11 @@
 ---
 title: "What TikTok LIVE Fest 2026 is and how to join"
 accent: "how to join"
-seo_title: "TikTok LIVE Fest 2026: Dates and How to Join | Thundrr"
-description: "When is TikTok LIVE Fest 2026? This guide covers league dates, how to sign up, what each league scores, and the Global Finals."
+seo_title: "TikTok LIVE Fest 2026: How It Works and Every League | Thundrr"
+description: "How TikTok LIVE Fest 2026 works: the dates TikTok has published, how to sign up, what each league scores and how the Global Finals fit in."
 summary: "When LIVE Fest 2026 is, how to join, and what each league covers."
 date: 2026-11-12
-last_modified_at: 2026-11-23
+last_modified_at: 2026-11-28
 icon: schedule
 cover_frame: f07
 image: "/assets/img/og/tiktok-live-fest-2026.jpg"
